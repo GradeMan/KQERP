@@ -35,7 +35,7 @@ namespace ERP.Domain
 		[ColumnMap("ItemCode", "")]
         public string ItemCode{ get; set; }
 				
-		[ColumnMap("StockQty", "")]
+		[ColumnMap("StockQty", "数量")]
         public decimal StockQty{ get; set; }
 				
 		[ColumnMap("Remarks", "")]
