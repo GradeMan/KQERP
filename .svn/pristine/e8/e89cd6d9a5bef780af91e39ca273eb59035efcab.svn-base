@@ -1,8 +1,0 @@
-2015-06-03 16:24:27,212 [12796] INFO  AppServer-42659827 - The server instance AppServer-42659827 has been started!
-2015-06-03 16:24:49,787 [5216] INFO  ESOPServer-42659827 - The server instance ESOPServer-42659827 has been started!
-2015-06-03 16:31:59,698 [14164] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
-2015-06-03 16:32:14,513 [12128] INFO  ESOPServer-44150175 - Session: 61ab80d6-bc8c-47c8-80e4-1e0590bc91ae/127.0.0.1:22155
-A new session connected!
-2015-06-03 16:57:16,276 [12452] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
-2015-06-03 16:57:27,144 [14236] INFO  ESOPServer-44150175 - Session: 4abb15a9-c7ee-4321-b3cd-baaf63ccae37/127.0.0.1:22943
-A new session connected!

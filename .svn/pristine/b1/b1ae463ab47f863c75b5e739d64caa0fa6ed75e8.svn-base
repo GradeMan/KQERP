@@ -1,6 +1,0 @@
-2015-07-07 16:52:12,166 [16732] DEBUG DefaultBootstrap - The server instance ESOPServer has been created!
-2015-07-07 16:52:12,383 [16732] DEBUG DefaultBootstrap - The server instance ESOPServer has been initialized!
-2015-07-07 16:52:17,150 [16732] DEBUG DefaultBootstrap - The PerformanceMonitor has been initialized!
-2015-07-07 16:52:17,151 [16732] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
-2015-07-07 16:52:17,443 [16732] DEBUG ESOPServer - Listener (0.0.0.0:2012) was started
-2015-07-07 16:52:17,464 [16732] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!

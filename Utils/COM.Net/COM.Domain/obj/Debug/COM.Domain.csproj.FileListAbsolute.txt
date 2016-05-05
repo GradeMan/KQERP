@@ -72,3 +72,11 @@ E:\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\Util.pdb
 E:\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.csprojResolveAssemblyReference.cache
 E:\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.dll
 E:\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\COM.Domain.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\COM.Domain.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\EntityFramework.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\Util.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\bin\Debug\Util.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.csprojResolveAssemblyReference.cache
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Domain\obj\Debug\COM.Domain.pdb

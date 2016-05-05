@@ -32,3 +32,8 @@ E:\KQERP\Utils\Util\bin\Debug\Util.pdb
 E:\KQERP\Utils\Util\obj\Debug\Util.dll
 E:\KQERP\Utils\Util\obj\Debug\Util.pdb
 E:\KQERP\Utils\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+D:\第三方源代码\KQ2016\KQERP\Utils\Util\bin\Debug\Util.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\Util\bin\Debug\Util.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+D:\第三方源代码\KQ2016\KQERP\Utils\Util\obj\Debug\Util.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\Util\obj\Debug\Util.pdb

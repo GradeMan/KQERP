@@ -114,3 +114,15 @@ E:\KQERP\Utils\COM.Net\COM.Data\bin\Debug\EntityFramework.xml
 E:\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.csprojResolveAssemblyReference.cache
 E:\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.dll
 E:\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\COM.Data.dll.config
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\COM.Data.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\COM.Data.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\COM.Domain.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\EntityFramework.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\Util.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\Util.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\COM.Domain.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\bin\Debug\EntityFramework.xml
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.csprojResolveAssemblyReference.cache
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\COM.Net\COM.Data\obj\Debug\COM.Data.pdb

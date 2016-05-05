@@ -38,3 +38,9 @@ E:\KQERP\Utils\DependencyLibraries\bin\Debug\DependencyLibraries.dll
 E:\KQERP\Utils\DependencyLibraries\bin\Debug\DependencyLibraries.pdb
 E:\KQERP\Utils\DependencyLibraries\obj\Debug\DependencyLibraries.dll
 E:\KQERP\Utils\DependencyLibraries\obj\Debug\DependencyLibraries.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\bin\Debug\DependencyLibraries.dll.config
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\bin\Debug\DependencyLibraries.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\bin\Debug\DependencyLibraries.pdb
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\obj\Debug\DependencyLibraries.csprojResolveAssemblyReference.cache
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\obj\Debug\DependencyLibraries.dll
+D:\第三方源代码\KQ2016\KQERP\Utils\DependencyLibraries\obj\Debug\DependencyLibraries.pdb
