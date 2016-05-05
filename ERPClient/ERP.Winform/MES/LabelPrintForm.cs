@@ -295,10 +295,10 @@ namespace ERP.Winform.MES
                             M.Code2D = M.CustPartName + "\n" + M.CustPartType + "\n" + M.CustPartSpec + "\n" + M.CustDrawingNo + "\n" + ls_Supplier + "\n" + M.CustPONo + "\n" + M.CustPartNo + "\n" + M.Qty + "\n" + M.BoxNo + "\n" + M.LotNo + "\n" + M.ProdDt + "\n" + M.ExpiredDt;
                             break;
                         case "202-KH":
-                            M.Code2D = M.CustPartNo + "," + M.MLotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
+                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
                             break;
                         case "202R-KH":
-                            M.Code2D = M.CustPartNo + "," + M.MLotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
+                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
                             break;
                         default: M.Code2D = M.LotNo;
                             break;
@@ -379,11 +379,11 @@ namespace ERP.Winform.MES
                             S.Code2D = S.PartNo + "\n" + S.CustPartNo + "\n" + S.MatCode + "\n" + S.LotNo + "\n" + S.ProdDt + "\n" + S.ExpiredDt + "\n" + S.Qty + "\n" + ls_Supplier;
                             break;
                         case "202-KH":
-                            S.Code2D = S.CustPartNo + "," + S.MLotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
+                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
                             S.PackSeqNo = L.BoxNo + S.PackSeqNo;
                             break;
                         case "202R-KH":
-                            S.Code2D = S.CustPartNo + "," + S.MLotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
+                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
                             S.PackSeqNo = L.BoxNo + S.PackSeqNo;
                             break;
                         case "212-AOI":
