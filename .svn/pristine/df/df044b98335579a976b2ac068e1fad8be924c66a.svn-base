@@ -1,0 +1,21 @@
+2015-07-08 08:16:17,383 [4672] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-08 09:43:27,081 [4672] INFO  ESOPServer - The server instance ESOPServer has been stopped!
+2015-07-08 17:11:11,508 [20088] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-08 17:14:36,262 [20088] INFO  ESOPServer - The server instance ESOPServer has been stopped!
+2015-07-08 17:14:36,262 [20088] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-08 17:14:44,468 [20088] INFO  ESOPServer - The server instance ESOPServer has been stopped!
+2015-07-08 17:14:44,468 [20088] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-08 17:16:23,213 [20088] INFO  ESOPServer - The server instance ESOPServer has been stopped!
+2015-07-08 17:16:39,095 [22232] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-08 17:20:57,765 [24548] INFO  ESOPServer - Session: 0ab4e6fe-7e66-4481-882f-6163b9848741/192.168.10.215:49161
+A new session connected!
+2015-07-08 17:21:08,232 [24548] INFO  ESOPServer - Session: a5ea2d1e-3832-4327-8893-c4c007c18121/192.168.10.160:53570
+A new session connected!
+2015-07-08 17:21:12,335 [24432] INFO  ESOPServer - Session: 0ab4e6fe-7e66-4481-882f-6163b9848741/192.168.10.215:49161
+This session was closed for ClientClosing!
+2015-07-08 17:21:13,084 [24548] INFO  ESOPServer - Session: cd9265f9-1811-43f7-8674-78ed68cacc93/192.168.10.215:49163
+A new session connected!
+2015-07-08 17:21:35,829 [17856] INFO  ESOPServer - Session: cd9265f9-1811-43f7-8674-78ed68cacc93/192.168.10.215:49163
+This session was closed for ClientClosing!
+2015-07-08 17:21:43,270 [24548] INFO  ESOPServer - Session: 6ef27172-3f49-4807-91d0-0dc1fc532050/192.168.10.215:49164
+A new session connected!

@@ -1,0 +1,15 @@
+﻿using System;
+using ERP.Domain;
+namespace ERP.Data
+{
+    public interface Itb_C005_EmployeeRepository : IRepository<ERP_C005_Employee>
+	{
+	}
+    public class tb_C005_EmployeeRepository : AnyRepositoryBase<ERP_C005_Employee>, Itb_C005_EmployeeRepository
+	{
+		public tb_C005_EmployeeRepository(IDatabaseFactory databaseFactory)
+			: base(databaseFactory)
+		{
+		}
+	}
+}

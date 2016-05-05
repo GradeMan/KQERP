@@ -1,0 +1,70 @@
+﻿using System; 
+using System.Text;
+using System.Collections.Generic; 
+using System.Data;
+using COM.Domain;
+namespace ERP.Domain
+{
+   public class WMS_C103_Stock:AggregateRoot
+	{
+   		public  WMS_C103_Stock(Guid id)
+   			: base(id)
+		{
+			
+		}
+		public  WMS_C103_Stock( )
+			: base(Guid.NewGuid())
+		{
+		
+		}
+      			
+
+								
+		[ColumnMap("CompCode", "")]
+        public string CompCode{ get; set; }
+								
+		[ColumnMap("InStoreDetailId", "")]
+        public Guid? InStoreDetailId{ get; set; }
+								
+		[ColumnMap("InStoreId", "")]
+        public Guid? InStoreId{ get; set; }
+
+        [ColumnMap("JobNo", "")]
+        public string JobNo { get; set; }
+
+        [ColumnMap("LotNo", "")]
+        public string LotNo { get; set; }
+
+        public string MatClass2 { get; set; }
+
+        public string MatSpec { get; set; }
+
+        public string SuppCode { get; set; }
+
+        public string Unit { get; set; }	
+		[ColumnMap("ARCode", "")]
+        public string ARCode{ get; set; }
+								
+		[ColumnMap("StoreAmount", "")]
+        public decimal StoreAmount{ get; set; }
+								
+		[ColumnMap("StockStatus", "")]
+        public string StockStatus{ get; set; }
+								
+		[ColumnMap("ModifyDt", "")]
+        public DateTime? ModifyDt{ get; set; }
+								
+		[ColumnMap("ModifyUser", "")]
+        public string ModifyUser{ get; set; }
+								
+		[ColumnMap("CreateDt", "")]
+        public DateTime? CreateDt{ get; set; }
+								
+		[ColumnMap("CreateUser", "")]
+        public string CreateUser{ get; set; }
+								
+				[ColumnMap("Version", "")]
+        public byte[] Version{ get; set; }
+				   		
+	}
+}

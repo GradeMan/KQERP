@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="zh-CN">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Order">
+      <CalculatedFields>
+        <CalculatedField Name="Month" Expression="Substring([OrdDt],0  ,7 )" />
+      </CalculatedFields>
+    </DataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="表格 1" DataSource="dataSource1">
+      <DataItems>
+        <Dimension DataMember="Month" UniqueName="DataItem0" />
+        <Dimension DataMember="OrdDt" UniqueName="DataItem1" />
+        <Measure DataMember="Qty" UniqueName="DataItem2" />
+      </DataItems>
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem2" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

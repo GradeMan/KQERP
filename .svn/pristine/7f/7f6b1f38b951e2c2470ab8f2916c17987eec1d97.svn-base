@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCAC80FF-58EF-4575-B04E-D3B5677C3595}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.Winform</RootNamespace>
+    <AssemblyName>ERP.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="COM.YKControls">
+      <HintPath>..\..\Utils\COM.Net\COM.YKControls\bin\Debug\COM.YKControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v14.1.Win, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.1.UI, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.UI, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Win, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\DependencyLibraries\EntityFramework\4.3.1.0\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="LayeredSkin">
+      <HintPath>..\..\Utils\DependencyLibraries\layoutSkin\LayeredSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Utils\DependencyLibraries\Log4\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\Utils\DependencyLibraries\Unity\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\Utils\DependencyLibraries\Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\Utils\DependencyLibraries\Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonModule\CompanyEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CompanyEditForm.Designer.cs">
+      <DependentUpon>CompanyEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\CompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\CompanyForm.Designer.cs">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\EmployeeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\EmployeeEditForm.Designer.cs">
+      <DependentUpon>EmployeeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonModule\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonModule\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WidgetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\WidgetControl.Designer.cs">
+      <DependentUpon>WidgetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AppStartService.cs" />
+    <Compile Include="Service\ERPHelper.cs" />
+    <Compile Include="Service\LogServive.cs" />
+    <Compile Include="SysModule\A004_RoleControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\A004_RoleControl.designer.cs">
+      <DependentUpon>A004_RoleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\A004_RoleControlEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\A004_RoleControlEdit.designer.cs">
+      <DependentUpon>A004_RoleControlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\DocumentManagerTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\DocumentManagerTest.Designer.cs">
+      <DependentUpon>DocumentManagerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysButtonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysButtonEditForm.Designer.cs">
+      <DependentUpon>SysButtonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysButtonForm.Designer.cs">
+      <DependentUpon>SysButtonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysMenuEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysMenuEditForm.Designer.cs">
+      <DependentUpon>SysMenuEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysMenuForm.Designer.cs">
+      <DependentUpon>SysMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysRoleEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysRoleEditForm.Designer.cs">
+      <DependentUpon>SysRoleEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysRoleForm.Designer.cs">
+      <DependentUpon>SysRoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysUserEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysUserEditForm.Designer.cs">
+      <DependentUpon>SysUserEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysModule\SysUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysModule\SysUserForm.Designer.cs">
+      <DependentUpon>SysUserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CommonModule\CompanyEditForm.resx">
+      <DependentUpon>CompanyEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\CompanyForm.resx">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\EmployeeEditForm.resx">
+      <DependentUpon>EmployeeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonModule\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\WidgetControl.resx">
+      <DependentUpon>WidgetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SysModule\A004_RoleControl.resx">
+      <DependentUpon>A004_RoleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\A004_RoleControlEdit.resx">
+      <DependentUpon>A004_RoleControlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\DocumentManagerTest.resx">
+      <DependentUpon>DocumentManagerTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysButtonEditForm.resx">
+      <DependentUpon>SysButtonEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysButtonForm.resx">
+      <DependentUpon>SysButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysMenuEditForm.resx">
+      <DependentUpon>SysMenuEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysMenuForm.resx">
+      <DependentUpon>SysMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysRoleEditForm.resx">
+      <DependentUpon>SysRoleEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysRoleForm.resx">
+      <DependentUpon>SysRoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysUserEditForm.resx">
+      <DependentUpon>SysUserEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysModule\SysUserForm.resx">
+      <DependentUpon>SysUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Images\Thumbs.db" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_C001_Company.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_C005_Employee.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Button.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Menu.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Roles.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.tb_Sys_User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utils\COM.Net\COM.Data\COM.Data.csproj">
+      <Project>{E9E3B245-1886-4383-891E-704FF2B2F1B8}</Project>
+      <Name>COM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\COM.Net\COM.Domain\COM.Domain.csproj">
+      <Project>{7571EB64-5375-4084-975E-3BB5FDF1E30F}</Project>
+      <Name>COM.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\COM.Net\COM.Service\COM.Service.csproj">
+      <Project>{C28A50D9-B531-4320-835F-64F62965B86D}</Project>
+      <Name>COM.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\COM.Net\COM.Winform\COM.Winform.csproj">
+      <Project>{7ED5FCBB-CB76-41C2-B7D6-0848B8A742B1}</Project>
+      <Name>COM.Winform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\Util\Util.csproj">
+      <Project>{BC7CC9BA-EB2E-4EB4-992A-B9E018EFBE21}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Domain\ERP.Domain.csproj">
+      <Project>{ED115BEA-3C8F-4DB5-95FE-04D4D32D9F51}</Project>
+      <Name>ERP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Service\ERP.Service.csproj">
+      <Project>{09E0AB3B-2194-4C50-9145-89D5753E2223}</Project>
+      <Name>ERP.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\close0.png" />
+    <Content Include="Images\close1.png" />
+    <Content Include="Images\cloud.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\loginbody.png" />
+    <Content Include="Images\logo32.ico" />
+    <Content Include="Images\mini0.png" />
+    <Content Include="Images\mini1.png" />
+    <Content Include="Images\sun2.png" />
+    <Content Include="Images\yezi2.png" />
+    <Content Include="Images\yezi3.png" />
+    <Content Include="log4net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\note-32x32.png" />
+    <None Include="Resources\计算器.png" />
+    <None Include="Resources\Load-2.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

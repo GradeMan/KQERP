@@ -1,0 +1,5 @@
+2015-06-08 17:25:59,915 [9960] ERROR ESOPServer-42659827 - Listener (192.168.10.159:90) error: 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+System.Net.Sockets.SocketException (0x80004005): 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 SuperSocket.SocketEngine.TcpAsyncSocketListener.Start(IServerConfig config)

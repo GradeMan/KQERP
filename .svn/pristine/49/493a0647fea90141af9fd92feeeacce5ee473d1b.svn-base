@@ -1,0 +1,2310 @@
+2015-07-02 12:47:04,220 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,724,416.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:48:04,134 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 66,289,664.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:49:04,138 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 66,314,240.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:50:04,153 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 66,633,728.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:51:04,170 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 67,162,112.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:52:04,200 Performance - ---------------------------------------------------
+CPU Usage: 0.06%, Physical Memory Usage: 70,574,080.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 12:53:04,203 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 70,602,752.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 12:54:04,214 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 70,926,336.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:47:04
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 12:55:00,599 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,302,528.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:56:00,582 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 66,785,280.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:57:00,574 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 67,383,296.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:58:00,603 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 68,108,288.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 12:59:00,609 Performance - ---------------------------------------------------
+CPU Usage: 0.08%, Physical Memory Usage: 68,636,672.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 13:00:00,634 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 68,681,728.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 13:01:00,619 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 68,931,584.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 13:02:00,640 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 69,890,048.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:03:00,670 Performance - ---------------------------------------------------
+CPU Usage: 0.07%, Physical Memory Usage: 73,809,920.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 4
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:04:00,676 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 73,986,048.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 4
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:05:00,712 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 74,289,152.00, Total Thread Count: 26
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 4
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:06:00,708 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 74,457,088.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:07:00,706 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 74,559,488.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:08:00,737 Performance - ---------------------------------------------------
+CPU Usage: 0.06%, Physical Memory Usage: 76,783,616.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 3
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 6
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 253
+Total Sending Queue Items: 256
+
+2015-07-02 13:09:00,750 Performance - ---------------------------------------------------
+CPU Usage: 0.06%, Physical Memory Usage: 76,906,496.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 6
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:10:00,766 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 77,611,008.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 8
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:11:00,794 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 76,390,400.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 11
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:12:00,788 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 76,369,920.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 11
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:13:00,782 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,582,912.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 11
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:14:00,800 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 76,992,512.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 11
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:15:00,831 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 77,287,424.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 12:55:00
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 11
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:16:16,541 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,466,368.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:16:16
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:17:16,523 Performance - ---------------------------------------------------
+CPU Usage: 0.14%, Physical Memory Usage: 73,981,952.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:16:16
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:18:47,343 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,224,704.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:18:47
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:19:47,310 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 69,935,104.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:18:47
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 13:21:37,749 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,605,632.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:22:40,507 Performance - ---------------------------------------------------
+CPU Usage: 0.36%, Physical Memory Usage: 106,549,248.00, Total Thread Count: 34
+AvailableWorkingThreads: 32763, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:23:40,539 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 104,624,128.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 13:24:40,524 Performance - ---------------------------------------------------
+CPU Usage: 0.04%, Physical Memory Usage: 104,873,984.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 3
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 3
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 253
+Total Sending Queue Items: 256
+
+2015-07-02 13:25:40,534 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 105,111,552.00, Total Thread Count: 36
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 3
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 7
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 253
+Total Sending Queue Items: 256
+
+2015-07-02 13:26:40,558 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 105,652,224.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:21:37
+Is Running: True
+Total Connections: 3
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 8
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 253
+Total Sending Queue Items: 256
+
+2015-07-02 13:31:54,989 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,347,584.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:31:54
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:32:54,979 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 66,953,216.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:31:54
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:34:05,086 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 64,630,784.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:34:05
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:38:36,504 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 66,052,096.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:38:36
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:39:02,244 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,933,312.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:02
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:39:04,085 Performance - ---------------------------------------------------
+CPU Usage: 1.26%, Physical Memory Usage: 68,132,864.00, Total Thread Count: 36
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:04
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:39:52,694 Performance - ---------------------------------------------------
+CPU Usage: 0.19%, Physical Memory Usage: 72,138,752.00, Total Thread Count: 38
+AvailableWorkingThreads: 32765, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:40:52,710 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 72,052,736.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:41:52,727 Performance - ---------------------------------------------------
+CPU Usage: 0.06%, Physical Memory Usage: 72,728,576.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:42:52,745 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 72,945,664.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:43:52,755 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 73,146,368.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:44:52,763 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 73,621,504.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:45:52,786 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 74,530,816.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:46:52,785 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 75,034,624.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:47:52,809 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 75,390,976.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:48:52,812 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,927,552.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:49:52,846 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 74,952,704.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:50:52,840 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 75,137,024.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:51:52,858 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 75,067,392.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:52:52,867 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 75,272,192.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:53:52,880 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 75,390,976.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:54:52,905 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,464,704.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:55:52,921 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,534,336.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:56:52,923 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,538,432.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:57:52,958 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,866,112.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:58:52,949 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 76,197,888.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 13:59:52,969 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,115,968.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:00:52,979 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,136,448.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:01:52,994 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,746,752.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:02:53,002 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,820,480.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:03:53,028 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 76,869,632.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:04:53,046 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 77,099,008.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:05:53,044 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 77,266,944.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:06:53,057 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 77,942,784.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:07:53,073 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 78,577,664.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:08:53,089 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 75,292,672.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:09:53,141 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 75,390,976.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:10:53,129 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,382,784.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:11:53,133 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,448,320.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:12:53,139 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 75,653,120.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:13:53,175 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,341,824.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:14:53,174 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,485,184.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:15:53,199 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 75,554,816.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:16:53,200 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,665,408.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:17:53,208 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 75,784,192.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:18:53,235 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 76,140,544.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 14:19:53,234 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 76,779,520.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:20:53,259 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 78,409,728.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:21:53,259 Performance - ---------------------------------------------------
+CPU Usage: 0.23%, Physical Memory Usage: 108,974,080.00, Total Thread Count: 36
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 3
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:23:06,836 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 109,961,216.00, Total Thread Count: 37
+AvailableWorkingThreads: 32764, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:24:06,856 Performance - ---------------------------------------------------
+CPU Usage: 0.04%, Physical Memory Usage: 110,764,032.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:25:06,865 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 111,489,024.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:26:06,875 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 112,099,328.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:27:06,914 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 109,314,048.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:28:06,909 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 109,588,480.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:29:06,913 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,993,984.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:30:06,941 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,985,792.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:31:06,940 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 110,039,040.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:32:06,962 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 110,174,208.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:33:06,974 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 110,915,584.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:34:07,017 Performance - ---------------------------------------------------
+CPU Usage: 0.04%, Physical Memory Usage: 109,375,488.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:35:06,995 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,359,104.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:36:07,011 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,498,368.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:37:07,022 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,592,576.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:38:07,047 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,780,992.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:39:07,050 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,989,888.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:40:07,079 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 110,030,848.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:41:07,090 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 109,584,384.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:42:07,089 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,723,648.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:43:07,104 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,789,184.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:44:07,117 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,789,184.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:45:07,130 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,793,280.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:46:07,159 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,797,376.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:47:07,157 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,969,408.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:48:07,186 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 109,645,824.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:49:07,186 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,785,088.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:50:07,200 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,772,800.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:51:07,229 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,895,680.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:52:07,233 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 109,924,352.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:53:07,240 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 109,973,504.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:54:07,264 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 110,030,848.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:55:07,264 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 110,252,032.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 14:56:07,296 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 110,424,064.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 13:39:52
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 5
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 15:05:37,067 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 66,162,688.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:05:37
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:06:37,058 Performance - ---------------------------------------------------
+CPU Usage: 0.04%, Physical Memory Usage: 67,284,992.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:05:37
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:07:37,068 Performance - ---------------------------------------------------
+CPU Usage: 0.07%, Physical Memory Usage: 70,877,184.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:05:37
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 15:10:46,864 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 64,348,160.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:11:46,849 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 65,994,752.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:12:46,873 Performance - ---------------------------------------------------
+CPU Usage: 0.05%, Physical Memory Usage: 66,867,200.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 15:13:46,868 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 67,047,424.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 254
+Total Sending Queue Items: 256
+
+2015-07-02 15:14:46,886 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 67,977,216.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 4
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 252
+Total Sending Queue Items: 256
+
+2015-07-02 15:15:46,908 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 65,650,688.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 5
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 251
+Total Sending Queue Items: 256
+
+2015-07-02 15:16:46,910 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 66,093,056.00, Total Thread Count: 35
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 7
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 249
+Total Sending Queue Items: 256
+
+2015-07-02 15:17:46,940 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 66,351,104.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:18:46,949 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 69,234,688.00, Total Thread Count: 36
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:19:46,963 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 69,369,856.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:20:46,968 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 69,685,248.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:21:46,993 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,947,392.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:22:47,001 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 70,172,672.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:23:47,009 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,238,784.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:24:47,021 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,414,912.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:25:47,041 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,709,824.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:26:47,054 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 70,033,408.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:27:47,069 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 70,238,208.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 15:28:47,086 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 71,081,984.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:29:47,109 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,251,072.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:30:47,107 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,320,704.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:31:47,124 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,660,672.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:32:47,142 Performance - ---------------------------------------------------
+CPU Usage: 0.02%, Physical Memory Usage: 70,537,216.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:33:47,144 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 71,024,640.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:10:46
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 3
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:34:34,174 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 62,709,760.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:34:34
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:35:34,141 Performance - ---------------------------------------------------
+CPU Usage: 0.08%, Physical Memory Usage: 67,321,856.00, Total Thread Count: 32
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:34:34
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:40:47,389 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,855,488.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:40:47
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:41:47,369 Performance - ---------------------------------------------------
+CPU Usage: 0.14%, Physical Memory Usage: 70,291,456.00, Total Thread Count: 34
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:40:47
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 15:42:13,048 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,945,600.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 15:42:13
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:28:32,624 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,609,728.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:29:32,613 Performance - ---------------------------------------------------
+CPU Usage: 0.08%, Physical Memory Usage: 70,295,552.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:30:32,622 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 70,836,224.00, Total Thread Count: 30
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:31:32,645 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 68,378,624.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:32:32,640 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 68,681,728.00, Total Thread Count: 29
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:33:32,654 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 68,825,088.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:34:32,668 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,111,808.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 1
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:35:32,682 Performance - ---------------------------------------------------
+CPU Usage: 0.01%, Physical Memory Usage: 69,459,968.00, Total Thread Count: 31
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+
+2015-07-02 16:36:32,709 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 69,885,952.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 2
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:37:32,723 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 70,524,928.00, Total Thread Count: 27
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 3
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+
+2015-07-02 16:38:32,737 Performance - ---------------------------------------------------
+CPU Usage: 0.04%, Physical Memory Usage: 71,143,424.00, Total Thread Count: 28
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-02 16:28:32
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 6
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 255
+Total Sending Queue Items: 256
+

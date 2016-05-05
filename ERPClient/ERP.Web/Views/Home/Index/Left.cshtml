@@ -1,0 +1,5 @@
+﻿<div class="easyui-accordion" data-options="fit:true,border:false">
+    <div title="系统功能" data-options="iconCls:'icon-save'" style="overflow:auto;">
+        @Html.EasyUi().Tree("/Home/GetSysTree", "divMenuTree").Click("$.project.clickMainMenuNode")
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@model ERP.Domain.tb_Sys_User
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/ContentLayout.cshtml";
+    var x = @Html.EasyUi();
+}
+
+@section head {
+    <script type="text/javascript">
+        $(function () {
+            $.easyui.deleteUrl = "/system/account/delete";
+        });
+    </script>
+}
+@section top {
+    @*工具栏*@
+    <div class="toolbar">
+        @x.DialogButton("添加用户", "/system/account/add").Icon("icon-add").Plain().DialogSize(500, 500)
+        @x.DialogButton("编辑用户", "/system/account/edit").Id("btnEdit").Icon("icon-edit").Plain().DialogSize(500, 500).ShowEditDialog()
+        @x.Button("删除用户").Icon("icon-delete").Plain().Delete()
+        @x.Button("刷 新").Icon("icon-refresh").Plain().Refresh()
+        @x.DialogButton("设置权限", "/system/account/setmenu").Id("btnEdit").Icon("icon-edit").Plain().DialogSize(420, 400).ShowEditDialog()
+    </div>
+}
+
+@section content {
+    @*表格*@
+    @(x.Grid("grid").Toolbar("divQuery").Url("/account/Query")
+        .ShowEditDialogByDblClick().Menu().FitColumns(false)
+        .Columns(
+            x.GridColumn(t => t.Id).CheckBox(),
+            x.GridColumn(t => t.CompCode),
+            x.GridColumn(t => t.UserCode),
+            x.GridColumn(t => t.UserName),
+            x.GridColumn(t => t.CreateTime).Date(),
+            x.GridColumn(t => t.Createuser),
+            x.GridColumn(t => t.ModifyTime).Date(),
+            x.GridColumn(t => t.ModifyUser)
+        )
+    )
+}

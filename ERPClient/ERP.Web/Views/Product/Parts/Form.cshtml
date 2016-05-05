@@ -1,0 +1,33 @@
+﻿@model ERP.Domain.ERP_M001_Product
+@{
+    var x = @Html.EasyUi();
+}
+<div class="divForm">
+    <div class="formtitle">应用程序管理</div>
+    @using (x.Form("form").AddClass("form").Action("/commons/notice/Save").Begin())
+    {
+        <dl>
+            <dt>@Html.LabelFor(t => t.PartNo)</dt>
+            <dd>
+                @x.TextBox(t => t.PartNo)
+            </dd>
+        </dl>
+        <dl>
+            <dt>@Html.LabelFor(t => t.PartName)</dt>
+            <dd>
+                @*@x.TextBox(t => t.Context).MultiLine(400, 300)*@
+                @*<input class="easyui-textbox textbox-f" data-options="value:'',multiline:true,width:400,height:300,required:true,missingMessage:'内容不能为空'" textboxname="Context" style="display: none;">*@
+                @x.TextBox(t => t.PartName)
+            </dd>
+        </dl>
+        @Html.HiddenFor(t => t.Id)
+        @Html.HiddenFor(t => t.CompCode)
+        @Html.HiddenFor(t => t.CreateDt)
+        @Html.HiddenFor(t => t.CreateUser)
+        @Html.AntiForgeryToken()
+    }
+</div>
+<div id="dialogButtons">
+    @x.Button("保 存").Icon("icon-ok").Width(90).Submit()
+    @x.DialogButton("关 闭").Icon("icon-cancel").Width(90).CloseDialog()
+</div>

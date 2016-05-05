@@ -1,0 +1,8 @@
+﻿@{
+    var x = @Html.EasyUi();
+}
+@x.Menu( "menuGrid" ).Click( "$.easyui.fnClickGridMenuItem_Grid" ).Duration( 600 ).Items(
+    x.MenuItem( "menuItem_Edit", "编 辑", "icon-edit" ),
+    x.MenuItem( "menuItem_Delete", "删 除", "icon-delete" ),
+    x.MenuItem( "menuItem_Refresh", "刷 新", "icon-refresh" )
+)

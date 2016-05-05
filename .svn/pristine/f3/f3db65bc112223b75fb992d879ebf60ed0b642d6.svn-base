@@ -1,0 +1,847 @@
+﻿namespace ERP.Winform.WMS
+{
+    partial class InStoreEditForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.CompCodeTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForCompCode = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForJobNo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.JobNoTextEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.wMSC101InStoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ItemForStatus = new DevExpress.XtraLayout.LayoutControlItem();
+            this.StatusTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForCreateUser = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CreateUserTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForCreateDt = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CreateDtDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.ItemForModifyDt = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ModifyDtDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.ItemForModifyUser = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ModifyUserTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForItemCode = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemCodeTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForOrderNo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.OrderNoTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForActualAmount = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ActualAmountTextEdit = new DevExpress.XtraEditors.SpinEdit();
+            this.ItemForInstoreDt = new DevExpress.XtraLayout.LayoutControlItem();
+            this.InstoreDtDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.wMSC102InStoreDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridInstoreDetail = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCompCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colInStoreId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colARCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAmount = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModifyDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModifyUser = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreateDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreateUser = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVersion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colJobNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLotNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLotNo = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.ItemForBeforeAmount = new DevExpress.XtraLayout.LayoutControlItem();
+            this.BeforeAmountTextEdit = new DevExpress.XtraEditors.SpinEdit();
+            this.ItemForInStoreBarCode = new DevExpress.XtraLayout.LayoutControlItem();
+            this.InStoreBarCodeTextEdit = new DevExpress.XtraEditors.TextEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
+            this.dataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompCodeTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCompCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForJobNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JobNoTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wMSC101InStoreBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatusTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCreateUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateUserTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCreateDt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateDtDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateDtDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForModifyDt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyDtDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyDtDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForModifyUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyUserTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemCodeTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForOrderNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderNoTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForActualAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ActualAmountTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForInstoreDt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InstoreDtDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InstoreDtDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wMSC102InStoreDetailBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInstoreDetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLotNo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBeforeAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeforeAmountTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForInStoreBarCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InStoreBarCodeTextEdit.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Size = new System.Drawing.Size(930, 500);
+            // 
+            // dataLayoutControl1
+            // 
+            this.dataLayoutControl1.Controls.Add(this.toolStrip1);
+            this.dataLayoutControl1.Controls.Add(this.gridControl1);
+            this.dataLayoutControl1.Controls.Add(this.CompCodeTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.InStoreBarCodeTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.ItemCodeTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.OrderNoTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.StatusTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.InstoreDtDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.ModifyDtDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.ModifyUserTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.CreateDtDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.CreateUserTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.ActualAmountTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.BeforeAmountTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.JobNoTextEdit);
+            this.dataLayoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForCompCode,
+            this.ItemForInStoreBarCode,
+            this.ItemForBeforeAmount});
+            this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(477, 214, 250, 350);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(926, 496);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Size = new System.Drawing.Size(926, 496);
+            // 
+            // CompCodeTextEdit
+            // 
+            this.CompCodeTextEdit.Location = new System.Drawing.Point(114, 12);
+            this.CompCodeTextEdit.Name = "CompCodeTextEdit";
+            this.CompCodeTextEdit.Size = new System.Drawing.Size(576, 20);
+            this.CompCodeTextEdit.StyleController = this.dataLayoutControl1;
+            this.CompCodeTextEdit.TabIndex = 4;
+            // 
+            // ItemForCompCode
+            // 
+            this.ItemForCompCode.Control = this.CompCodeTextEdit;
+            this.ItemForCompCode.CustomizationFormText = "Comp Code";
+            this.ItemForCompCode.Location = new System.Drawing.Point(0, 0);
+            this.ItemForCompCode.Name = "ItemForCompCode";
+            this.ItemForCompCode.Size = new System.Drawing.Size(682, 24);
+            this.ItemForCompCode.Text = "Comp Code";
+            this.ItemForCompCode.TextSize = new System.Drawing.Size(50, 20);
+            this.ItemForCompCode.TextToControlDistance = 5;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.CustomizationFormText = "autoGeneratedGroup0";
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup6});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(906, 476);
+            this.layoutControlGroup2.Text = "autoGeneratedGroup0";
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.CustomizationFormText = "入库单";
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForJobNo,
+            this.ItemForStatus,
+            this.layoutControlGroup5,
+            this.ItemForItemCode,
+            this.ItemForOrderNo,
+            this.ItemForActualAmount,
+            this.ItemForInstoreDt,
+            this.emptySpaceItem1,
+            this.emptySpaceItem3,
+            this.emptySpaceItem2});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(906, 190);
+            this.layoutControlGroup3.Text = "入库单";
+            // 
+            // ItemForJobNo
+            // 
+            this.ItemForJobNo.Control = this.JobNoTextEdit;
+            this.ItemForJobNo.CustomizationFormText = "工单号";
+            this.ItemForJobNo.Location = new System.Drawing.Point(0, 0);
+            this.ItemForJobNo.Name = "ItemForJobNo";
+            this.ItemForJobNo.Size = new System.Drawing.Size(210, 24);
+            this.ItemForJobNo.Text = "工单号";
+            this.ItemForJobNo.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // JobNoTextEdit
+            // 
+            this.JobNoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "JobNo", true));
+            this.JobNoTextEdit.Location = new System.Drawing.Point(76, 44);
+            this.JobNoTextEdit.Name = "JobNoTextEdit";
+            this.JobNoTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.JobNoTextEdit.Properties.NullText = "";
+            this.JobNoTextEdit.Properties.View = this.gridLookUpEdit1View;
+            this.JobNoTextEdit.Size = new System.Drawing.Size(154, 20);
+            this.JobNoTextEdit.StyleController = this.dataLayoutControl1;
+            this.JobNoTextEdit.TabIndex = 6;
+            // 
+            // wMSC101InStoreBindingSource
+            // 
+            this.wMSC101InStoreBindingSource.DataSource = typeof(ERP.Domain.WMS_C101_InStore);
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // ItemForStatus
+            // 
+            this.ItemForStatus.Control = this.StatusTextEdit;
+            this.ItemForStatus.CustomizationFormText = "Status";
+            this.ItemForStatus.Location = new System.Drawing.Point(0, 24);
+            this.ItemForStatus.Name = "ItemForStatus";
+            this.ItemForStatus.Size = new System.Drawing.Size(210, 24);
+            this.ItemForStatus.Text = "状态";
+            this.ItemForStatus.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // StatusTextEdit
+            // 
+            this.StatusTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "Status", true));
+            this.StatusTextEdit.Enabled = false;
+            this.StatusTextEdit.Location = new System.Drawing.Point(76, 68);
+            this.StatusTextEdit.Name = "StatusTextEdit";
+            this.StatusTextEdit.Size = new System.Drawing.Size(154, 20);
+            this.StatusTextEdit.StyleController = this.dataLayoutControl1;
+            this.StatusTextEdit.TabIndex = 11;
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.CustomizationFormText = "layoutControlGroup3";
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForCreateUser,
+            this.ItemForCreateDt,
+            this.ItemForModifyDt,
+            this.ItemForModifyUser});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 85);
+            this.layoutControlGroup5.Name = "layoutControlGroup5";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(882, 48);
+            this.layoutControlGroup5.Text = "layoutControlGroup5";
+            this.layoutControlGroup5.TextVisible = false;
+            // 
+            // ItemForCreateUser
+            // 
+            this.ItemForCreateUser.Control = this.CreateUserTextEdit;
+            this.ItemForCreateUser.CustomizationFormText = "Create User";
+            this.ItemForCreateUser.Location = new System.Drawing.Point(198, 0);
+            this.ItemForCreateUser.Name = "ItemForCreateUser";
+            this.ItemForCreateUser.Size = new System.Drawing.Size(205, 24);
+            this.ItemForCreateUser.Text = "创建者";
+            this.ItemForCreateUser.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // CreateUserTextEdit
+            // 
+            this.CreateUserTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "CreateUser", true));
+            this.CreateUserTextEdit.Enabled = false;
+            this.CreateUserTextEdit.Location = new System.Drawing.Point(286, 141);
+            this.CreateUserTextEdit.Name = "CreateUserTextEdit";
+            this.CreateUserTextEdit.Size = new System.Drawing.Size(149, 20);
+            this.CreateUserTextEdit.StyleController = this.dataLayoutControl1;
+            this.CreateUserTextEdit.TabIndex = 16;
+            // 
+            // ItemForCreateDt
+            // 
+            this.ItemForCreateDt.Control = this.CreateDtDateEdit;
+            this.ItemForCreateDt.CustomizationFormText = "Create Dt";
+            this.ItemForCreateDt.Location = new System.Drawing.Point(0, 0);
+            this.ItemForCreateDt.Name = "ItemForCreateDt";
+            this.ItemForCreateDt.Size = new System.Drawing.Size(198, 24);
+            this.ItemForCreateDt.Text = "创建日期";
+            this.ItemForCreateDt.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // CreateDtDateEdit
+            // 
+            this.CreateDtDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "CreateDt", true));
+            this.CreateDtDateEdit.EditValue = null;
+            this.CreateDtDateEdit.Enabled = false;
+            this.CreateDtDateEdit.Location = new System.Drawing.Point(88, 141);
+            this.CreateDtDateEdit.Name = "CreateDtDateEdit";
+            this.CreateDtDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.CreateDtDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.CreateDtDateEdit.Size = new System.Drawing.Size(142, 20);
+            this.CreateDtDateEdit.StyleController = this.dataLayoutControl1;
+            this.CreateDtDateEdit.TabIndex = 15;
+            // 
+            // ItemForModifyDt
+            // 
+            this.ItemForModifyDt.Control = this.ModifyDtDateEdit;
+            this.ItemForModifyDt.CustomizationFormText = "Modify Dt";
+            this.ItemForModifyDt.Location = new System.Drawing.Point(403, 0);
+            this.ItemForModifyDt.Name = "ItemForModifyDt";
+            this.ItemForModifyDt.Size = new System.Drawing.Size(221, 24);
+            this.ItemForModifyDt.Text = "修改日期";
+            this.ItemForModifyDt.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // ModifyDtDateEdit
+            // 
+            this.ModifyDtDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "ModifyDt", true));
+            this.ModifyDtDateEdit.EditValue = null;
+            this.ModifyDtDateEdit.Enabled = false;
+            this.ModifyDtDateEdit.Location = new System.Drawing.Point(491, 141);
+            this.ModifyDtDateEdit.Name = "ModifyDtDateEdit";
+            this.ModifyDtDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ModifyDtDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ModifyDtDateEdit.Size = new System.Drawing.Size(165, 20);
+            this.ModifyDtDateEdit.StyleController = this.dataLayoutControl1;
+            this.ModifyDtDateEdit.TabIndex = 13;
+            // 
+            // ItemForModifyUser
+            // 
+            this.ItemForModifyUser.Control = this.ModifyUserTextEdit;
+            this.ItemForModifyUser.CustomizationFormText = "Modify User";
+            this.ItemForModifyUser.Location = new System.Drawing.Point(624, 0);
+            this.ItemForModifyUser.Name = "ItemForModifyUser";
+            this.ItemForModifyUser.Size = new System.Drawing.Size(234, 24);
+            this.ItemForModifyUser.Text = "修改者";
+            this.ItemForModifyUser.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // ModifyUserTextEdit
+            // 
+            this.ModifyUserTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "ModifyUser", true));
+            this.ModifyUserTextEdit.Enabled = false;
+            this.ModifyUserTextEdit.Location = new System.Drawing.Point(712, 141);
+            this.ModifyUserTextEdit.Name = "ModifyUserTextEdit";
+            this.ModifyUserTextEdit.Size = new System.Drawing.Size(178, 20);
+            this.ModifyUserTextEdit.StyleController = this.dataLayoutControl1;
+            this.ModifyUserTextEdit.TabIndex = 14;
+            // 
+            // ItemForItemCode
+            // 
+            this.ItemForItemCode.Control = this.ItemCodeTextEdit;
+            this.ItemForItemCode.CustomizationFormText = "产品";
+            this.ItemForItemCode.Location = new System.Drawing.Point(210, 0);
+            this.ItemForItemCode.Name = "ItemForItemCode";
+            this.ItemForItemCode.Size = new System.Drawing.Size(206, 24);
+            this.ItemForItemCode.Text = "产品";
+            this.ItemForItemCode.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // ItemCodeTextEdit
+            // 
+            this.ItemCodeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "ItemCode", true));
+            this.ItemCodeTextEdit.Enabled = false;
+            this.ItemCodeTextEdit.Location = new System.Drawing.Point(286, 44);
+            this.ItemCodeTextEdit.Name = "ItemCodeTextEdit";
+            this.ItemCodeTextEdit.Size = new System.Drawing.Size(150, 20);
+            this.ItemCodeTextEdit.StyleController = this.dataLayoutControl1;
+            this.ItemCodeTextEdit.TabIndex = 7;
+            // 
+            // ItemForOrderNo
+            // 
+            this.ItemForOrderNo.Control = this.OrderNoTextEdit;
+            this.ItemForOrderNo.CustomizationFormText = "订单";
+            this.ItemForOrderNo.Location = new System.Drawing.Point(416, 0);
+            this.ItemForOrderNo.Name = "ItemForOrderNo";
+            this.ItemForOrderNo.Size = new System.Drawing.Size(218, 24);
+            this.ItemForOrderNo.Text = "订单";
+            this.ItemForOrderNo.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // OrderNoTextEdit
+            // 
+            this.OrderNoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "OrderNo", true));
+            this.OrderNoTextEdit.Enabled = false;
+            this.OrderNoTextEdit.Location = new System.Drawing.Point(492, 44);
+            this.OrderNoTextEdit.Name = "OrderNoTextEdit";
+            this.OrderNoTextEdit.Size = new System.Drawing.Size(162, 20);
+            this.OrderNoTextEdit.StyleController = this.dataLayoutControl1;
+            this.OrderNoTextEdit.TabIndex = 8;
+            // 
+            // ItemForActualAmount
+            // 
+            this.ItemForActualAmount.Control = this.ActualAmountTextEdit;
+            this.ItemForActualAmount.CustomizationFormText = "实际入库";
+            this.ItemForActualAmount.Location = new System.Drawing.Point(634, 0);
+            this.ItemForActualAmount.Name = "ItemForActualAmount";
+            this.ItemForActualAmount.Size = new System.Drawing.Size(248, 24);
+            this.ItemForActualAmount.Text = "实际入库";
+            this.ItemForActualAmount.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // ActualAmountTextEdit
+            // 
+            this.ActualAmountTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "ActualAmount", true));
+            this.ActualAmountTextEdit.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ActualAmountTextEdit.Enabled = false;
+            this.ActualAmountTextEdit.Location = new System.Drawing.Point(710, 44);
+            this.ActualAmountTextEdit.Name = "ActualAmountTextEdit";
+            this.ActualAmountTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ActualAmountTextEdit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.ActualAmountTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.ActualAmountTextEdit.Size = new System.Drawing.Size(192, 20);
+            this.ActualAmountTextEdit.StyleController = this.dataLayoutControl1;
+            this.ActualAmountTextEdit.TabIndex = 10;
+            // 
+            // ItemForInstoreDt
+            // 
+            this.ItemForInstoreDt.Control = this.InstoreDtDateEdit;
+            this.ItemForInstoreDt.CustomizationFormText = "Instore Dt";
+            this.ItemForInstoreDt.Location = new System.Drawing.Point(210, 24);
+            this.ItemForInstoreDt.Name = "ItemForInstoreDt";
+            this.ItemForInstoreDt.Size = new System.Drawing.Size(206, 24);
+            this.ItemForInstoreDt.Text = "入库日期";
+            this.ItemForInstoreDt.TextSize = new System.Drawing.Size(48, 14);
+            // 
+            // InstoreDtDateEdit
+            // 
+            this.InstoreDtDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "InstoreDt", true));
+            this.InstoreDtDateEdit.EditValue = null;
+            this.InstoreDtDateEdit.Enabled = false;
+            this.InstoreDtDateEdit.Location = new System.Drawing.Point(286, 68);
+            this.InstoreDtDateEdit.Name = "InstoreDtDateEdit";
+            this.InstoreDtDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.InstoreDtDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.InstoreDtDateEdit.Size = new System.Drawing.Size(150, 20);
+            this.InstoreDtDateEdit.StyleController = this.dataLayoutControl1;
+            this.InstoreDtDateEdit.TabIndex = 12;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
+            this.emptySpaceItem1.Location = new System.Drawing.Point(416, 24);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(466, 24);
+            this.emptySpaceItem1.Text = "emptySpaceItem1";
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.CustomizationFormText = "emptySpaceItem3";
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 133);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(882, 13);
+            this.emptySpaceItem3.Text = "emptySpaceItem3";
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.CustomizationFormText = "emptySpaceItem2";
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 48);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(882, 37);
+            this.emptySpaceItem2.Text = "emptySpaceItem2";
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlGroup6
+            // 
+            this.layoutControlGroup6.CustomizationFormText = "明细";
+            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2});
+            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 190);
+            this.layoutControlGroup6.Name = "layoutControlGroup6";
+            this.layoutControlGroup6.Size = new System.Drawing.Size(906, 286);
+            this.layoutControlGroup6.Text = "明细";
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.gridControl1;
+            this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 42);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(882, 200);
+            this.layoutControlItem1.Text = "layoutControlItem1";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextToControlDistance = 0;
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridControl1.DataSource = this.wMSC102InStoreDetailBindingSource;
+            this.gridControl1.Location = new System.Drawing.Point(24, 276);
+            this.gridControl1.MainView = this.gridInstoreDetail;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemLotNo});
+            this.gridControl1.Size = new System.Drawing.Size(878, 196);
+            this.gridControl1.TabIndex = 17;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridInstoreDetail});
+            // 
+            // wMSC102InStoreDetailBindingSource
+            // 
+            this.wMSC102InStoreDetailBindingSource.DataSource = typeof(ERP.Domain.WMS_C102_InStoreDetail);
+            // 
+            // gridInstoreDetail
+            // 
+            this.gridInstoreDetail.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCompCode,
+            this.colInStoreId,
+            this.colARCode,
+            this.colAmount,
+            this.colModifyDt,
+            this.colModifyUser,
+            this.colCreateDt,
+            this.colCreateUser,
+            this.colVersion,
+            this.colId,
+            this.colJobNo,
+            this.colLotNo});
+            this.gridInstoreDetail.GridControl = this.gridControl1;
+            this.gridInstoreDetail.Name = "gridInstoreDetail";
+            this.gridInstoreDetail.OptionsView.ShowGroupPanel = false;
+            // 
+            // colCompCode
+            // 
+            this.colCompCode.FieldName = "CompCode";
+            this.colCompCode.Name = "colCompCode";
+            // 
+            // colInStoreId
+            // 
+            this.colInStoreId.FieldName = "InStoreId";
+            this.colInStoreId.Name = "colInStoreId";
+            // 
+            // colARCode
+            // 
+            this.colARCode.Caption = "区域";
+            this.colARCode.FieldName = "ARCode";
+            this.colARCode.Name = "colARCode";
+            this.colARCode.Visible = true;
+            this.colARCode.VisibleIndex = 2;
+            // 
+            // colAmount
+            // 
+            this.colAmount.Caption = "数量";
+            this.colAmount.FieldName = "Amount";
+            this.colAmount.Name = "colAmount";
+            this.colAmount.Visible = true;
+            this.colAmount.VisibleIndex = 3;
+            // 
+            // colModifyDt
+            // 
+            this.colModifyDt.FieldName = "ModifyDt";
+            this.colModifyDt.Name = "colModifyDt";
+            // 
+            // colModifyUser
+            // 
+            this.colModifyUser.FieldName = "ModifyUser";
+            this.colModifyUser.Name = "colModifyUser";
+            // 
+            // colCreateDt
+            // 
+            this.colCreateDt.FieldName = "CreateDt";
+            this.colCreateDt.Name = "colCreateDt";
+            // 
+            // colCreateUser
+            // 
+            this.colCreateUser.FieldName = "CreateUser";
+            this.colCreateUser.Name = "colCreateUser";
+            // 
+            // colVersion
+            // 
+            this.colVersion.FieldName = "Version";
+            this.colVersion.Name = "colVersion";
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            // 
+            // colJobNo
+            // 
+            this.colJobNo.Caption = "工单号";
+            this.colJobNo.FieldName = "JobNo";
+            this.colJobNo.Name = "colJobNo";
+            this.colJobNo.Visible = true;
+            this.colJobNo.VisibleIndex = 0;
+            // 
+            // colLotNo
+            // 
+            this.colLotNo.Caption = "批号";
+            this.colLotNo.ColumnEdit = this.repositoryItemLotNo;
+            this.colLotNo.FieldName = "LotNo";
+            this.colLotNo.Name = "colLotNo";
+            this.colLotNo.Visible = true;
+            this.colLotNo.VisibleIndex = 1;
+            // 
+            // repositoryItemLotNo
+            // 
+            this.repositoryItemLotNo.AutoHeight = false;
+            this.repositoryItemLotNo.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLotNo.DisplayMember = "LotNo";
+            this.repositoryItemLotNo.Name = "repositoryItemLotNo";
+            this.repositoryItemLotNo.NullText = "";
+            this.repositoryItemLotNo.ValueMember = "LotNo";
+            this.repositoryItemLotNo.View = this.repositoryItemGridLookUpEdit1View;
+            // 
+            // repositoryItemGridLookUpEdit1View
+            // 
+            this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
+            this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.toolStrip1;
+            this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(882, 42);
+            this.layoutControlItem2.Text = "layoutControlItem2";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextToControlDistance = 0;
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Location = new System.Drawing.Point(24, 234);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(878, 38);
+            this.toolStrip1.TabIndex = 18;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // ItemForBeforeAmount
+            // 
+            this.ItemForBeforeAmount.Control = this.BeforeAmountTextEdit;
+            this.ItemForBeforeAmount.CustomizationFormText = "预计入库";
+            this.ItemForBeforeAmount.Location = new System.Drawing.Point(522, 0);
+            this.ItemForBeforeAmount.Name = "ItemForBeforeAmount";
+            this.ItemForBeforeAmount.Size = new System.Drawing.Size(160, 24);
+            this.ItemForBeforeAmount.Text = "预计入库";
+            this.ItemForBeforeAmount.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForBeforeAmount.TextToControlDistance = 5;
+            // 
+            // BeforeAmountTextEdit
+            // 
+            this.BeforeAmountTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.wMSC101InStoreBindingSource, "BeforeAmount", true));
+            this.BeforeAmountTextEdit.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.BeforeAmountTextEdit.Location = new System.Drawing.Point(598, 44);
+            this.BeforeAmountTextEdit.Name = "BeforeAmountTextEdit";
+            this.BeforeAmountTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.BeforeAmountTextEdit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.BeforeAmountTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.BeforeAmountTextEdit.Size = new System.Drawing.Size(104, 20);
+            this.BeforeAmountTextEdit.StyleController = this.dataLayoutControl1;
+            this.BeforeAmountTextEdit.TabIndex = 9;
+            // 
+            // ItemForInStoreBarCode
+            // 
+            this.ItemForInStoreBarCode.Control = this.InStoreBarCodeTextEdit;
+            this.ItemForInStoreBarCode.CustomizationFormText = "入库条码";
+            this.ItemForInStoreBarCode.Location = new System.Drawing.Point(0, 0);
+            this.ItemForInStoreBarCode.Name = "ItemForInStoreBarCode";
+            this.ItemForInStoreBarCode.Size = new System.Drawing.Size(838, 24);
+            this.ItemForInStoreBarCode.Text = "入库条码";
+            this.ItemForInStoreBarCode.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForInStoreBarCode.TextToControlDistance = 5;
+            // 
+            // InStoreBarCodeTextEdit
+            // 
+            this.InStoreBarCodeTextEdit.Location = new System.Drawing.Point(76, 47);
+            this.InStoreBarCodeTextEdit.Name = "InStoreBarCodeTextEdit";
+            this.InStoreBarCodeTextEdit.Size = new System.Drawing.Size(782, 20);
+            this.InStoreBarCodeTextEdit.StyleController = this.dataLayoutControl1;
+            this.InStoreBarCodeTextEdit.TabIndex = 5;
+            // 
+            // InStoreEditForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(934, 530);
+            this.Name = "InStoreEditForm";
+            this.Text = "InStoreEditForm";
+            this.Load += new System.EventHandler(this.InStoreEditForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
+            this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompCodeTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCompCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForJobNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JobNoTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wMSC101InStoreBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatusTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCreateUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateUserTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCreateDt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateDtDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreateDtDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForModifyDt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyDtDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyDtDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForModifyUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ModifyUserTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemCodeTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForOrderNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderNoTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForActualAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ActualAmountTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForInstoreDt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InstoreDtDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InstoreDtDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wMSC102InStoreDetailBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInstoreDetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLotNo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBeforeAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BeforeAmountTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForInStoreBarCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InStoreBarCodeTextEdit.Properties)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraEditors.TextEdit CompCodeTextEdit;
+        private DevExpress.XtraEditors.TextEdit InStoreBarCodeTextEdit;
+        private DevExpress.XtraEditors.TextEdit ItemCodeTextEdit;
+        private DevExpress.XtraEditors.TextEdit OrderNoTextEdit;
+        private DevExpress.XtraEditors.TextEdit StatusTextEdit;
+        private DevExpress.XtraEditors.DateEdit InstoreDtDateEdit;
+        private DevExpress.XtraEditors.DateEdit ModifyDtDateEdit;
+        private DevExpress.XtraEditors.TextEdit ModifyUserTextEdit;
+        private DevExpress.XtraEditors.DateEdit CreateDtDateEdit;
+        private DevExpress.XtraEditors.TextEdit CreateUserTextEdit;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForCompCode;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridInstoreDetail;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForInStoreBarCode;
+        private System.Windows.Forms.BindingSource wMSC102InStoreDetailBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colInStoreId;
+        private DevExpress.XtraGrid.Columns.GridColumn colARCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colAmount;
+        private DevExpress.XtraGrid.Columns.GridColumn colModifyDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colModifyUser;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreateDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreateUser;
+        private DevExpress.XtraGrid.Columns.GridColumn colVersion;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private DevExpress.XtraGrid.Columns.GridColumn colJobNo;
+        private DevExpress.XtraEditors.SpinEdit ActualAmountTextEdit;
+        private DevExpress.XtraEditors.SpinEdit BeforeAmountTextEdit;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForJobNo;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForStatus;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForCreateUser;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForCreateDt;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForModifyDt;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForModifyUser;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForItemCode;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForOrderNo;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForBeforeAmount;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForActualAmount;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForInstoreDt;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraGrid.Columns.GridColumn colLotNo;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private System.Windows.Forms.BindingSource wMSC101InStoreBindingSource;
+        private DevExpress.XtraEditors.GridLookUpEdit JobNoTextEdit;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemLotNo;
+        private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemGridLookUpEdit1View;
+    }
+}

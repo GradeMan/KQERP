@@ -1,0 +1,9 @@
+2015-07-07 16:52:17,457 [16732] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-07 17:10:10,732 [5040] INFO  ESOPServer - Session: 4a1af3a3-dd36-44bf-8b14-37e8e436977b/192.168.10.113:49164
+A new session connected!
+2015-07-07 17:12:45,714 [16140] INFO  ESOPServer - Session: 4a752663-59c0-4b8f-9f29-6c4c26d3bde8/192.168.10.160:58491
+A new session connected!
+2015-07-07 17:12:48,924 [15704] INFO  ESOPServer - Session: 4a1af3a3-dd36-44bf-8b14-37e8e436977b/192.168.10.113:49164
+This session was closed for ClientClosing!
+2015-07-07 17:12:55,746 [16140] INFO  ESOPServer - Session: 9d5b408f-91df-4ce2-a23d-ec264c138aa8/192.168.10.113:49199
+A new session connected!

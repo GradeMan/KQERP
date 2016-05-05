@@ -1,0 +1,43 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ include file="TableConfig.tt.txt"#>
+<#@ include file="NewTable.tt.txt"#>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="System.Data.Services.Client.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Linq.Expressions" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.Services.Common" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#var c = this.NewTable();#>
+<#
+if(string.IsNullOrEmpty(c.PrimaryKey))
+	TableInfo.SetPrimaryKeyInfo(c);	
+#>
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Services.Common;
+using COM.Domain;
+
+
+namespace <#=c.AppName#>.Domain
+{
+    [ColumnMap("<#=c.TableName#>", "<#=c.Title#>")]
+    [DataServiceKey("<#=c.PrimaryKey#>")]
+	public class <#=c.EntityTypeName#>
+    {<#
+	foreach (DataRow row in TableInfo.GetSchemaInfo(c).Rows) 
+	{#>
+			
+		[ColumnMap("<#=row["ColumnName"]#>","<#=row["ColumnName"]#>")]
+		public <#=TableInfo.DbType2CshartType(row["DataType"].ToString(),row["IsNullable"].ToString())#> <#=row["ColumnName"]#> { get; set; }
+<#}#>
+	}
+}

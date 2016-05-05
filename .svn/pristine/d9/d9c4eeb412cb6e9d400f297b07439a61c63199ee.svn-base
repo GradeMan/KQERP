@@ -1,0 +1,297 @@
+2015-06-26 08:19:11,517 [4160] INFO  ESOPServer-55909147 - The server instance ESOPServer-55909147 has been started!
+2015-06-26 08:23:29,586 [7812] INFO  ESOPServer-55909147 - Session: d71315b8-6f76-4564-8639-4527512a5645/127.0.0.1:17825
+A new session connected!
+2015-06-26 08:23:37,274 [12304] INFO  ESOPServer-55909147 - Session: d71315b8-6f76-4564-8639-4527512a5645/127.0.0.1:17825
+This session was closed for ClientClosing!
+2015-06-26 08:26:23,924 [7812] INFO  ESOPServer-55909147 - Session: 0835ee39-1d0e-4b12-86be-5c8f423254a8/192.168.10.170:17987
+A new session connected!
+2015-06-26 08:26:39,300 [12344] INFO  ESOPServer-55909147 - Session: 4029c982-8632-4229-96ce-8f7c9f2d28f2/127.0.0.1:18005
+A new session connected!
+2015-06-26 08:26:56,704 [7704] INFO  ESOPServer-55909147 - Session: 0835ee39-1d0e-4b12-86be-5c8f423254a8/192.168.10.170:17987
+This session was closed for ClientClosing!
+2015-06-26 08:31:52,746 [12156] INFO  ESOPServer-55909147 - Session: 67a308ab-3413-43aa-9a99-c201e84dd401/192.168.10.170:18278
+A new session connected!
+2015-06-26 08:32:04,906 [12156] INFO  ESOPServer-55909147 - Session: 8311d8f8-e779-4259-a309-d9c28b7a1ec7/127.0.0.1:18300
+A new session connected!
+2015-06-26 08:33:10,204 [8304] INFO  ESOPServer-55909147 - Session: 67a308ab-3413-43aa-9a99-c201e84dd401/192.168.10.170:18278
+This session was closed for ClientClosing!
+2015-06-26 08:34:34,235 [12416] INFO  ESOPServer-55909147 - Session: a91ef9c7-57ec-4730-8b83-9b8385bbbe09/192.168.10.170:18439
+A new session connected!
+2015-06-26 08:34:35,827 [12416] INFO  ESOPServer-55909147 - Session: 4af79749-c82a-4ca2-9725-1c7ae7c8c1fd/192.168.10.170:18442
+A new session connected!
+2015-06-26 08:34:37,814 [7704] INFO  ESOPServer-55909147 - Session: 4af79749-c82a-4ca2-9725-1c7ae7c8c1fd/192.168.10.170:18442
+This session was closed for ClientClosing!
+2015-06-26 08:34:53,729 [2776] INFO  ESOPServer-55909147 - Session: a91ef9c7-57ec-4730-8b83-9b8385bbbe09/192.168.10.170:18439
+This session was closed for ClientClosing!
+2015-06-26 08:34:56,968 [2776] INFO  ESOPServer-55909147 - Session: 8311d8f8-e779-4259-a309-d9c28b7a1ec7/127.0.0.1:18300
+This session was closed for ClientClosing!
+2015-06-26 08:34:56,968 [10612] INFO  ESOPServer-55909147 - Session: 4029c982-8632-4229-96ce-8f7c9f2d28f2/127.0.0.1:18005
+This session was closed for ClientClosing!
+2015-06-26 08:36:41,622 [13272] INFO  ESOPServer-42659827 - The server instance ESOPServer-42659827 has been started!
+2015-06-26 08:36:58,819 [7268] INFO  ESOPServer-42659827 - Session: 53257ef5-333a-40b8-a22d-e4e84536ead5/192.168.10.170:18584
+A new session connected!
+2015-06-26 08:37:03,755 [7268] INFO  ESOPServer-42659827 - Session: ef22b708-dedd-4439-96d8-71af555f4bf4/127.0.0.1:18588
+A new session connected!
+2015-06-26 08:39:02,916 [9676] INFO  ESOPServer-42659827 - Session: 53257ef5-333a-40b8-a22d-e4e84536ead5/192.168.10.170:18584
+This session was closed for ClientClosing!
+2015-06-26 08:39:38,094 [6240] INFO  ESOPServer-42659827 - Session: f70e0a72-73a6-4914-8c7a-9c0bd2a20862/192.168.10.170:18746
+A new session connected!
+2015-06-26 08:39:45,815 [6096] INFO  ESOPServer-42659827 - Session: f70e0a72-73a6-4914-8c7a-9c0bd2a20862/192.168.10.170:18746
+This session was closed for ClientClosing!
+2015-06-26 08:41:05,078 [6240] INFO  ESOPServer-42659827 - Session: 790071ed-18bd-46cf-94af-169ae462cb1a/192.168.10.170:18851
+A new session connected!
+2015-06-26 08:41:16,670 [10608] INFO  ESOPServer-42659827 - Session: 790071ed-18bd-46cf-94af-169ae462cb1a/192.168.10.170:18851
+This session was closed for ClientClosing!
+2015-06-26 08:41:24,659 [6240] INFO  ESOPServer-42659827 - Session: f05fda71-d77b-4168-a227-39ef057d36c7/192.168.10.170:18867
+A new session connected!
+2015-06-26 08:41:27,873 [9300] INFO  ESOPServer-42659827 - Session: f05fda71-d77b-4168-a227-39ef057d36c7/192.168.10.170:18867
+This session was closed for ClientClosing!
+2015-06-26 08:41:30,466 [12128] INFO  ESOPServer-42659827 - Session: ef22b708-dedd-4439-96d8-71af555f4bf4/127.0.0.1:18588
+This session was closed for ClientClosing!
+2015-06-26 08:41:35,200 [6240] INFO  ESOPServer-42659827 - Session: ff35aa86-2cc9-44b3-be89-423beeee3294/192.168.10.170:18885
+A new session connected!
+2015-06-26 08:42:19,029 [10608] INFO  ESOPServer-42659827 - Session: ff35aa86-2cc9-44b3-be89-423beeee3294/192.168.10.170:18885
+This session was closed for ClientClosing!
+2015-06-26 08:42:58,717 [1224] INFO  ESOPServer-42659827 - Session: bd8316da-53c8-4243-868c-abcb7b22de9f/192.168.10.170:18961
+A new session connected!
+2015-06-26 08:43:16,351 [1224] INFO  ESOPServer-42659827 - Session: 8a409bf7-8398-4458-87c7-beb576208915/127.0.0.1:18980
+A new session connected!
+2015-06-26 08:43:21,220 [4944] INFO  ESOPServer-42659827 - Session: bd8316da-53c8-4243-868c-abcb7b22de9f/192.168.10.170:18961
+This session was closed for ClientClosing!
+2015-06-26 08:44:09,380 [1224] INFO  ESOPServer-42659827 - Session: d847d0d1-5ecc-448f-98d2-5c27b0e8599c/192.168.10.170:19034
+A new session connected!
+2015-06-26 08:44:11,079 [11276] INFO  ESOPServer-42659827 - Session: d847d0d1-5ecc-448f-98d2-5c27b0e8599c/192.168.10.170:19034
+This session was closed for ClientClosing!
+2015-06-26 08:44:47,089 [10080] INFO  ESOPServer-42659827 - Session: 2c1b0447-ff16-46b3-bbec-cc9b8551c442/192.168.10.170:19070
+A new session connected!
+2015-06-26 08:45:01,874 [10080] INFO  ESOPServer-42659827 - Session: 2f287021-4c48-40b9-9c5e-5a809bb47fa0/127.0.0.1:19085
+A new session connected!
+2015-06-26 08:54:00,957 [3276] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 08:54:20,817 [9344] INFO  ESOPServer-44150175 - Session: 5be60d30-a71c-4ef2-acb4-508b3bcc5c17/192.168.10.170:20059
+A new session connected!
+2015-06-26 08:54:29,301 [9344] INFO  ESOPServer-44150175 - Session: bc5c52bd-1c45-4b1c-878c-a0c71af7755c/127.0.0.1:20068
+A new session connected!
+2015-06-26 08:54:43,041 [9344] INFO  ESOPServer-44150175 - Session: 8d6c04b3-8751-4801-9925-bf7d93ac3d84/127.0.0.1:20080
+A new session connected!
+2015-06-26 09:01:21,923 [7212] INFO  ESOPServer-44150175 - Session: 5be60d30-a71c-4ef2-acb4-508b3bcc5c17/192.168.10.170:20059
+This session was closed for ClientClosing!
+2015-06-26 09:05:14,354 [7212] INFO  ESOPServer-44150175 - Session: bc5c52bd-1c45-4b1c-878c-a0c71af7755c/127.0.0.1:20068
+This session was closed for ClientClosing!
+2015-06-26 09:12:57,761 [7340] INFO  ESOPServer-42659827 - The server instance ESOPServer-42659827 has been started!
+2015-06-26 09:13:11,142 [2712] INFO  ESOPServer-42659827 - Session: 36219a2a-c71c-4031-a772-50144bf24b8c/192.168.10.170:21539
+A new session connected!
+2015-06-26 09:13:22,316 [2712] INFO  ESOPServer-42659827 - Session: aa2b4ae0-ee41-469a-8db3-e26f864fb3c0/127.0.0.1:21550
+A new session connected!
+2015-06-26 09:13:55,865 [2480] INFO  ESOPServer-42659827 - Session: 36219a2a-c71c-4031-a772-50144bf24b8c/192.168.10.170:21539
+This session was closed for ClientClosing!
+2015-06-26 09:15:06,928 [11012] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 09:15:17,593 [8572] INFO  ESOPServer-44150175 - Session: 573aa176-7697-4edc-96a2-0dfab0de0763/192.168.10.170:21662
+A new session connected!
+2015-06-26 09:15:24,104 [12848] INFO  ESOPServer-44150175 - Session: 573aa176-7697-4edc-96a2-0dfab0de0763/192.168.10.170:21662
+This session was closed for ClientClosing!
+2015-06-26 09:17:12,804 [12252] INFO  ESOPServer-63630067 - The server instance ESOPServer-63630067 has been started!
+2015-06-26 09:18:01,459 [11072] INFO  ESOPServer-63630067 - Session: 061e0c71-8b99-4303-8260-d0e5a837953d/192.168.10.170:21818
+A new session connected!
+2015-06-26 09:18:25,392 [8264] INFO  ESOPServer-63630067 - Session: bec5291b-ab0d-4771-89c9-088bb88088a8/127.0.0.1:21842
+A new session connected!
+2015-06-26 09:18:32,095 [8264] INFO  ESOPServer-63630067 - Session: aa1f97e3-679a-4057-b62b-97695247a6a7/127.0.0.1:21849
+A new session connected!
+2015-06-26 09:19:04,379 [3320] INFO  ESOPServer-42659827 - The server instance ESOPServer-42659827 has been started!
+2015-06-26 09:19:09,266 [5720] INFO  ESOPServer-42659827 - Session: 3db01e38-5c56-467c-b39e-6fed058a937a/127.0.0.1:21891
+A new session connected!
+2015-06-26 09:20:43,535 [7260] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 09:20:50,168 [10696] INFO  ESOPServer-44150175 - Session: 30bf4918-2200-44e5-bc98-2f1489b28fd4/192.168.10.170:21983
+A new session connected!
+2015-06-26 09:22:18,306 [8864] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 09:22:22,821 [11728] INFO  ESOPServer-44150175 - Session: 621990b5-fbea-4e67-89cd-124bae45f62c/192.168.10.170:22078
+A new session connected!
+2015-06-26 09:22:38,187 [11728] INFO  ESOPServer-44150175 - Session: 3564a978-c46f-4b31-91bb-8377c61253df/127.0.0.1:22096
+A new session connected!
+2015-06-26 09:39:02,747 [4588] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 09:39:18,714 [10484] INFO  ESOPServer-44150175 - Session: db8ce834-6070-4f54-ac13-3915cb2d5bcd/192.168.10.170:23088
+A new session connected!
+2015-06-26 09:39:24,568 [10484] INFO  ESOPServer-44150175 - Session: fc26b033-3781-4c2d-b551-61c045476590/127.0.0.1:23094
+A new session connected!
+2015-06-26 09:39:36,614 [11928] INFO  ESOPServer-44150175 - Session: fc26b033-3781-4c2d-b551-61c045476590/127.0.0.1:23094
+This session was closed for ClientClosing!
+2015-06-26 09:41:00,488 [11928] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 11:24:48,564 [11136] INFO  ESOPServer-63630067 - The server instance ESOPServer-63630067 has been started!
+2015-06-26 11:25:19,084 [14844] INFO  ESOPServer-63630067 - Session: 520382c3-fa20-4662-af9b-f319acf72224/192.168.10.170:33656
+A new session connected!
+2015-06-26 11:25:55,552 [11376] INFO  ESOPServer-63630067 - Session: 73c5e6eb-0f84-4584-8c09-77632ee70476/127.0.0.1:33708
+A new session connected!
+2015-06-26 11:27:07,095 [15240] INFO  ESOPServer-63630067 - Session: 520382c3-fa20-4662-af9b-f319acf72224/192.168.10.170:33656
+This session was closed for ClientClosing!
+2015-06-26 11:30:28,017 [14964] INFO  ESOPServer-63630067 - Session: 8134bd26-dd0f-4ec5-b9b4-0db28f36f3a8/192.168.10.170:34133
+A new session connected!
+2015-06-26 11:30:31,566 [5732] INFO  ESOPServer-63630067 - Session: 8134bd26-dd0f-4ec5-b9b4-0db28f36f3a8/192.168.10.170:34133
+This session was closed for ClientClosing!
+2015-06-26 12:06:43,670 [4736] INFO  ESOPServer-63630067 - Session: 48099090-3015-4848-93dd-ab040e9a0b1d/192.168.10.170:37222
+A new session connected!
+2015-06-26 12:07:10,255 [15508] INFO  ESOPServer-63630067 - Session: 48099090-3015-4848-93dd-ab040e9a0b1d/192.168.10.170:37222
+This session was closed for ClientClosing!
+2015-06-26 12:08:16,335 [13320] INFO  ESOPServer-63630067 - Session: 4d7a8cd0-e260-4a09-a098-2755b1802358/192.168.10.170:37553
+A new session connected!
+2015-06-26 12:08:27,332 [13256] INFO  ESOPServer-63630067 - Session: 4d7a8cd0-e260-4a09-a098-2755b1802358/192.168.10.170:37553
+This session was closed for ClientClosing!
+2015-06-26 12:11:03,984 [10288] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 12:11:13,628 [13468] INFO  ESOPServer-44150175 - Session: 488740c6-e863-4774-8f8e-17e4120b1c36/192.168.10.170:37808
+A new session connected!
+2015-06-26 12:11:25,735 [13468] INFO  ESOPServer-44150175 - Session: b4630841-6b67-446f-bfc6-447cc15330bf/127.0.0.1:37821
+A new session connected!
+2015-06-26 12:14:16,116 [16176] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 12:14:34,871 [9772] INFO  ESOPServer-44150175 - Session: 66147305-3ff0-4bc5-8def-e7ef4bdff035/192.168.10.170:38112
+A new session connected!
+2015-06-26 12:14:40,858 [9772] INFO  ESOPServer-44150175 - Session: 8c991514-ee70-4bfb-a8d6-3cbfb61a8651/127.0.0.1:38120
+A new session connected!
+2015-06-26 12:16:36,792 [12236] INFO  ESOPServer-44150175 - Session: 66147305-3ff0-4bc5-8def-e7ef4bdff035/192.168.10.170:38112
+This session was closed for ClientClosing!
+2015-06-26 12:16:38,115 [15940] INFO  ESOPServer-44150175 - Session: 8c991514-ee70-4bfb-a8d6-3cbfb61a8651/127.0.0.1:38120
+This session was closed for ClientClosing!
+2015-06-26 12:17:59,625 [15376] INFO  ESOPServer-63782940 - The server instance ESOPServer-63782940 has been started!
+2015-06-26 12:18:04,989 [13648] INFO  ESOPServer-63782940 - Session: 15d4fcf0-e753-4187-b319-0a9eb8ea20db/192.168.10.170:38406
+A new session connected!
+2015-06-26 12:18:16,219 [15052] INFO  ESOPServer-63782940 - Session: 15d4fcf0-e753-4187-b319-0a9eb8ea20db/192.168.10.170:38406
+This session was closed for ClientClosing!
+2015-06-26 12:19:25,956 [13648] INFO  ESOPServer-63782940 - Session: 5ca71406-ce8d-404f-9c4a-4c7867a4984e/192.168.10.170:38524
+A new session connected!
+2015-06-26 12:21:18,558 [15636] INFO  ESOPServer-63782940 - Session: 5ca71406-ce8d-404f-9c4a-4c7867a4984e/192.168.10.170:38524
+This session was closed for ClientClosing!
+2015-06-26 12:22:13,336 [16268] INFO  ESOPServer-63782940 - Session: 94178fa5-affd-4e6f-88ac-ea9ae24a1766/192.168.10.170:38741
+A new session connected!
+2015-06-26 12:22:20,511 [15728] INFO  ESOPServer-63782940 - Session: 94178fa5-affd-4e6f-88ac-ea9ae24a1766/192.168.10.170:38741
+This session was closed for ClientClosing!
+2015-06-26 12:22:53,776 [16268] INFO  ESOPServer-63782940 - Session: 55c0f393-9666-4c0b-93e3-4ec3a39dd66f/192.168.10.170:38789
+A new session connected!
+2015-06-26 12:23:06,189 [15728] INFO  ESOPServer-63782940 - Session: 55c0f393-9666-4c0b-93e3-4ec3a39dd66f/192.168.10.170:38789
+This session was closed for ClientClosing!
+2015-06-26 12:25:47,633 [16268] INFO  ESOPServer-63782940 - Session: c374e824-8ea7-494e-a5ad-1b2a1d32ece3/192.168.10.170:38968
+A new session connected!
+2015-06-26 12:25:51,886 [10044] INFO  ESOPServer-63782940 - Session: c374e824-8ea7-494e-a5ad-1b2a1d32ece3/192.168.10.170:38968
+This session was closed for ClientClosing!
+2015-06-26 14:35:37,406 [16368] INFO  ESOPServer-42659827 - The server instance ESOPServer-42659827 has been started!
+2015-06-26 14:37:17,861 [8504] INFO  ESOPServer-42659827 - Session: a33c5f15-67b9-4eb3-ac81-a123bff496ce/192.168.10.113:38929
+A new session connected!
+2015-06-26 14:38:20,148 [8504] INFO  ESOPServer-42659827 - Session: af1cb7ab-bf01-4860-8e43-4559620e0320/127.0.0.1:48473
+A new session connected!
+2015-06-26 15:09:56,443 [16352] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 15:10:02,944 [10260] INFO  ESOPServer-44150175 - Session: fa7f1694-368e-4523-83a9-a736f3b653ca/192.168.10.170:52507
+A new session connected!
+2015-06-26 15:10:08,033 [3256] INFO  ESOPServer-44150175 - Session: fa7f1694-368e-4523-83a9-a736f3b653ca/192.168.10.170:52507
+This session was closed for ClientClosing!
+2015-06-26 15:10:48,658 [10260] INFO  ESOPServer-44150175 - Session: f5c7b55f-cd9d-4fd2-a81d-c4e763a22cb1/192.168.10.170:52557
+A new session connected!
+2015-06-26 15:12:37,293 [9700] INFO  ESOPServer-44150175 - Session: f5c7b55f-cd9d-4fd2-a81d-c4e763a22cb1/192.168.10.170:52557
+This session was closed for ClientClosing!
+2015-06-26 15:12:43,213 [7384] INFO  ESOPServer-44150175 - Session: 288783c6-b6e4-4a6f-8996-f0087217dfa8/192.168.10.170:52707
+A new session connected!
+2015-06-26 15:14:21,266 [4968] INFO  ESOPServer-44150175 - Session: 288783c6-b6e4-4a6f-8996-f0087217dfa8/192.168.10.170:52707
+This session was closed for ClientClosing!
+2015-06-26 15:30:18,585 [8868] INFO  ESOPServer-44150175 - The server instance ESOPServer-44150175 has been started!
+2015-06-26 15:31:09,627 [8884] INFO  ESOPServer-44150175 - Session: 3568b2ac-470f-4937-86c5-23bc6c2f9f1e/192.168.10.170:2690
+A new session connected!
+2015-06-26 15:31:43,810 [7340] INFO  ESOPServer-44150175 - Session: 2aaea242-8fbd-4578-a4c6-a5de5060e619/127.0.0.1:2724
+A new session connected!
+2015-06-26 15:33:27,036 [6652] INFO  ESOPServer-44150175 - Session: 3568b2ac-470f-4937-86c5-23bc6c2f9f1e/192.168.10.170:2690
+This session was closed for ClientClosing!
+2015-06-26 15:33:34,572 [9156] INFO  ESOPServer-44150175 - Session: 2aaea242-8fbd-4578-a4c6-a5de5060e619/127.0.0.1:2724
+This session was closed for ClientClosing!
+2015-06-26 16:02:11,713 [9060] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:03:40,827 [8348] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:06:10,785 [7932] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:06:20,521 [1668] INFO  ESOPServer - Session: aead54c9-bea6-49a8-a13e-34da73345635/192.168.10.170:4109
+A new session connected!
+2015-06-26 16:06:50,093 [8156] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:06:54,013 [5180] INFO  ESOPServer - Session: 46174d12-68a9-4000-8032-50cb3b2bccc0/192.168.10.170:4131
+A new session connected!
+2015-06-26 16:07:14,457 [8752] INFO  ESOPServer - Session: 46174d12-68a9-4000-8032-50cb3b2bccc0/192.168.10.170:4131
+This session was closed for ClientClosing!
+2015-06-26 16:08:48,521 [6856] INFO  ESOPServer - Session: a51c707e-a579-4aa6-ad26-b41989fbf638/192.168.10.170:4199
+A new session connected!
+2015-06-26 16:08:49,761 [6300] INFO  ESOPServer - Session: a51c707e-a579-4aa6-ad26-b41989fbf638/192.168.10.170:4199
+This session was closed for ClientClosing!
+2015-06-26 16:09:41,528 [8100] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:09:47,258 [7560] INFO  ESOPServer - Session: 7af6441e-ff3c-4447-a0f4-329da3585dc4/192.168.10.170:4237
+A new session connected!
+2015-06-26 16:10:10,715 [6740] INFO  ESOPServer - Session: c30748b9-1fd8-4a96-93b9-d0449ca9b829/127.0.0.1:4252
+A new session connected!
+2015-06-26 16:10:19,735 [3548] INFO  ESOPServer - Session: 7af6441e-ff3c-4447-a0f4-329da3585dc4/192.168.10.170:4237
+This session was closed for ClientClosing!
+2015-06-26 16:11:29,650 [4752] INFO  ESOPServer - Session: 953480e4-17d7-4ead-83a4-fd9700b16bf0/127.0.0.1:4296
+A new session connected!
+2015-06-26 16:13:35,033 [8076] INFO  ESOPServer - Session: 6d5af84e-d827-4d72-b787-a5f9b95d4236/192.168.10.170:4359
+A new session connected!
+2015-06-26 16:14:47,110 [8272] INFO  ESOPServer - Session: 6d5af84e-d827-4d72-b787-a5f9b95d4236/192.168.10.170:4359
+This session was closed for ClientClosing!
+2015-06-26 16:17:58,181 [5936] INFO  ESOPServer - Session: b0967072-8ba8-4334-8ee8-cb74a097f6f8/172.27.35.3:49219
+A new session connected!
+2015-06-26 16:19:02,821 [5584] INFO  ESOPServer - Session: c30748b9-1fd8-4a96-93b9-d0449ca9b829/127.0.0.1:4252
+This session was closed for ClientClosing!
+2015-06-26 16:21:00,867 [1272] INFO  ESOPServer - Session: b0967072-8ba8-4334-8ee8-cb74a097f6f8/172.27.35.3:49219
+This session was closed for ClientClosing!
+2015-06-26 16:21:48,543 [8404] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:23:03,724 [7440] INFO  ESOPServer - Session: 3880f7ec-20b3-4289-a3d0-b566c51056d2/192.168.10.170:4669
+A new session connected!
+2015-06-26 16:23:23,397 [6428] INFO  ESOPServer - Session: 72079dd2-d40a-4e8a-9dd7-a87f9922e8d0/127.0.0.1:4680
+A new session connected!
+2015-06-26 16:24:07,912 [9048] INFO  ESOPServer - Session: 3880f7ec-20b3-4289-a3d0-b566c51056d2/192.168.10.170:4669
+This session was closed for ClientClosing!
+2015-06-26 16:34:49,135 [4512] INFO  ESOPServer - Session: 643d39c6-3b5f-4b45-9142-ab3710d9775b/192.168.10.170:5168
+A new session connected!
+2015-06-26 16:35:33,692 [3624] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:35:35,867 [9864] INFO  ESOPServer - Session: 7c0b4a5f-d41e-4beb-bfb8-ab23c201b224/192.168.10.170:5198
+A new session connected!
+2015-06-26 16:36:36,915 [8480] INFO  ESOPServer - Session: 7c0b4a5f-d41e-4beb-bfb8-ab23c201b224/192.168.10.170:5198
+This session was closed for ClientClosing!
+2015-06-26 16:37:51,734 [9092] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:37:54,925 [6856] INFO  ESOPServer - Session: fbc3347d-b245-46a8-a07c-08aa2279d230/192.168.10.170:5401
+A new session connected!
+2015-06-26 16:38:14,051 [6856] INFO  ESOPServer - Session: 7e041757-d58d-4830-9466-b98263a17bf0/127.0.0.1:5413
+A new session connected!
+2015-06-26 16:38:19,425 [508] INFO  ESOPServer - Session: fbc3347d-b245-46a8-a07c-08aa2279d230/192.168.10.170:5401
+This session was closed for ClientClosing!
+2015-06-26 16:44:16,472 [6428] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:44:21,504 [9404] INFO  ESOPServer - Session: ea8b8c7f-53fd-4073-a4ec-18f5f416e270/127.0.0.1:5777
+A new session connected!
+2015-06-26 16:44:38,619 [9404] INFO  ESOPServer - Session: fd860221-a167-460e-b079-13a3cc38254b/192.168.10.170:5806
+A new session connected!
+2015-06-26 16:45:40,004 [9652] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:45:40,681 [10228] INFO  ESOPServer - Session: 07d2a96b-d043-4aea-b13e-9b397592c51a/192.168.10.170:5838
+A new session connected!
+2015-06-26 16:46:34,533 [10228] INFO  ESOPServer - Session: 486f422b-b787-4374-8643-55ba39679b4a/127.0.0.1:5867
+A new session connected!
+2015-06-26 16:46:55,630 [1304] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:46:56,608 [5444] INFO  ESOPServer - Session: b5071dda-8b14-4ae2-9f13-7d231976ad4c/192.168.10.170:5881
+A new session connected!
+2015-06-26 16:47:06,793 [5444] INFO  ESOPServer - Session: ec8d0215-bb9e-45f3-94e8-c5ce511ff093/127.0.0.1:5889
+A new session connected!
+2015-06-26 16:50:08,596 [7540] INFO  ESOPServer - Session: b5071dda-8b14-4ae2-9f13-7d231976ad4c/192.168.10.170:5881
+This session was closed for ClientClosing!
+2015-06-26 16:51:19,078 [8280] INFO  ESOPServer - Session: ec8d0215-bb9e-45f3-94e8-c5ce511ff093/127.0.0.1:5889
+This session was closed for ClientClosing!
+2015-06-26 16:52:08,690 [9244] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:52:36,190 [7744] INFO  ESOPServer - Session: bb499865-ec26-4634-bc96-9e51115280ac/192.168.10.170:6075
+A new session connected!
+2015-06-26 16:52:44,863 [7744] INFO  ESOPServer - Session: 9e93b911-1691-4eff-a2d6-300350dee3d8/127.0.0.1:6081
+A new session connected!
+2015-06-26 16:52:55,088 [2536] INFO  ESOPServer - Session: bb499865-ec26-4634-bc96-9e51115280ac/192.168.10.170:6075
+This session was closed for ClientClosing!
+2015-06-26 16:53:00,269 [7744] INFO  ESOPServer - Session: 42b8c8b9-5ff5-449d-856f-66ef855a0df3/192.168.10.170:6095
+A new session connected!
+2015-06-26 16:53:15,536 [2536] INFO  ESOPServer - Session: 42b8c8b9-5ff5-449d-856f-66ef855a0df3/192.168.10.170:6095
+This session was closed for ClientClosing!
+2015-06-26 16:53:45,901 [8372] INFO  ESOPServer - Session: 0d331b37-0c47-4d15-afa8-e6563cae1c0d/192.168.10.170:6121
+A new session connected!
+2015-06-26 16:53:50,961 [9500] INFO  ESOPServer - Session: 0d331b37-0c47-4d15-afa8-e6563cae1c0d/192.168.10.170:6121
+This session was closed for ClientClosing!
+2015-06-26 16:54:27,618 [5196] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-06-26 16:54:32,028 [7412] INFO  ESOPServer - Session: 910e49a3-8556-414f-a3b1-439f3b7ee38f/192.168.10.170:6155
+A new session connected!
+2015-06-26 16:54:44,157 [7412] INFO  ESOPServer - Session: 7734325f-299d-4450-867c-f191408458bb/127.0.0.1:6164
+A new session connected!
+2015-06-26 17:00:13,333 [9056] INFO  ESOPServer - Session: 910e49a3-8556-414f-a3b1-439f3b7ee38f/192.168.10.170:6155
+This session was closed for ClientClosing!
+2015-06-26 17:15:51,050 [8476] INFO  ESOPServer - Session: f0ee9643-01ed-4635-bb74-7db2976152b9/172.27.35.3:49324
+A new session connected!
+2015-06-26 17:15:56,430 [7744] INFO  ESOPServer - Session: f0ee9643-01ed-4635-bb74-7db2976152b9/172.27.35.3:49324
+This session was closed for ClientClosing!

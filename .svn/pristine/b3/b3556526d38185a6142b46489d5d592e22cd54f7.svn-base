@@ -1,0 +1,215 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Configuration;
+using ERP.Domain;
+namespace ERP.Data
+{
+    public partial class ErpDbContext:DbContext
+    {
+
+        private void RegistEntityMap(ConfigurationRegistrar configuration)
+        {
+            this.RegistEntityMapSystem(configuration);
+            this.RegistEntityMapProduct(configuration);
+            this.RegistEntityMapOrder(configuration);
+            this.RegistEntityMapWMS(configuration);
+            this.RegistEntityMapFile(configuration);
+            this.RegistEntityMapESOP(configuration);
+            this.RegistEntityMapSupplier(configuration);
+        }
+
+        #region 1.0 系统权限 System
+        public DbSet<tb_Sys_User> tb_Sys_UserSet { get; set; }
+        public DbSet<tb_Sys_UserRole> tb_Sys_UserRoleSet { get; set; }
+        public DbSet<tb_Sys_Menu> tb_Sys_MenuSet { get; set; }
+        public DbSet<tb_Sys_Roles> tb_Sys_RolesSet { get; set; }
+        public DbSet<tb_Sys_RolesRight> tb_Sys_RolesRightSet { get; set; }
+        public DbSet<tb_Sys_RolesBtn> tb_Sys_RolesBtnSet { get; set; }
+        public DbSet<tb_Sys_Button> tb_Sys_ButtonSet { get; set; }
+        public DbSet<tb_Sys_Controls> tb_Sys_ControlsSet { get; set; }
+        public DbSet<tb_Sys_RolesControl> tb_Sys_RolesControlSet { get; set; }
+        #endregion
+
+        #region 2.0 基础模块 Common
+        public DbSet<ERP_C001_Code> ERP_C001_CodeSet { get; set; }
+        public DbSet<ERP_C002_Company> tb_C001_CompanySet { get; set; }
+        public DbSet<ERP_C003_Customer> ERP_C003_CustomerSet { get; set; }
+        public DbSet<ERP_C004_Supplier> ERP_C004_SupplierSet { get; set; }
+        public DbSet<ERP_C005_Employee> tb_C005_EmployeeSet { get; set; }
+        public DbSet<ERP_C006_ProcessFlow> ERP_C006_ProcessFlowSet { get; set; }
+        public DbSet<ERP_C006_ProcessFlow_Process> ERP_C006_ProcessFlow_ProcessSet { get; set; }
+
+        private void RegistEntityMapSystem(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new tb_Sys_MenuMap())
+                .Add(new tb_Sys_UserMap())
+                .Add(new tb_Sys_UserRoleMap())
+                .Add(new tb_Sys_RolesMap())
+                .Add(new tb_Sys_RolesRightMap())
+                .Add(new tb_Sys_RolesBtnMap())
+                .Add(new tb_Sys_ButtonMap())
+                .Add(new tb_Sys_RolesControlMap())
+                .Add(new tb_Sys_ControlsMap())
+                .Add(new tb_C001_CompanyMap())
+                .Add(new ERP_C001_CodeMap())
+                .Add(new ERP_C003_CustomerMap())
+                .Add(new ERP_C004_SupplierMap())
+                .Add(new ERP_C006_ProcessFlowMap())
+                .Add(new ERP_C005_EmployeeMap())
+                .Add(new ERP_C006_ProcessFlow_ProcessMap());
+
+        }
+        #endregion
+
+        #region 3.0 产品模块
+        public DbSet<ERP_M001_Product> ERP_M001_ProductSet { get; set; }
+        public DbSet<ERP_M001_Product_CustPack> ERP_M001_Product_CustPackSet { get; set; }
+        public DbSet<ERP_M001_Product_File> ERP_M001_Product_FileSet { get; set; }
+        public DbSet<ERP_M001_Product_Material> ERP_M001_Product_MaterialSet { get; set; }
+        public DbSet<ERP_M001_Product_ProcessFlow> ERP_M001_Product_ProcessFlowSet { get; set; }
+        public DbSet<ERP_M001_Product_ProdInfo> ERP_M001_Product_ProdInfoSet { get; set; }
+        public DbSet<ERP_M002_Material> ERP_M002_MaterialSet { get; set; }
+        public DbSet<ERP_M003_Model> ERP_M003_ModelSet { get; set; }
+        public DbSet<ERP_M003_Model_Product> ERP_M003_Model_ProductSet { get; set; }
+        public DbSet<ERP_M004_QHProduct> ERP_M004_QHProductSet { get; set; }
+
+        private void RegistEntityMapProduct(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new ERP_M001_ProductMap())
+                .Add(new ERP_M001_Product_CustPackMap())
+                .Add(new ERP_M001_Product_FileMap())
+                .Add(new ERP_M001_Product_MaterialMap())
+                .Add(new ERP_M001_Product_ProcessFlowMap())
+                .Add(new ERP_M001_Product_ProdInfoMap())
+                .Add(new ERP_M002_MaterialMap())
+                .Add(new ERP_M003_ModelMap())
+                .Add(new ERP_M003_Model_ProductMap())
+                .Add(new ERP_M004_QHProductMap());
+        }
+        #endregion
+
+        #region 4.0 订单模块
+        public DbSet<MES_M001_Order> MES_M001_OrderSet { get; set; }
+        public DbSet<MES_M001_Order_Detail> MES_M001_Order_DetailSet { get; set; }
+        public DbSet<MES_M002_Job> MES_M002_JobSet { get; set; }
+        public DbSet<MES_M002_Job_Lot> MES_M002_Job_LotSet { get; set; }
+        public DbSet<MES_M003_LotTx> MES_M003_LotTxSet { get; set; }
+        public DbSet<MES_M003_LotTx_NG> MES_M003_LotTx_NGSet { get; set; }
+        public DbSet<MES_M003_LotTx_NG_Clone> MES_M003_LotTx_NG_CloneSet { get; set; }
+        public DbSet<vw_JobReport> vw_JobReportSet { get; set; }
+        public DbSet<MES_M002_Job_Lot_Process> MES_M002_Job_Lot_ProcessSet { get; set; }
+        private void RegistEntityMapOrder(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new MES_M001_OrderMap())
+                .Add(new MES_M001_Order_DetailMap())
+                .Add(new MES_M002_JobMap())
+                .Add(new MES_M002_Job_LotMap())
+                .Add(new MES_M003_LotTxMap())
+                .Add(new MES_M003_LotTx_NGMap())
+                .Add(new MES_M003_LotTx_NG_CloneMap())
+                .Add(new vw_JobReportMap())
+                .Add(new MES_M002_Job_Lot_ProcessMap());
+
+        }
+        #endregion
+
+        #region 5.0 仓库模块
+        public DbSet<WMS_C101_WareHouse> WMS_C101_WareHouseSet { get; set; }
+        public DbSet<WMS_C102_Area> WMS_C102_AreaSet { get; set; }
+        public DbSet<WMS_C103_Shelf> WMS_C103_ShelfSet { get; set; }
+        public DbSet<WMS_M001_Product> WMS_M001_ProductSet { get; set; }
+        public DbSet<WMS_M002_StockTx> WMS_M002_StockTxSet { get; set; }
+        public DbSet<WMS_C101_InStore> WMS_C101_InStoreSet { get; set; }
+        public DbSet<WMS_C102_InStoreDetail> WMS_C102_InStoreDetailSet { get; set; }
+        public DbSet<WMS_C103_Stock> WMS_C103_StockSet { get; set; }
+        public DbSet<WMS_C104_OutStore> WMS_C104_OutStoreSet { get; set; }
+        public DbSet<WMS_C105_OutStoreDetail> WMS_C105_OutStoreDetailSet { get; set; }
+        private void RegistEntityMapWMS(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new WMS_C101_WareHouseMap())
+                .Add(new WMS_C102_AreaMap())
+                .Add(new WMS_C103_ShelfMap())
+                .Add(new WMS_M001_ProductMap())
+                .Add(new WMS_M002_StockTxMap())
+                .Add(new WMS_C101_InStoreMap())
+                .Add(new WMS_C102_InStoreDetailMap())
+                .Add(new WMS_C103_StockMap())
+                .Add(new WMS_C104_OutStoreMap())
+                .Add(new WMS_C105_OutStoreDetailMap());
+
+        }
+        #endregion
+
+        #region 6.0 文件管理模块
+        public DbSet<FTP_F002_File> FTP_F002_FileSet { get; set; }
+        public DbSet<FTP_F003_RolesRight> FTP_F003_RolesRightSet { get; set; }
+
+        private void RegistEntityMapFile(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new FTP_F002_FileMap())
+                .Add(new FTP_F003_RolesRightMap());
+        }
+        #endregion
+
+        #region 7.0 设备管理模块
+        public DbSet<DEV_D001_Device> DEV_D001_DeviceSet { get; set; }
+        public DbSet<DEV_D001_Device_File> DEV_D001_Device_FileSet { get; set; }
+        public DbSet<DEV_D001_Device_Appurten> DEV_D001_Device_AppurtenSet { get; set; }
+        private void RegistEntityMapDevice(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new DEV_D001_DeviceMap())
+                .Add(new DEV_D001_Device_FileMap())
+                .Add(new DEV_D001_Device_AppurtenMap());
+        } 
+        #endregion
+
+        #region 8.0 ESOP管理模块
+        public DbSet<ESOP_Device> ESOP_DeviceSet { get; set; }
+        public DbSet<ESOP_Product> ESOP_ProductSet { get; set; }
+        public DbSet<ESOP_Publish> ESOP_PublishSet { get; set; }
+        public DbSet<ESOP_Doc> ESOP_DocSet { get; set; }
+        public DbSet<ESOP_DocIndex> ESOP_DocIndexSet { get; set; }
+        public DbSet<ESOP_DocIndex_Sec> ESOP_DocIndex_SecSet { get; set; }
+        public DbSet<ESOP_RoleDevice> ESOP_RoleDeviceSet { get; set; }
+        private void RegistEntityMapESOP(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new ESOP_DeviceMap())
+                .Add(new ESOP_ProductMap())
+                .Add(new ESOP_PublishMap())
+                .Add(new ESOP_DocMap())
+                .Add(new ESOP_DocIndexMap())
+                .Add(new ESOP_DocIndex_SecMap())
+                .Add(new ESOP_RoleDeviceMap());
+               
+        }
+        #endregion
+
+        #region 9.0 供应商管理模块
+        public DbSet<ERP_C003_Supplier> ERP_C003_SupplierSet { get; set; }
+        public DbSet<ERP_M001_Material> ERP_M001_MaterialSet { get; set; }
+        public DbSet<ERP_M001_Material_Supp> ERP_M001_Material_SuppSet { get; set; }
+        public DbSet<SUPP_M001_PurPlan> SUPP_M001_PurPlanSet { get; set; }
+        public DbSet<SUPP_M001_PurPlan_Material> SUPP_M001_PurPlan_MaterialSet { get; set; }
+        public DbSet<ERP_M002_BOM> ERP_M002_BOMSet { get; set; }
+        public DbSet<ERP_M002_BOM_Material> ERP_M002_BOM_MaterialSet { get; set; }
+        public DbSet<ERP_C003_Supplier_File> ERP_C003_Supplier_FileSet { get; set; }
+        public DbSet<SUPP_M001_PurPlan_Detail> SUPP_M001_PurPlan_DetailSet { get; set; }
+        private void RegistEntityMapSupplier(ConfigurationRegistrar configuration)
+        {
+            configuration.Add(new ERP_C003_SupplierMap())
+                .Add(new ERP_M001_MaterialMap())
+                .Add(new ERP_M001_Material_SuppMap())
+                .Add(new SUPP_M001_PurPlanMap())
+                .Add(new SUPP_M001_PurPlan_MaterialMap())
+                .Add(new ERP_M002_BOMMap())
+                .Add(new ERP_M002_BOM_MaterialMap())
+                .Add(new ERP_C003_Supplier_FileMap())
+                .Add(new SUPP_M001_PurPlan_DetailMap());
+
+        }
+        #endregion
+    }
+}

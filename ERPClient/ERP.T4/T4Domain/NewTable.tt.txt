@@ -1,0 +1,13 @@
+﻿<#+
+public ITableConfig NewTable()
+{
+	return new TableConfig
+	{
+	    PrimaryKey = "UserID",
+		ModuleNameField = "ExportDetailDocFile",
+		Title = "客户产品库类别",
+		TableName = "tb_Sys_User",
+		EntityTypeNameField = "ClientProductCategoryID",
+	};
+}
+#>

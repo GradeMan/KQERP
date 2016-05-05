@@ -1,0 +1,52 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ include file="EntityConfig.tt.txt"#>
+<#@ include file="NewEntity.tt.txt"#>
+<#@ output extension=".bat" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.Services.Client.dll" #>
+<#@ assembly name="$(ProjectDir)..\..\Utils\COM.Net\COM.Domain\bin\Debug\COM.Domain.dll" #>
+<#@ assembly name="$(ProjectDir)..\ERP.Domain\bin\Debug\ERP.Domain.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Linq.Expressions" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.Services.Common" #>
+<#@ import namespace="COM.Domain" #>
+<#@ import namespace="ERP.Domain" #>
+<#var c = this.NewEntity();#>
+
+cls
+@echo off
+rem move t4.cs to module dir
+
+<# var projectDir = string.Format(@"D:\Project.SVN\MH.Net\{0}.MH\{0}.T4",c.AppName); #>
+<#= projectDir.Substring(0,2)#>
+cd <#= projectDir #>\T4
+
+md ..\..\\<#= c.AppName #>.Domain\\<#= c.ModuleName #>\Map
+copy .\DomainMap\EntityMap.cs  ..\..\\<#= c.AppName #>.Domain\\<#= c.ModuleName #>\Map\\<#= c.EntityTypeName #>Map.cs /y
+
+md ..\..\\<#= c.AppName #>.Data\\<#= c.ModuleName #>
+copy .\Data\EntityRepository.cs  ..\..\\<#= c.AppName #>.Data\\<#= c.ModuleName #>\\<#= c.EntityTypeName #>Repository.cs /y
+
+md ..\..\\<#= c.AppName #>.Service\\<#= c.ModuleName #>
+copy .\Service\EntityService.cs  ..\..\\<#= c.AppName #>.Service\\<#= c.ModuleName #>\\<#= c.EntityTypeName #>Service.cs /y
+
+md ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>
+md ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Controllers
+copy .\Web\Controller.cs  ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Controllers\\<#= c.EntityTypeName #>Controller.cs /y
+
+md ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Views
+md ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Views\\<#= c.EntityTypeName #>
+copy .\Web\List.cshtml  ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Views\\<#= c.EntityTypeName #>\List.cshtml /y
+copy .\Web\Edit.cshtml  ..\..\..\\<#= c.WebAppName #>.Net\\<#= c.WebAppName #>.Web\\<#= c.ModuleName #>\Views\\<#= c.EntityTypeName #>\Edit.cshtml /y
+
+del .\DomainMap\*.cs  /q
+del .\Data\*.cs  /q
+del .\Service\*.cs  /q
+del .\Web\*.cs  /q
+del .\Web\*.cshtml  /q
+del .\*.cs  /q
+del .\*.bat /q
+

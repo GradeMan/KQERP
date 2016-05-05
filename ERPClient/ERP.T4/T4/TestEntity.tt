@@ -1,0 +1,48 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ include file="EntityConfig.tt.txt"#>
+<#@ include file="NewEntity.tt.txt"#>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.Services.Client.dll" #>
+<#@ assembly name="$(ProjectDir)..\..\COM.Net\COM.Domain\bin\Debug\COM.Domain.dll" #>
+<#@ assembly name="$(ProjectDir)..\SupplierApp.Domain\bin\Debug\SupplierApp.Domain.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Linq.Expressions" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.Services.Common" #>
+<#@ import namespace="COM.Domain" #>
+<#@ import namespace="SupplierApp.Domain" #>
+
+<#var c = new EntityConfig<TestLog>()
+	{
+		ModuleNameField = "TestModule",
+		KeyShortNameField = "logId",
+		KeyPropertyExp = (i=>i.app),
+	};
+#>
+
+/*
+AppName = <#= c.AppName #>
+ModuleName = <#= c.ModuleName #>
+
+Title = <#= c.Title #>
+TableName = <#= c.TableName #>
+EntityType = <#= c.EntityType #>
+entityTypeName = <#= c.entityTypeName #>
+EntityTypeName = <#= c.EntityTypeName #>
+
+IEntityRepository = <#= c.IEntityRepository #>
+entityRepository = <#= c.entityRepository #>
+IEntityService = <#= c.IEntityService #>
+entityService = <#= c.entityService #>
+
+KeyTypeName = <#= c.KeyTypeName #>
+KeyName = <#= c.KeyName #>
+keyName = <#= c.keyName #>
+KeyShortName = <#= c.KeyShortName #>
+keyShortName = <#= c.keyShortName #>
+
+}
+*/

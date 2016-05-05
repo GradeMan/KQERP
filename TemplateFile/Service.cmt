@@ -1,0 +1,84 @@
+﻿<#@ template language="c#" HostSpecific="True" #>
+<#@ output extension= ".cs" #>
+<#
+	TableHost host = (TableHost)(Host);
+	host.Fieldlist.Sort(CodeCommon.CompareByintOrder);
+#>
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using COM.Data;
+using ERP.Data;
+using ERP.Domain;
+namespace ERP.Service
+{
+	public interface I<#= host.GetModelClass(host.TableName) #>Service
+	{
+		<#= host.GetModelClass(host.TableName) #> Get<#= host.GetModelClass(host.TableName) #>By<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>(<#= CodeCommon.GetInParameter(host.Keys,true) #>);
+        List<<#= host.GetModelClass(host.TableName) #>> Get<#= host.GetModelClass(host.TableName) #>List();
+		List<<#= host.GetModelClass(host.TableName) #>> Get<#= host.GetModelClass(host.TableName) #>List(PagingModel pagingModel, DateTime? beginDate, DateTime? endDate);
+        void Create<#= host.GetModelClass(host.TableName) #>(<#= host.GetModelClass(host.TableName) #> <#= host.GetModelClass(host.TableName) #>);
+        void Update<#= host.GetModelClass(host.TableName) #>(<#= host.GetModelClass(host.TableName) #> <#= host.GetModelClass(host.TableName) #>);
+        void Delete<#= host.GetModelClass(host.TableName) #>(<#= CodeCommon.GetInParameter(host.Keys,true) #>);
+	}
+	public class <#= host.GetModelClass(host.TableName) #>Service :I<#= host.GetModelClass(host.TableName) #>Service
+	{
+		private I<#= host.GetModelClass(host.TableName) #>Repository <#= host.GetModelClass(host.TableName) #>Repository;
+		private IRuntimeService runtimeService;
+		public <#= host.GetModelClass(host.TableName) #>Service(IRuntimeService runtimeService, I<#= host.GetModelClass(host.TableName) #>Repository <#= host.GetModelClass(host.TableName) #>Repository)
+		{
+			this.runtimeService = runtimeService;
+			this.<#= host.GetModelClass(host.TableName) #>Repository = <#= host.GetModelClass(host.TableName) #>Repository;
+		}
+
+		public List<<#= host.GetModelClass(host.TableName) #>> Get<#= host.GetModelClass(host.TableName) #>List()
+        {
+            var q = this.<#= host.GetModelClass(host.TableName) #>Repository.GetMany(i => true);
+            return q.ToList();
+        }
+
+        public <#= host.GetModelClass(host.TableName) #> Get<#= host.GetModelClass(host.TableName) #>By<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>(<#= CodeCommon.GetInParameter(host.Keys,true) #>)
+        {
+            return this.<#= host.GetModelClass(host.TableName) #>Repository.GetByID(<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>);
+        }
+
+        public void Create<#= host.GetModelClass(host.TableName) #>(<#= host.GetModelClass(host.TableName) #> <#= host.GetModelClass(host.TableName) #>)
+        {
+			this.<#= host.GetModelClass(host.TableName) #>Repository.Add(<#= host.GetModelClass(host.TableName) #>);
+            this.runtimeService.UnitOfWork.Commit();
+        }
+
+        public void Delete<#= host.GetModelClass(host.TableName) #>(<#= CodeCommon.GetInParameter(host.Keys,true) #>)
+        {
+            var existstb_Sys_Menu = this.Get<#= host.GetModelClass(host.TableName) #>By<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>(<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>);
+            this.<#= host.GetModelClass(host.TableName) #>Repository.Delete(existstb_Sys_Menu);
+            this.runtimeService.UnitOfWork.Commit();
+        }
+
+        public void Update<#= host.GetModelClass(host.TableName) #>(<#= host.GetModelClass(host.TableName) #> <#= host.GetModelClass(host.TableName) #>)
+        {
+            var existstb_Sys_Menu = this.Get<#= host.GetModelClass(host.TableName) #>By<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>(<#= host.GetModelClass(host.TableName) #>.<#= CodeCommon.GetFieldstrlist(host.Keys,true) #>);
+            this.<#= host.GetModelClass(host.TableName) #>Repository.SetValues(<#= host.GetModelClass(host.TableName) #>, existstb_Sys_Menu);
+            this.runtimeService.UnitOfWork.Commit();
+        }
+
+        public List<<#= host.GetModelClass(host.TableName) #>> Get<#= host.GetModelClass(host.TableName) #>List(PagingModel pagingModel, DateTime? beginDate, DateTime? endDate)
+        {
+            var q = this.<#= host.GetModelClass(host.TableName) #>Repository.GetMany(i => true);
+			if (beginDate.HasValue)
+            {
+                beginDate = beginDate.Value.Date;
+           	    q = q.Where(p => p.CreateTime >= beginDate);
+            }
+            if (endDate.HasValue)
+            {
+                endDate = endDate.Value.Date.AddDays(1);
+                q = q.Where(p => p.CreateTime < endDate);
+            }
+            
+            q = q.OrderByDescending(i => i.CreateTime);
+            q = q.Paging(pagingModel);
+            return q.ToList();
+        }
+	}
+}

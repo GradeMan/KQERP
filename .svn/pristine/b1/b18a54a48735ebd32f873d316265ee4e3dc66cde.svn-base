@@ -1,0 +1,27 @@
+2015-06-23 16:08:31,682 [21012] INFO  ESOPServer-63782940 - The server instance ESOPServer-63782940 has been started!
+2015-06-23 16:09:32,658 [25252] INFO  ESOPServer-63782940 - Session: dff8a32b-e467-4bfd-9325-53ae1804e3a0/192.168.10.172:16910
+A new session connected!
+2015-06-23 16:10:08,308 [25252] INFO  ESOPServer-63782940 - Session: bc234739-33f7-4107-8a82-0c95b7018f3b/127.0.0.1:16919
+A new session connected!
+2015-06-23 16:12:22,493 [52804] INFO  ESOPServer-63782940 - Session: 6f9d3acb-909c-4259-8644-8d290082fcfe/192.168.10.204:49415
+A new session connected!
+2015-06-23 16:13:26,383 [11632] INFO  ESOPServer-63782940 - Session: dff8a32b-e467-4bfd-9325-53ae1804e3a0/192.168.10.172:16910
+This session was closed for ClientClosing!
+2015-06-23 16:19:49,380 [53348] INFO  ESOPServer-63782940 - Session: c10fabd4-6d6e-4dd5-9db4-8df9699983ef/192.168.10.221:49663
+A new session connected!
+2015-06-23 16:20:55,348 [50848] INFO  ESOPServer-63782940 - Session: c10fabd4-6d6e-4dd5-9db4-8df9699983ef/192.168.10.221:49663
+This session was closed for ClientClosing!
+2015-06-23 16:33:30,895 [30844] INFO  ESOPServer-63782940 - Session: 6f9d3acb-909c-4259-8644-8d290082fcfe/192.168.10.204:49415
+This session was closed for ClientClosing!
+2015-06-23 16:34:42,972 [34928] INFO  ESOPServer-63782940 - Session: 2b73603c-cf21-46f3-af97-359b8e744e38/192.168.10.221:49154
+A new session connected!
+2015-06-23 16:34:54,295 [34928] INFO  ESOPServer-63782940 - Session: 481a4193-946a-4916-9414-58a3d1ecfbdf/127.0.0.1:17518
+A new session connected!
+2015-06-23 16:34:55,859 [29792] INFO  ESOPServer-63782940 - Session: 2b73603c-cf21-46f3-af97-359b8e744e38/192.168.10.221:49154
+This session was closed for ClientClosing!
+2015-06-23 16:34:56,051 [34928] INFO  ESOPServer-63782940 - Session: cd3e26da-0e8d-48a1-883b-74385ede5b26/192.168.10.221:49156
+A new session connected!
+2015-06-23 16:35:12,797 [34928] INFO  ESOPServer-63782940 - Session: 9974e24a-aeba-4d59-9c9f-226ec22bf6d5/127.0.0.1:17525
+A new session connected!
+2015-06-23 16:37:34,392 [53480] INFO  ESOPServer-63782940 - Session: cd3e26da-0e8d-48a1-883b-74385ede5b26/192.168.10.221:49156
+This session was closed for ClientClosing!

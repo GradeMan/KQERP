@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Linq;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using ERP.Service;
+using COM.Service;
+using Util;
+using ERP.Domain;
+namespace ERP.Winform.SysModule
+{
+    public partial class LoginForm2 : DevExpress.XtraEditors.XtraForm
+    {
+        private IAppLoginService appLoginService = Unity.Instance.GetService<IAppLoginService>();
+        private ICacheServiceBase appCacheService = Unity.Instance.GetService<ICacheServiceBase>();
+        private ICompanyService companyService = Unity.Instance.GetService<ICompanyService>();
+        public int formStyle = 0;
+        public LoginForm2()
+        {
+            InitializeComponent();
+           
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            appLoginService.LoginAsERPUser(txtUser.Text.ToStr(), txtPassword.Text.ToStr());
+            formStyle = this.txtFormStyle.SelectedIndex;
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
+        private void LoginForm2_Load(object sender, EventArgs e)
+        {
+            ERP_C002_Company company = companyService.GetList().FirstOrDefault();
+            if (company != null)
+            {
+                this.txtCompanyName.Text = company.CompName;
+                this.txtSystemName.Text = company.SysName;
+            }
+            txtFormStyle.SelectedIndex = 0;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+2015-07-02 13:38:38,548 [33276] ERROR DefaultBootstrap - The process crashed for an unhandled exception!
+System.Exception: The server had been initialized already, you cannot initialize it again!
+   在 SuperSocket.SocketEngine.DefaultBootstrap.Initialize(Func`2 serverConfigResolver, ILogFactory logFactory)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.Initialize(Func`2 serverConfigResolver)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.Initialize()
+   在 ESOP.Server.ServerManager.toolStripButton1_Click(Object sender, EventArgs e) 位置 d:\ESOPSolution\ESOP.Server\ServerManager.cs:行号 183
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 ESOP.Server.Program.Main() 位置 d:\ESOPSolution\ESOP.Server\Program.cs:行号 19
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.Runtime.Hosting.ApplicationActivator.CreateInstance(ActivationContext activationContext, String[] activationCustomData)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssemblyDebugInZone()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()

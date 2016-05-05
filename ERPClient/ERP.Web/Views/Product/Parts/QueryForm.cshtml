@@ -1,0 +1,23 @@
+﻿@model ERP.Domain.ERP_M001_Product
+@{
+    var x = @Html.EasyUi();
+}
+<div id="divQuery" class="divQueryForm">
+    @using ( x.Form( "formQuery" ).AddClass( "form" ).Begin() ) {
+        <dl>
+            <dt>@Html.LabelFor( t => t.PartNo )</dt>
+            <dd>
+                @x.TextBox( t => t.PartNo )
+            </dd>
+        </dl>
+        <dl>
+            <dt>@Html.LabelFor( t => t.PartName )</dt>
+            <dd>
+                @x.TextBox( t => t.PartName )
+            </dd>
+        </dl>
+        <span class="button">
+            @x.Button( "查 询" ).Width( 70 ).Icon( "icon-search" ).QueryByTreeGrid()
+        </span>
+    }
+</div>

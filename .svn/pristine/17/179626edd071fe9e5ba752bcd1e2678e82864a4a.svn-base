@@ -1,0 +1,15 @@
+﻿using System;
+using ERP.Domain;
+namespace ERP.Data
+{
+	public interface IERP_M003_Model_ProductRepository : IRepository<ERP_M003_Model_Product>
+	{
+	}
+	public class ERP_M003_Model_ProductRepository : AnyRepositoryBase<ERP_M003_Model_Product>, IERP_M003_Model_ProductRepository
+	{
+		public ERP_M003_Model_ProductRepository(IDatabaseFactory databaseFactory)
+			: base(databaseFactory)
+		{
+		}
+	}
+}

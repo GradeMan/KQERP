@@ -1,0 +1,62 @@
+2015-06-26 15:47:33,343 [6624] ERROR DefaultBootstrap - System.ArgumentException: “UTF8”不是受支持的编码名。
+参数名: name
+   在 System.Globalization.EncodingTable.internalGetCodePageFromName(String name)
+   在 System.Text.Encoding.GetEncoding(String name)
+   在 SuperSocket.SocketBase.AppServerBase`2.SetupBasic(IRootConfig rootConfig, IServerConfig config, ISocketServerFactory socketServerFactory)
+   在 SuperSocket.SocketBase.AppServerBase`2.SuperSocket.SocketBase.IWorkItem.Setup(IBootstrap bootstrap, IServerConfig config, ProviderFactoryInfo[] factories)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:47:33,358 [6624] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 15:48:13,877 [4016] ERROR DefaultBootstrap - System.ArgumentException: “UTF8”不是受支持的编码名。
+参数名: name
+   在 System.Globalization.EncodingTable.internalGetCodePageFromName(String name)
+   在 System.Text.Encoding.GetEncoding(String name)
+   在 SuperSocket.SocketBase.AppServerBase`2.SetupBasic(IRootConfig rootConfig, IServerConfig config, ISocketServerFactory socketServerFactory)
+   在 SuperSocket.SocketBase.AppServerBase`2.SuperSocket.SocketBase.IWorkItem.Setup(IBootstrap bootstrap, IServerConfig config, ProviderFactoryInfo[] factories)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:48:13,879 [4016] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 15:49:21,078 [8656] ERROR DefaultBootstrap - System.ArgumentException: “UTF8”不是受支持的编码名。
+参数名: name
+   在 System.Globalization.EncodingTable.internalGetCodePageFromName(String name)
+   在 System.Text.Encoding.GetEncoding(String name)
+   在 SuperSocket.SocketBase.AppServerBase`2.SetupBasic(IRootConfig rootConfig, IServerConfig config, ISocketServerFactory socketServerFactory)
+   在 SuperSocket.SocketBase.AppServerBase`2.SuperSocket.SocketBase.IWorkItem.Setup(IBootstrap bootstrap, IServerConfig config, ProviderFactoryInfo[] factories)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:49:21,079 [8656] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 15:51:12,547 [6328] ERROR DefaultBootstrap - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:51:12,548 [6328] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 15:55:18,670 [8428] ERROR DefaultBootstrap - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:55:18,671 [8428] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 15:58:24,707 [9184] ERROR DefaultBootstrap - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 15:58:24,708 [9184] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 16:00:53,121 [7984] ERROR DefaultBootstrap - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 16:00:53,122 [7984] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 16:02:18,280 [9060] ERROR ESOPServer - This server instance is in the state Running, you cannot start it now.
+2015-06-26 16:05:03,569 [9128] ERROR DefaultBootstrap - System.ArgumentException: “UTF8”不是受支持的编码名。
+参数名: name
+   在 System.Globalization.EncodingTable.internalGetCodePageFromName(String name)
+   在 System.Text.Encoding.GetEncoding(String name)
+   在 SuperSocket.SocketBase.AppServerBase`2.SetupBasic(IRootConfig rootConfig, IServerConfig config, ISocketServerFactory socketServerFactory)
+   在 SuperSocket.SocketBase.AppServerBase`2.SuperSocket.SocketBase.IWorkItem.Setup(IBootstrap bootstrap, IServerConfig config, ProviderFactoryInfo[] factories)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 16:05:03,570 [9128] ERROR DefaultBootstrap - Failed to setup server instance!
+2015-06-26 16:05:19,140 [1112] ERROR DefaultBootstrap - System.ArgumentException: “UTF8”不是受支持的编码名。
+参数名: name
+   在 System.Globalization.EncodingTable.internalGetCodePageFromName(String name)
+   在 System.Text.Encoding.GetEncoding(String name)
+   在 SuperSocket.SocketBase.AppServerBase`2.SetupBasic(IRootConfig rootConfig, IServerConfig config, ISocketServerFactory socketServerFactory)
+   在 SuperSocket.SocketBase.AppServerBase`2.SuperSocket.SocketBase.IWorkItem.Setup(IBootstrap bootstrap, IServerConfig config, ProviderFactoryInfo[] factories)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.SetupWorkItemInstance(IWorkItem workItem, WorkItemFactoryInfo factoryInfo)
+   在 SuperSocket.SocketEngine.DefaultBootstrap.InitializeAndSetupWorkItem(WorkItemFactoryInfo factoryInfo)
+2015-06-26 16:05:19,142 [1112] ERROR DefaultBootstrap - Failed to setup server instance!

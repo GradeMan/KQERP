@@ -1,0 +1,14 @@
+2015-07-03 07:56:08,324 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 67,940,352.00, Total Thread Count: 33
+AvailableWorkingThreads: 32766, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 32767, MaxCompletionPortThreads: 1000
+ESOPServer ----------------------------------
+Started Time: 2015-07-03 07:56:08
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 100
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 256
+Total Sending Queue Items: 256
+

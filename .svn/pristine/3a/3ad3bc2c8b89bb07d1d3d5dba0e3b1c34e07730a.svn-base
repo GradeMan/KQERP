@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Linq;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using COM.Winform;
+using ERP.Service;
+using ERP.Domain;
+using COM.Service;
+namespace ERP.Winform.CommonModule
+{
+    public partial class EmployeeEditForm : EditForm
+    {
+        private IEmployeeService employeeService = Unity.Instance.GetService<IEmployeeService>();
+        public EmployeeEditForm(ERP_C005_Employee employeeData,IEmployeeService employeeService)
+        {
+            InitializeComponent();
+            //this.employeeService = employeeService;
+            tbC005EmployeeBindingSource.DataSource = employeeData;
+        }
+
+        protected override void OnSetLayoutItemStyle()
+        {
+            ERPHelper.Instance.ApplyBindingSettings(ItemForCompCode, ItemBindingType.Required);
+            ERPHelper.Instance.ApplyBindingSettings(ItemForEmpNo, ItemBindingType.Required);
+            ERPHelper.Instance.ApplyBindingSettings(ItemForName, ItemBindingType.Required);
+        }
+        protected override void OnBtnCommand(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            
+            if (e.Item.Caption == BtnCommandEnum.Save)
+            {
+                tbC005EmployeeBindingSource.EndEdit();
+                 var employeeData = tbC005EmployeeBindingSource.DataSource as ERP_C005_Employee;
+                if (this.Tag.ToString() == BtnCommandEnum.Add)
+                    employeeService.Create(employeeData);
+                else if (this.Tag.ToString() == BtnCommandEnum.Edit)
+                    employeeService.Update(employeeData);
+                DialogResult = DialogResult.OK;
+            }
+            if (e.Item.Caption == BtnCommandEnum.Cancel)
+                DialogResult = DialogResult.Cancel;
+        }
+
+        private void PhotoPictureEdit_EditValueChanged(object sender, EventArgs e)
+        {
+            //var employeeData = tbC005EmployeeBindingSource.DataSource as ERP_C005_Employee;
+            //employeeData.Photo = ERPHelper.Instance.ImageToBuffer(this.PhotoPictureEdit.Image);
+        }
+    }
+}

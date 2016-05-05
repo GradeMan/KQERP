@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED115BEA-3C8F-4DB5-95FE-04D4D32D9F51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.Domain</RootNamespace>
+    <AssemblyName>ERP.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\Utils\DependencyLibraries\EntityFramework\4.3.1.0\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ERP_C001_Code.cs" />
+    <Compile Include="Common\ERP_C001_CodeDictionary.cs" />
+    <Compile Include="Common\ERP_C003_Customer.cs" />
+    <Compile Include="Common\ERP_C004_Supplier.cs" />
+    <Compile Include="Common\ERP_C006_ProcessFlow.cs" />
+    <Compile Include="Common\ERP_C006_ProcessFlow_Process.cs" />
+    <Compile Include="Common\ERP_C006_ProcessFlow_ProdInfo.cs" />
+    <Compile Include="Common\ERP_C006_ProcessProdInfo.cs" />
+    <Compile Include="Common\ERP_C009_Layout.cs" />
+    <Compile Include="Common\Map\ERP_C001_Code.cs" />
+    <Compile Include="Common\Map\ERP_C001_CodeDictionary.cs" />
+    <Compile Include="Common\Map\ERP_C002_Company.cs" />
+    <Compile Include="Common\Map\ERP_C003_Customer.cs" />
+    <Compile Include="Common\Map\ERP_C004_Supplier.cs" />
+    <Compile Include="Common\Map\ERP_C006_ProcessFlow.cs" />
+    <Compile Include="Common\Map\ERP_C006_ProcessFlow_Process.cs" />
+    <Compile Include="Common\Map\ERP_C006_ProcessFlow_ProdInfo.cs" />
+    <Compile Include="Common\Map\ERP_C006_ProcessProdInfo.cs" />
+    <Compile Include="Common\Map\ERP_C009_Layout.cs" />
+    <Compile Include="Common\Map\ERP_C005_Employee.cs" />
+    <Compile Include="Common\ERP_C002_Company.cs" />
+    <Compile Include="Common\ERP_C005_Employee.cs" />
+    <Compile Include="Device\DEV_D001_Device.cs" />
+    <Compile Include="Device\DEV_D001_Device_Appurten.cs" />
+    <Compile Include="Device\DEV_D001_Device_File.cs" />
+    <Compile Include="Device\Map\DEV_D001_Device.cs" />
+    <Compile Include="Device\Map\DEV_D001_Device_Appurten.cs" />
+    <Compile Include="Device\Map\DEV_D001_Device_File.cs" />
+    <Compile Include="ESOP\ESOP_Device.cs" />
+    <Compile Include="ESOP\ESOP_Doc.cs" />
+    <Compile Include="ESOP\ESOP_DocIndex.cs" />
+    <Compile Include="ESOP\ESOP_DocIndex_Sec.cs" />
+    <Compile Include="ESOP\ESOP_Product.cs" />
+    <Compile Include="ESOP\ESOP_Publish.cs" />
+    <Compile Include="ESOP\ESOP_RoleDevice.cs" />
+    <Compile Include="ESOP\Map\ESOP_Device.cs" />
+    <Compile Include="ESOP\Map\ESOP_Doc.cs" />
+    <Compile Include="ESOP\Map\ESOP_DocIndex.cs" />
+    <Compile Include="ESOP\Map\ESOP_DocIndex_Sec.cs" />
+    <Compile Include="ESOP\Map\ESOP_Product.cs" />
+    <Compile Include="ESOP\Map\ESOP_Publish.cs" />
+    <Compile Include="ESOP\Map\ESOP_RoleDevice.cs" />
+    <Compile Include="File\FTP_F002_File.cs" />
+    <Compile Include="File\FTP_F003_RolesRight.cs" />
+    <Compile Include="File\Map\FTP_F002_File.cs" />
+    <Compile Include="File\Map\FTP_F003_RolesRight.cs" />
+    <Compile Include="MES\Map\MES_M201_Plan.cs" />
+    <Compile Include="MES\Map\MES_M201_Plan_Detail.cs" />
+    <Compile Include="MES\Map\MES_M201_Plan_Material.cs" />
+    <Compile Include="MES\Map\MES_M202_Task.cs" />
+    <Compile Include="MES\Map\MES_M202_Task_Detail.cs" />
+    <Compile Include="MES\Map\MES_M202_Task_JobLot.cs" />
+    <Compile Include="MES\Map\MES_M501_JobTx.cs" />
+    <Compile Include="MES\Map\MES_M501_JobTxDetail.cs" />
+    <Compile Include="MES\Map\MES_M501_JobTxProdInfo.cs" />
+    <Compile Include="MES\Map\MES_M501_JobTx_NG.cs" />
+    <Compile Include="MES\Map\MES_M802_Packing_Dtl.cs" />
+    <Compile Include="MES\Map\MES_M802_Packing_Hd.cs" />
+    <Compile Include="MES\MES_M201_Plan.cs" />
+    <Compile Include="MES\MES_M201_Plan_Detail.cs" />
+    <Compile Include="MES\MES_M201_Plan_Material.cs" />
+    <Compile Include="MES\MES_M202_Task.cs" />
+    <Compile Include="MES\MES_M202_Task_Detail.cs" />
+    <Compile Include="MES\MES_M202_Task_JobLot.cs" />
+    <Compile Include="MES\MES_M501_JobTx.cs" />
+    <Compile Include="MES\MES_M501_JobTxDetail.cs" />
+    <Compile Include="MES\MES_M501_JobTxProdInfo.cs" />
+    <Compile Include="MES\MES_M501_JobTx_NG.cs" />
+    <Compile Include="MES\MES_M802_Packing_Dtl.cs" />
+    <Compile Include="MES\MES_M802_Packing_Hd.cs" />
+    <Compile Include="MES\ProductMaterialViewModel.cs" />
+    <Compile Include="MES\Report\MES_P106_ActMatDaily.cs" />
+    <Compile Include="MES\Report\MES_Q101_DailyQCSummary.cs" />
+    <Compile Include="MES\Report\MES_Q102_DailyQC.cs" />
+    <Compile Include="MES\Report\MES_Q103_YieldIQCNG.cs" />
+    <Compile Include="MES\Report\MES_Q103_YieldIQCScrap.cs" />
+    <Compile Include="MES\Report\MES_Q201_NGDetail.cs" />
+    <Compile Include="MES\Report\MES_Q202_PNG.cs" />
+    <Compile Include="MES\Report\MES_Q203_ENG.cs" />
+    <Compile Include="MES\Report\MES_Q204_CNG.cs" />
+    <Compile Include="MES\Report\MES_R102_JobDelay.cs" />
+    <Compile Include="MES\Report\MES_Y101_DailyYieldSummary.cs" />
+    <Compile Include="MES\Report\MES_Y102_DailyYield.cs" />
+    <Compile Include="MES\Report\MES_Y201_PYield.cs" />
+    <Compile Include="MES\Report\MES_Y202_EYield.cs" />
+    <Compile Include="MES\Report\MES_Y203_CYield.cs" />
+    <Compile Include="MES\Report\MES_Y204_QYield.cs" />
+    <Compile Include="MES\Report\R103_JobTxDetail.cs" />
+    <Compile Include="MES\Report\R105_PlanTrace.cs" />
+    <Compile Include="Order\Map\MES_M001_Order.cs" />
+    <Compile Include="Order\Map\MES_M001_Order_Detail.cs" />
+    <Compile Include="Order\Map\MES_M002_Job.cs" />
+    <Compile Include="Order\Map\MES_M002_Job_Lot.cs" />
+    <Compile Include="Order\Map\MES_M003_LotTx.cs" />
+    <Compile Include="Order\Map\MES_M003_LotTx_NG.cs" />
+    <Compile Include="Order\Map\MES_M003_LotTx_NG_Clone.cs" />
+    <Compile Include="Order\Map\MES_M004_PlanJob.cs" />
+    <Compile Include="Order\Map\vw_JobReport.cs" />
+    <Compile Include="Order\MES_M001_Order.cs" />
+    <Compile Include="Order\MES_M001_Order_Detail.cs" />
+    <Compile Include="Order\MES_M002_Job.cs" />
+    <Compile Include="Order\MES_M002_Job_Lot.cs" />
+    <Compile Include="Order\Map\MES_M002_Job_Lot_Process.cs" />
+    <Compile Include="Order\MES_M002_Job_Lot_Process.cs" />
+    <Compile Include="Order\MES_M003_LotTx.cs" />
+    <Compile Include="Order\MES_M003_LotTx_NG.cs" />
+    <Compile Include="Order\MES_M003_LotTx_NG_Clone.cs" />
+    <Compile Include="Order\MES_M004_PlanJob.cs" />
+    <Compile Include="Order\ViewModel\JobReportModel.cs" />
+    <Compile Include="Order\ViewModel\LotEditJobModelView.cs" />
+    <Compile Include="Order\ViewModel\OrderDashboardModel.cs" />
+    <Compile Include="Order\vw_JobReport.cs" />
+    <Compile Include="Common\ERP_M001_Product.cs" />
+    <Compile Include="Common\ERP_M001_Product_CustPack.cs" />
+    <Compile Include="Common\ERP_M001_Product_File.cs" />
+    <Compile Include="Common\ERP_M001_Product_Material.cs" />
+    <Compile Include="Common\ERP_M001_Product_PackInfo.cs" />
+    <Compile Include="Common\ERP_M001_Product_ProcessFlow.cs" />
+    <Compile Include="Common\ERP_M001_Product_ProdInfo.cs" />
+    <Compile Include="Common\ERP_M001_Product_SemiProduct.cs" />
+    <Compile Include="Common\ERP_M002_Material.cs" />
+    <Compile Include="Device\ERP_M003_Model.cs" />
+    <Compile Include="Device\ERP_M003_Model_Product.cs" />
+    <Compile Include="Common\ERP_M004_QHProduct.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_CustPack.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_File.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_Material.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_PackInfo.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_ProcessFlow.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_ProdInfo.cs" />
+    <Compile Include="Common\Map\ERP_M001_Product_SemiProduct.cs" />
+    <Compile Include="Common\Map\ERP_M002_Material.cs" />
+    <Compile Include="Device\Map\ERP_M003_Model.cs" />
+    <Compile Include="Device\Map\ERP_M003_Model_Product.cs" />
+    <Compile Include="Common\Map\ERP_M004_QHProduct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\ERP_C003_Supplier.cs" />
+    <Compile Include="Common\ERP_C003_Supplier_File.cs" />
+    <Compile Include="Common\ERP_M001_Material.cs" />
+    <Compile Include="Common\ERP_M001_Material_Supp.cs" />
+    <Compile Include="Common\ERP_M002_BOM.cs" />
+    <Compile Include="Common\ERP_M002_BOM_Material.cs" />
+    <Compile Include="Common\Map\ERP_C003_Supplier.cs" />
+    <Compile Include="Common\Map\ERP_C003_Supplier_File.cs" />
+    <Compile Include="Common\Map\ERP_M001_Material.cs" />
+    <Compile Include="Common\Map\ERP_M001_Material_Supp.cs" />
+    <Compile Include="Common\Map\ERP_M002_BOM.cs" />
+    <Compile Include="Common\Map\ERP_M002_BOM_Material.cs" />
+    <Compile Include="Supplier\Map\SUPP_M001_PurPlan.cs" />
+    <Compile Include="Supplier\Map\SUPP_M001_PurPlan_Detail.cs" />
+    <Compile Include="Supplier\Map\SUPP_M001_PurPlan_Material.cs" />
+    <Compile Include="Supplier\PurPlanDetailModel.cs" />
+    <Compile Include="Supplier\PurPlanHeaderModel.cs" />
+    <Compile Include="Supplier\PurPlanMatViewModel.cs" />
+    <Compile Include="Supplier\PurPlanReportViewModel.cs" />
+    <Compile Include="Supplier\SUPP_M001_PurPlan.cs" />
+    <Compile Include="Supplier\SUPP_M001_PurPlan_Detail.cs" />
+    <Compile Include="Supplier\SUPP_M001_PurPlan_Material.cs" />
+    <Compile Include="System\Map\tb_Sys_Button.cs" />
+    <Compile Include="System\Map\tb_Sys_Controls.cs" />
+    <Compile Include="System\Map\tb_Sys_Menu.cs" />
+    <Compile Include="System\Map\tb_Sys_Roles.cs" />
+    <Compile Include="System\Map\tb_Sys_RolesBtn.cs" />
+    <Compile Include="System\Map\tb_Sys_RolesControl.cs" />
+    <Compile Include="System\Map\tb_Sys_RolesRight.cs" />
+    <Compile Include="System\Map\tb_Sys_User.cs" />
+    <Compile Include="System\Map\tb_Sys_UserRole.cs" />
+    <Compile Include="System\tb_Sys_Button.cs" />
+    <Compile Include="System\tb_Sys_Controls.cs" />
+    <Compile Include="System\tb_Sys_Menu.cs" />
+    <Compile Include="System\tb_Sys_Roles.cs" />
+    <Compile Include="System\tb_Sys_RolesBtn.cs" />
+    <Compile Include="System\tb_Sys_RolesControl.cs" />
+    <Compile Include="System\tb_Sys_RolesRight.cs" />
+    <Compile Include="System\tb_Sys_User.cs" />
+    <Compile Include="System\tb_Sys_UserRole.cs" />
+    <Compile Include="View\K041PDARecords.cs" />
+    <Compile Include="View\KQMIS_JobList.cs" />
+    <Compile Include="WMS\ERP_M003_InStore.cs" />
+    <Compile Include="WMS\ERP_M003_InStoreDetail.cs" />
+    <Compile Include="WMS\Map\ERP_M003_InStore.cs" />
+    <Compile Include="WMS\Map\ERP_M003_InStoreDetail.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_L.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_L_PrintData.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_M.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_M_PrintData.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_S.cs" />
+    <Compile Include="MES\Map\MES_M801_Label_S_PrintData.cs" />
+    <Compile Include="WMS\Map\WMS_C101_InStore.cs" />
+    <Compile Include="WMS\Map\WMS_C101_WareHouse.cs" />
+    <Compile Include="WMS\Map\WMS_C102_Area.cs" />
+    <Compile Include="WMS\Map\WMS_C102_InStoreDetail.cs" />
+    <Compile Include="WMS\Map\WMS_C103_Shelf.cs" />
+    <Compile Include="WMS\Map\WMS_C103_Stock.cs" />
+    <Compile Include="WMS\Map\WMS_C104_OutStore.cs" />
+    <Compile Include="WMS\Map\WMS_C105_OutStoreDetail.cs" />
+    <Compile Include="WMS\Map\WMS_M001_Product.cs" />
+    <Compile Include="WMS\Map\WMS_M002_StockTx.cs" />
+    <Compile Include="WMS\Map\WMS_M101_StockTx_Data.cs" />
+    <Compile Include="MES\MES_M801_Label_L.cs" />
+    <Compile Include="MES\MES_M801_Label_L_PrintData.cs" />
+    <Compile Include="MES\MES_M801_Label_M.cs" />
+    <Compile Include="MES\MES_M801_Label_M_PrintData.cs" />
+    <Compile Include="MES\MES_M801_Label_S.cs" />
+    <Compile Include="MES\MES_M801_Label_S_PrintData.cs" />
+    <Compile Include="WMS\Map\WMS_M104_Packing_Detail.cs" />
+    <Compile Include="WMS\Map\WMS_M104_Packing_Hd.cs" />
+    <Compile Include="WMS\Map\WMS_M105_MatGet.cs" />
+    <Compile Include="WMS\Map\WMS_M105_MatGetDetail.cs" />
+    <Compile Include="WMS\Map\WMS_M105_MatReturn.cs" />
+    <Compile Include="WMS\Map\WMS_M105_MatReturnDetail.cs" />
+    <Compile Include="WMS\Map\WMS_M105_MatSotre.cs" />
+    <Compile Include="WMS\Map\WMS_MatConsume_ActMat.cs" />
+    <Compile Include="WMS\Map\WMS_MatConsume_ActMatDetail.cs" />
+    <Compile Include="WMS\Map\WMS_MatConsume_ActMatMouthCheck.cs" />
+    <Compile Include="WMS\vwSALE_R101_Delivery_Dtl.cs" />
+    <Compile Include="WMS\WMS_C101_InStore.cs" />
+    <Compile Include="WMS\WMS_C101_WareHouse.cs" />
+    <Compile Include="WMS\WMS_C102_Area.cs" />
+    <Compile Include="WMS\WMS_C102_InStoreDetail.cs" />
+    <Compile Include="WMS\WMS_C103_Shelf.cs" />
+    <Compile Include="WMS\WMS_C103_Stock.cs" />
+    <Compile Include="WMS\WMS_C104_OutStore.cs" />
+    <Compile Include="WMS\WMS_C105_OutStoreDetail.cs" />
+    <Compile Include="WMS\WMS_M001_Product.cs" />
+    <Compile Include="WMS\WMS_M002_StockTx.cs" />
+    <Compile Include="WMS\WMS_M101_StockTx_Data.cs" />
+    <Compile Include="WMS\WMS_M104_Packing_Detail.cs" />
+    <Compile Include="WMS\WMS_M104_Packing_Hd.cs" />
+    <Compile Include="WMS\WMS_M105_MatGet.cs" />
+    <Compile Include="WMS\WMS_M105_MatGetDetail.cs" />
+    <Compile Include="WMS\WMS_M105_MatReturn.cs" />
+    <Compile Include="WMS\WMS_M105_MatReturnDetail.cs" />
+    <Compile Include="WMS\WMS_M105_MatSotre.cs" />
+    <Compile Include="WMS\WMS_MatConsume_ActMat.cs" />
+    <Compile Include="WMS\WMS_MatConsume_ActMatDetail.cs" />
+    <Compile Include="WMS\WMS_MatConsume_ActMatMouthCheck.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utils\COM.Net\COM.Domain\COM.Domain.csproj">
+      <Project>{7571EB64-5375-4084-975E-3BB5FDF1E30F}</Project>
+      <Name>COM.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ESOP\ViewModel\" />
+    <Folder Include="Product\Map\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

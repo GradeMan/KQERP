@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48B2040E-425D-4FC3-91B8-D706E429B5EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COM.Web</RootNamespace>
+    <AssemblyName>COM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dependency\HttpContextLifetimeManager.cs" />
+    <Compile Include="Dependency\UnityDependencyResolver.cs" />
+    <Compile Include="Dependency\Unity.cs" />
+    <Compile Include="HtmlHelper\ModelProperty.cs" />
+    <Compile Include="HtmlHelper\TrimProperty.cs" />
+    <Compile Include="HtmlHelper\DropDownListByProperty.cs" />
+    <Compile Include="HtmlHelper\DropDownListCache.cs" />
+    <Compile Include="HtmlHelper\KeyValueLabel.cs" />
+    <Compile Include="Permission\RoleFileDataService.cs" />
+    <Compile Include="Permission\WebPermissionServiceFile.cs" />
+    <Compile Include="Permission\RoleActionDataService.cs" />
+    <Compile Include="Permission\WebPermissionServiceAction.cs" />
+    <Compile Include="Url\MvcRouter.cs" />
+    <Compile Include="Url\TransferToRouteResult.cs" />
+    <Compile Include="WebRuntime\LogErrorAttribute.cs" />
+    <Compile Include="WebRuntime\MessageService.cs" />
+    <Compile Include="WebRuntime\WebStartService.cs" />
+    <Compile Include="WebRuntime\MvcWebApplication.cs" />
+    <Compile Include="Permission\UserPrincipalFactoryPartial.cs" />
+    <Compile Include="Permission\EnumWebPermissionName.cs" />
+    <Compile Include="Permission\IWebPrincipalService.cs" />
+    <Compile Include="Permission\LoginService.cs" />
+    <Compile Include="Permission\PermissionHttpModule.cs" />
+    <Compile Include="Permission\WebPermissionService.cs" />
+    <Compile Include="Permission\WebPrincipalService.cs" />
+    <Compile Include="Permission\UserPrincipalFactory.cs" />
+    <Compile Include="Permission\WebPermissionRole.cs" />
+    <Compile Include="Permission\WebUserLoginException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebRuntime\WebConfigService.cs" />
+    <Compile Include="WebRuntime\PreApplicationStartCode.cs" />
+    <Compile Include="WebRuntime\WebAppPathService.cs" />
+    <Compile Include="Schedule\HoureScheduleItem.cs" />
+    <Compile Include="Schedule\IScheduleItem.cs" />
+    <Compile Include="Schedule\IScheduleService.cs" />
+    <Compile Include="Schedule\Min5ScheduleItem.cs" />
+    <Compile Include="Schedule\MinScheduleItem.cs" />
+    <Compile Include="Schedule\ScheduleService.cs" />
+    <Compile Include="Schedule\ScheduleTimer.cs" />
+    <Compile Include="Schedule\TestTimeScheduleItem.cs" />
+    <Compile Include="Permission\PermissionActionFilter.cs" />
+    <Compile Include="Url\CustomerRazorViewEngine.cs" />
+    <Compile Include="WebRuntime\HttpRequestService.cs" />
+    <Compile Include="Url\NameSpaceAreaRegistration.cs" />
+    <Compile Include="Wcf\AppInterfaceUser.cs" />
+    <Compile Include="Wcf\ApplyDataContractResolverAttribute.cs" />
+    <Compile Include="Wcf\WcfException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM.Data\COM.Data.csproj">
+      <Project>{E9E3B245-1886-4383-891E-704FF2B2F1B8}</Project>
+      <Name>COM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.Domain\COM.Domain.csproj">
+      <Project>{7571EB64-5375-4084-975E-3BB5FDF1E30F}</Project>
+      <Name>COM.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.Service\COM.Service.csproj">
+      <Project>{C28A50D9-B531-4320-835F-64F62965B86D}</Project>
+      <Name>COM.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

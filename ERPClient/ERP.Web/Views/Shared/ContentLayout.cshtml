@@ -1,0 +1,30 @@
+﻿@{
+    var x = Html.EasyUi();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head {
+    @RenderSection( "head", false )
+}
+
+@using ( x.Layout( true ).Begin() ) {
+    @*顶部区域*@
+    using ( x.LayoutRegion().Top().AddClass( "top" ).Begin() ) {
+        @*站点路径*@
+        <div class="titlebar">
+            <span class="title">当前位置：</span>
+            <span>首页</span>
+            <span class="bold">></span>
+            <span>系统管理</span>
+            <span class="bold">></span>
+            <span>权限管理</span>
+        </div>
+        @*顶部扩展点*@
+        @RenderSection( "top", false )
+        
+    }
+    @*内容区域*@
+    using ( x.LayoutRegion().Center().AddClass( "center" ).Begin() ) {
+        @RenderSection( "content" )
+        @Html.AntiForgeryToken()
+    }
+}

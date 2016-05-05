@@ -1,0 +1,491 @@
+﻿namespace ERP.Winform.Product
+{
+    partial class ProductForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.ykGridControl1 = new COM.YKControls.YKGridControl();
+            this.eRPM001ProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCompCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colItemCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colItemName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colItemType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colItemShape = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStartDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCorpDrawingNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCorpDrawingRevNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustDrawingNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustDrawingRevNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecAlignHole = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecLeads = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecRows = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecLeadDistance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecWidth = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecLength = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecThickness = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecAgThickness = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecDeep = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecLeadWidth = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecUnitofSheet = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPlatType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRemarks = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModifyDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModifyUser = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreateDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreateUser = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVersion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
+            this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.treeCodeType = new DevExpress.XtraTreeList.TreeList();
+            this.treeColumnDescription = new DevExpress.XtraTreeList.Columns.TreeListColumn();
+            this.treeColumnCode = new DevExpress.XtraTreeList.Columns.TreeListColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ykGridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPM001ProductBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
+            this.dockPanel1.SuspendLayout();
+            this.dockPanel1_Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.treeCodeType)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // ykGridControl1
+            // 
+            this.ykGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ykGridControl1.DataSource = this.eRPM001ProductBindingSource;
+            this.ykGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ykGridControl1.EmbeddedNavigator.Buttons.Append.Visible = false;
+            this.ykGridControl1.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
+            this.ykGridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
+            this.ykGridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
+            this.ykGridControl1.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.ykGridControl1.EmbeddedNavigator.TextStringFormat = "第 {0} 总 {1}";
+            this.ykGridControl1.Location = new System.Drawing.Point(200, 0);
+            this.ykGridControl1.MainView = this.gridView1;
+            this.ykGridControl1.MenuManager = this.barManager1;
+            this.ykGridControl1.Name = "ykGridControl1";
+            this.ykGridControl1.Size = new System.Drawing.Size(612, 394);
+            this.ykGridControl1.TabIndex = 4;
+            this.ykGridControl1.UseEmbeddedNavigator = true;
+            this.ykGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // eRPM001ProductBindingSource
+            // 
+            this.eRPM001ProductBindingSource.DataSource = typeof(ERP.Domain.ERP_M001_Product);
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCompCode,
+            this.colItemCode,
+            this.colItemName,
+            this.colDescription,
+            this.colItemType,
+            this.colItemShape,
+            this.colStatus,
+            this.colStartDt,
+            this.colCorpDrawingNo,
+            this.colCorpDrawingRevNo,
+            this.colCustDrawingNo,
+            this.colCustDrawingRevNo,
+            this.colSpecAlignHole,
+            this.colSpecLeads,
+            this.colSpecRows,
+            this.colSpecLeadDistance,
+            this.colSpecWidth,
+            this.colSpecLength,
+            this.colSpecThickness,
+            this.colSpecAgThickness,
+            this.colSpecDeep,
+            this.colSpecLeadWidth,
+            this.colSpecUnitofSheet,
+            this.colPlatType,
+            this.colRemarks,
+            this.colModifyDt,
+            this.colModifyUser,
+            this.colCreateDt,
+            this.colCreateUser,
+            this.colVersion,
+            this.colId});
+            this.gridView1.GridControl = this.ykGridControl1;
+            this.gridView1.IndicatorWidth = 40;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colCompCode
+            // 
+            this.colCompCode.FieldName = "CompCode";
+            this.colCompCode.Name = "colCompCode";
+            // 
+            // colItemCode
+            // 
+            this.colItemCode.Caption = "产品编号";
+            this.colItemCode.FieldName = "ItemCode";
+            this.colItemCode.Name = "colItemCode";
+            this.colItemCode.Visible = true;
+            this.colItemCode.VisibleIndex = 0;
+            // 
+            // colItemName
+            // 
+            this.colItemName.Caption = "产品名称";
+            this.colItemName.FieldName = "ItemName";
+            this.colItemName.Name = "colItemName";
+            this.colItemName.Visible = true;
+            this.colItemName.VisibleIndex = 1;
+            // 
+            // colDescription
+            // 
+            this.colDescription.Caption = "产品描述";
+            this.colDescription.FieldName = "Description";
+            this.colDescription.Name = "colDescription";
+            this.colDescription.Visible = true;
+            this.colDescription.VisibleIndex = 2;
+            // 
+            // colItemType
+            // 
+            this.colItemType.Caption = "产品类别";
+            this.colItemType.FieldName = "ItemType";
+            this.colItemType.Name = "colItemType";
+            this.colItemType.Visible = true;
+            this.colItemType.VisibleIndex = 3;
+            // 
+            // colItemShape
+            // 
+            this.colItemShape.Caption = "封装类型";
+            this.colItemShape.FieldName = "ItemShape";
+            this.colItemShape.Name = "colItemShape";
+            this.colItemShape.Visible = true;
+            this.colItemShape.VisibleIndex = 4;
+            // 
+            // colStatus
+            // 
+            this.colStatus.Caption = "状态";
+            this.colStatus.FieldName = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.Visible = true;
+            this.colStatus.VisibleIndex = 5;
+            // 
+            // colStartDt
+            // 
+            this.colStartDt.Caption = "起启日期";
+            this.colStartDt.FieldName = "StartDt";
+            this.colStartDt.Name = "colStartDt";
+            this.colStartDt.Visible = true;
+            this.colStartDt.VisibleIndex = 6;
+            // 
+            // colCorpDrawingNo
+            // 
+            this.colCorpDrawingNo.Caption = "图号";
+            this.colCorpDrawingNo.FieldName = "CorpDrawingNo";
+            this.colCorpDrawingNo.Name = "colCorpDrawingNo";
+            this.colCorpDrawingNo.Visible = true;
+            this.colCorpDrawingNo.VisibleIndex = 7;
+            // 
+            // colCorpDrawingRevNo
+            // 
+            this.colCorpDrawingRevNo.Caption = "图号版本";
+            this.colCorpDrawingRevNo.FieldName = "CorpDrawingRevNo";
+            this.colCorpDrawingRevNo.Name = "colCorpDrawingRevNo";
+            this.colCorpDrawingRevNo.Visible = true;
+            this.colCorpDrawingRevNo.VisibleIndex = 8;
+            // 
+            // colCustDrawingNo
+            // 
+            this.colCustDrawingNo.Caption = "客户图号";
+            this.colCustDrawingNo.FieldName = "CustDrawingNo";
+            this.colCustDrawingNo.Name = "colCustDrawingNo";
+            this.colCustDrawingNo.Visible = true;
+            this.colCustDrawingNo.VisibleIndex = 9;
+            // 
+            // colCustDrawingRevNo
+            // 
+            this.colCustDrawingRevNo.Caption = "客户图号版本";
+            this.colCustDrawingRevNo.FieldName = "CustDrawingRevNo";
+            this.colCustDrawingRevNo.Name = "colCustDrawingRevNo";
+            this.colCustDrawingRevNo.Visible = true;
+            this.colCustDrawingRevNo.VisibleIndex = 10;
+            // 
+            // colSpecAlignHole
+            // 
+            this.colSpecAlignHole.Caption = "定位孔";
+            this.colSpecAlignHole.FieldName = "SpecAlignHole";
+            this.colSpecAlignHole.Name = "colSpecAlignHole";
+            this.colSpecAlignHole.Visible = true;
+            this.colSpecAlignHole.VisibleIndex = 11;
+            // 
+            // colSpecLeads
+            // 
+            this.colSpecLeads.Caption = "引脚数";
+            this.colSpecLeads.FieldName = "SpecLeads";
+            this.colSpecLeads.Name = "colSpecLeads";
+            this.colSpecLeads.Visible = true;
+            this.colSpecLeads.VisibleIndex = 12;
+            // 
+            // colSpecRows
+            // 
+            this.colSpecRows.Caption = "单排数";
+            this.colSpecRows.FieldName = "SpecRows";
+            this.colSpecRows.Name = "colSpecRows";
+            this.colSpecRows.Visible = true;
+            this.colSpecRows.VisibleIndex = 13;
+            // 
+            // colSpecLeadDistance
+            // 
+            this.colSpecLeadDistance.Caption = "单步距";
+            this.colSpecLeadDistance.FieldName = "SpecLeadDistance";
+            this.colSpecLeadDistance.Name = "colSpecLeadDistance";
+            this.colSpecLeadDistance.Visible = true;
+            this.colSpecLeadDistance.VisibleIndex = 14;
+            // 
+            // colSpecWidth
+            // 
+            this.colSpecWidth.Caption = "宽度(条)";
+            this.colSpecWidth.FieldName = "SpecWidth";
+            this.colSpecWidth.Name = "colSpecWidth";
+            this.colSpecWidth.Visible = true;
+            this.colSpecWidth.VisibleIndex = 15;
+            // 
+            // colSpecLength
+            // 
+            this.colSpecLength.Caption = "长度(条)";
+            this.colSpecLength.FieldName = "SpecLength";
+            this.colSpecLength.Name = "colSpecLength";
+            this.colSpecLength.Visible = true;
+            this.colSpecLength.VisibleIndex = 16;
+            // 
+            // colSpecThickness
+            // 
+            this.colSpecThickness.Caption = "单品厚度";
+            this.colSpecThickness.FieldName = "SpecThickness";
+            this.colSpecThickness.Name = "colSpecThickness";
+            // 
+            // colSpecAgThickness
+            // 
+            this.colSpecAgThickness.Caption = "镀层厚度";
+            this.colSpecAgThickness.FieldName = "SpecAgThickness";
+            this.colSpecAgThickness.Name = "colSpecAgThickness";
+            // 
+            // colSpecDeep
+            // 
+            this.colSpecDeep.Caption = "D/S深度";
+            this.colSpecDeep.FieldName = "SpecDeep";
+            this.colSpecDeep.Name = "colSpecDeep";
+            // 
+            // colSpecLeadWidth
+            // 
+            this.colSpecLeadWidth.Caption = "单品宽度";
+            this.colSpecLeadWidth.FieldName = "SpecLeadWidth";
+            this.colSpecLeadWidth.Name = "colSpecLeadWidth";
+            // 
+            // colSpecUnitofSheet
+            // 
+            this.colSpecUnitofSheet.Caption = "单元(条)";
+            this.colSpecUnitofSheet.FieldName = "SpecUnitofSheet";
+            this.colSpecUnitofSheet.Name = "colSpecUnitofSheet";
+            // 
+            // colPlatType
+            // 
+            this.colPlatType.Caption = "电镀方式";
+            this.colPlatType.FieldName = "PlatType";
+            this.colPlatType.Name = "colPlatType";
+            // 
+            // colRemarks
+            // 
+            this.colRemarks.Caption = "备注";
+            this.colRemarks.FieldName = "Remarks";
+            this.colRemarks.Name = "colRemarks";
+            // 
+            // colModifyDt
+            // 
+            this.colModifyDt.FieldName = "ModifyDt";
+            this.colModifyDt.Name = "colModifyDt";
+            // 
+            // colModifyUser
+            // 
+            this.colModifyUser.FieldName = "ModifyUser";
+            this.colModifyUser.Name = "colModifyUser";
+            // 
+            // colCreateDt
+            // 
+            this.colCreateDt.FieldName = "CreateDt";
+            this.colCreateDt.Name = "colCreateDt";
+            // 
+            // colCreateUser
+            // 
+            this.colCreateUser.FieldName = "CreateUser";
+            this.colCreateUser.Name = "colCreateUser";
+            // 
+            // colVersion
+            // 
+            this.colVersion.FieldName = "Version";
+            this.colVersion.Name = "colVersion";
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            // 
+            // dockManager1
+            // 
+            this.dockManager1.Form = this;
+            this.dockManager1.MenuManager = this.barManager1;
+            this.dockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
+            this.dockPanel1});
+            this.dockManager1.TopZIndexControls.AddRange(new string[] {
+            "DevExpress.XtraBars.BarDockControl",
+            "DevExpress.XtraBars.StandaloneBarDockControl",
+            "System.Windows.Forms.StatusBar",
+            "System.Windows.Forms.MenuStrip",
+            "System.Windows.Forms.StatusStrip",
+            "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
+            "DevExpress.XtraBars.Ribbon.RibbonControl",
+            "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
+            "DevExpress.XtraBars.Navigation.TileNavPane"});
+            // 
+            // dockPanel1
+            // 
+            this.dockPanel1.Controls.Add(this.dockPanel1_Container);
+            this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.dockPanel1.ID = new System.Guid("43903fca-7b33-49b3-8a62-5e273946c999");
+            this.dockPanel1.Location = new System.Drawing.Point(0, 0);
+            this.dockPanel1.Name = "dockPanel1";
+            this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
+            this.dockPanel1.Size = new System.Drawing.Size(200, 394);
+            // 
+            // dockPanel1_Container
+            // 
+            this.dockPanel1_Container.Controls.Add(this.treeCodeType);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.dockPanel1_Container.Name = "dockPanel1_Container";
+            this.dockPanel1_Container.Size = new System.Drawing.Size(192, 367);
+            this.dockPanel1_Container.TabIndex = 0;
+            // 
+            // treeCodeType
+            // 
+            this.treeCodeType.Columns.AddRange(new DevExpress.XtraTreeList.Columns.TreeListColumn[] {
+            this.treeColumnDescription,
+            this.treeColumnCode});
+            this.treeCodeType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeCodeType.Location = new System.Drawing.Point(0, 0);
+            this.treeCodeType.Name = "treeCodeType";
+            this.treeCodeType.OptionsBehavior.Editable = false;
+            this.treeCodeType.Size = new System.Drawing.Size(192, 367);
+            this.treeCodeType.TabIndex = 6;
+            this.treeCodeType.FocusedNodeChanged += new DevExpress.XtraTreeList.FocusedNodeChangedEventHandler(this.treeCodeType_FocusedNodeChanged);
+            // 
+            // treeColumnDescription
+            // 
+            this.treeColumnDescription.Caption = "产品类别";
+            this.treeColumnDescription.FieldName = "Description";
+            this.treeColumnDescription.Name = "treeColumnDescription";
+            this.treeColumnDescription.Visible = true;
+            this.treeColumnDescription.VisibleIndex = 0;
+            this.treeColumnDescription.Width = 78;
+            // 
+            // treeColumnCode
+            // 
+            this.treeColumnCode.Caption = "类别代号";
+            this.treeColumnCode.FieldName = "Code";
+            this.treeColumnCode.Name = "treeColumnCode";
+            this.treeColumnCode.Width = 78;
+            // 
+            // ProductForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(812, 423);
+            this.Controls.Add(this.ykGridControl1);
+            this.Controls.Add(this.dockPanel1);
+            this.Name = "ProductForm";
+            this.Text = "ProductForm";
+            this.Controls.SetChildIndex(this.dockPanel1, 0);
+            this.Controls.SetChildIndex(this.ykGridControl1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ykGridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPM001ProductBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
+            this.dockPanel1.ResumeLayout(false);
+            this.dockPanel1_Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.treeCodeType)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private COM.YKControls.YKGridControl ykGridControl1;
+        private System.Windows.Forms.BindingSource eRPM001ProductBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemName;
+        private DevExpress.XtraGrid.Columns.GridColumn colDescription;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemType;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemShape;
+        private DevExpress.XtraGrid.Columns.GridColumn colStatus;
+        private DevExpress.XtraGrid.Columns.GridColumn colStartDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colCorpDrawingNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCorpDrawingRevNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustDrawingNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustDrawingRevNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecAlignHole;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecLeads;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecRows;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecLeadDistance;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecWidth;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecLength;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecThickness;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecAgThickness;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecDeep;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecLeadWidth;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecUnitofSheet;
+        private DevExpress.XtraGrid.Columns.GridColumn colPlatType;
+        private DevExpress.XtraGrid.Columns.GridColumn colRemarks;
+        private DevExpress.XtraGrid.Columns.GridColumn colModifyDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colModifyUser;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreateDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreateUser;
+        private DevExpress.XtraGrid.Columns.GridColumn colVersion;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraBars.Docking.DockManager dockManager1;
+        private DevExpress.XtraBars.Docking.DockPanel dockPanel1;
+        private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
+        private DevExpress.XtraTreeList.TreeList treeCodeType;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeColumnDescription;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeColumnCode;
+       
+    }
+}

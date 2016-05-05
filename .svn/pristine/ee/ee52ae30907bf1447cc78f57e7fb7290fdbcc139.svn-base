@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ED5FCBB-CB76-41C2-B7D6-0848B8A742B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COM.Winform</RootNamespace>
+    <AssemblyName>COM.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="COM.YKControls">
+      <HintPath>..\COM.YKControls\bin\Debug\COM.YKControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission\IFunction.cs" />
+    <Compile Include="Permission\ToolBarCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Permission\ToolBarCommand.Designer.cs">
+      <DependentUpon>ToolBarCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapturer\CaptureImageToolColorTable.cs" />
+    <Compile Include="ScreenCapturer\ColorLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScreenCapturer\ColorSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenCapturer\ColorSelector.Designer.cs">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapturer\ControlPaintEx.cs" />
+    <Compile Include="ScreenCapturer\DrawStyle.cs" />
+    <Compile Include="ScreenCapturer\DrawTextData.cs" />
+    <Compile Include="ScreenCapturer\DrawToolsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenCapturer\DrawToolsControl.designer.cs">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapturer\DrawToolsDockStyle.cs" />
+    <Compile Include="ScreenCapturer\GraphicsPathHelper.cs" />
+    <Compile Include="ScreenCapturer\NativeMethods.cs" />
+    <Compile Include="ScreenCapturer\OperateManager.cs" />
+    <Compile Include="ScreenCapturer\OperateObject.cs" />
+    <Compile Include="ScreenCapturer\OperateType.cs" />
+    <Compile Include="ScreenCapturer\RegionHelper.cs" />
+    <Compile Include="ScreenCapturer\RoundStyle.cs" />
+    <Compile Include="ScreenCapturer\ScreenCapturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenCapturer\ScreenCapturer.Designer.cs">
+      <DependentUpon>ScreenCapturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapturer\SizeGrip.cs" />
+    <Compile Include="ScreenCapturer\ToolStripRendererEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenCapturer\ColorSelector.resx">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenCapturer\DrawToolsControl.resx">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenCapturer\ScreenCapturer.resx">
+      <DependentUpon>ScreenCapturer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ERPClient\ERP.Domain\ERP.Domain.csproj">
+      <Project>{ED115BEA-3C8F-4DB5-95FE-04D4D32D9F51}</Project>
+      <Name>ERP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Util.csproj">
+      <Project>{BC7CC9BA-EB2E-4EB4-992A-B9E018EFBE21}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.Domain\COM.Domain.csproj">
+      <Project>{7571EB64-5375-4084-975E-3BB5FDF1E30F}</Project>
+      <Name>COM.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COM.Service\COM.Service.csproj">
+      <Project>{C28A50D9-B531-4320-835F-64F62965B86D}</Project>
+      <Name>COM.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ScreenCapturer\Toolbar\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\up1.png" />
+    <None Include="Resources\Text.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\Rectangular.ico" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\Line.ico" />
+    <None Include="Resources\Go.bmp" />
+    <None Include="Resources\folder_new.png" />
+    <None Include="Resources\Exit.ico" />
+    <None Include="Resources\Ellipse.ico" />
+    <None Include="Resources\edit-undo.png" />
+    <None Include="Resources\edit-redo.png" />
+    <None Include="Resources\down1.png" />
+    <None Include="Resources\20120818113914742_easyicon_cn_16.png" />
+    <None Include="Resources\cut1.png" />
+    <None Include="Resources\copy1.png" />
+    <None Include="Resources\AV_Accept.png" />
+    <None Include="Resources\Arrow.ico" />
+    <None Include="Resources\app_icon_401.png" />
+    <None Include="Resources\Accept.ico" />
+    <Content Include="ScreenCapturer\Toolbar\Arrow.png" />
+    <Content Include="ScreenCapturer\Toolbar\Brush.PNG" />
+    <Content Include="ScreenCapturer\Toolbar\Circle.png" />
+    <Content Include="ScreenCapturer\Toolbar\Exit.png" />
+    <Content Include="ScreenCapturer\Toolbar\Finish.png" />
+    <Content Include="ScreenCapturer\Toolbar\Rectangle.png" />
+    <Content Include="ScreenCapturer\Toolbar\Save.png" />
+    <Content Include="ScreenCapturer\Toolbar\SinglePoint.PNG" />
+    <Content Include="ScreenCapturer\Toolbar\Text.png" />
+    <Content Include="ScreenCapturer\Toolbar\Undo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,115 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using COM.Winform;
+using ERP.Service;
+using COM.Service;
+using ERP.Domain;
+using Util;
+using COM.Domain;
+
+namespace ERP.Winform.Supplier
+{
+    public partial class MaterialForm : ListForm
+    {
+        private IERP_M001_MaterialService materialService = Unity.Instance.GetService<IERP_M001_MaterialService>();
+        private IERP_C003_SupplierService supplierServer = Unity.Instance.GetService<IERP_C003_SupplierService>();
+        
+        public MaterialForm()
+        {
+            InitializeComponent();
+        }
+        public override void InitData()
+        {
+            var suppData = supplierServer.GetSuppler().Select(a => new InputItem { DisPlayName = a.Alias, Value = a.SuppCode, InputCode1 = a.SuppCode }).ToList();
+            SetGridLookUpEdit(repositorySuppCode, suppData, 1);
+            gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(gridView1_FocusedRowChanged);
+            this.treeMaterType.DataSource = materialService.GetMaterial().Select(a => new { MatClass1 = a.MatClass1 }).Distinct().ToList();
+            //this.eRPM001MaterialBindingSource.DataSource = materialService.GetList();
+            //this.gridView1.BestFitColumns();
+        }
+
+        void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            ERP_M001_Material temp = eRPM001MaterialBindingSource.Current as ERP_M001_Material;
+            if (temp != null)
+            {
+                IERP_M001_Material_SuppService matSuppServer = Unity.Instance.GetService<IERP_M001_Material_SuppService>();
+                this.gridControlSupplier.DataSource = matSuppServer.GetListByMatCode(temp.MatCode);
+            }
+        }
+        public override void OnBtnCommand(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            // MessageBox.Show(e.Item.Caption);
+            //新增
+            if (e.Item.Caption == BtnCommandEnum.Add)
+            {
+                eRPM001MaterialBindingSource.AddNew();
+                
+                EditForm("物料资料新增", BtnCommandEnum.Add);
+            }
+            else if (e.Item.Caption == BtnCommandEnum.Edit)
+            {
+                ERP_M001_Material temp = eRPM001MaterialBindingSource.Current as ERP_M001_Material;
+                if (temp == null)
+                    throw new AppException("请先选择要修改的数据");
+                EditForm("物料资料修改", BtnCommandEnum.Edit);
+            }
+            else if (e.Item.Caption == BtnCommandEnum.Delete)
+            {
+                if (ERPHelper.Instance.MessageDel())
+                {
+                    ERP_M001_Material temp = eRPM001MaterialBindingSource.Current as ERP_M001_Material;
+                    materialService.Delete(temp.Id);
+                    eRPM001MaterialBindingSource.RemoveCurrent();
+                }
+            }
+            else if (e.Item.Caption == BtnCommandEnum.Watch)
+            {
+                ERP_M001_Material temp = eRPM001MaterialBindingSource.Current as ERP_M001_Material;
+                if (temp == null)
+                    throw new AppException("请先选择要查看的数据");
+                EditForm("物料资料查看", BtnCommandEnum.Watch);
+            }
+            else if (e.Item.Caption == BtnCommandEnum.Refresh)
+            {
+                InitData();
+            }
+        }
+        private void EditForm(string formText, string btnCommand)
+        {
+            ERP_M001_Material temp = this.eRPM001MaterialBindingSource.Current as ERP_M001_Material;
+            MaterialEditForm edit = new MaterialEditForm(temp);
+            edit.Text = formText;
+            edit.Tag = btnCommand;
+
+            if (edit.ShowDialog() != DialogResult.OK)
+            {
+                eRPM001MaterialBindingSource.CancelEdit();
+            }
+            else
+            {
+                gridView1_FocusedRowChanged(null, null);
+            }
+        }
+        /// <summary>
+        /// 点击物料类别，显示物料
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void treeMaterType_FocusedNodeChanged(object sender, DevExpress.XtraTreeList.FocusedNodeChangedEventArgs e)
+        {
+            //if (treeMaterType.FocusedNode.GetValue(treeMaterType) != null)
+            //{
+            string matClass = treeMaterType.FocusedNode.GetValue("MatClass1").ToString();
+            this.eRPM001MaterialBindingSource.DataSource = materialService.GetMaterial().Where(a => a.MatClass1 == matClass).ToList();
+            this.gridView1.BestFitColumns();
+           // }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+2015-07-16 09:33:51,110 [13076] INFO  ESOPServer - The server instance ESOPServer has been started!
+2015-07-16 09:35:20,962 [9420] INFO  ESOPServer - Session: 062865c4-b8da-4cf8-bd88-cd5b6fbadcea/192.168.10.158:36193
+A new session connected!
+2015-07-16 09:35:35,059 [13076] INFO  ESOPServer - Session: 062865c4-b8da-4cf8-bd88-cd5b6fbadcea/192.168.10.158:36193
+This session was closed for SocketError!

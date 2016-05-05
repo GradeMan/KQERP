@@ -1,0 +1,125 @@
+﻿<#@ template debug="true" hostspecific="false" language="C#" #>
+<#@ include file="..\EntityConfig.tt.txt" #>
+<#@ include file="..\NewEntity.tt.txt" #>
+<#@ output extension=".cshtml" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.Services.Client.dll" #>
+<#@ assembly name="$(ProjectDir)..\..\COM.Net\COM.Domain\bin\Debug\COM.Domain.dll" #>
+<#@ assembly name="$(ProjectDir)..\ERP.Domain\bin\Debug\ERP.Domain.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Linq.Expressions" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.Services.Common" #>
+<#@ import namespace="COM.Domain" #>
+<#@ import namespace="ERP.Domain" #>
+<#var c = this.NewEntity();#>
+@model List<<#=c.AppName#>.Domain.<#=c.EntityTypeName#>>
+@{
+    Layout = "~/Default/Views/Shared/_ListLayout.cshtml";
+    ViewBag.Title = "<#=c.Title#>";
+}
+
+<div class="divToolbar">
+    <a href="@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/Create")" class="easyui-linkbutton" iconCls="icon-add" plain="true">新建</a>  
+    <a id="editButton" href="@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/Edit/")" class="easyui-linkbutton" iconCls="icon-edit" plain="true">详细</a>  
+    <a href="@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/List")" class="easyui-linkbutton" iconCls="icon-reload" plain="true">刷新</a>  
+</div>
+
+<div id="updateGridDiv" style="margin-top:10px">
+    <div id="divListWebGrid">
+    @{
+        var grid = new WebGrid<<#=c.AppName#>.Domain.<#=c.EntityTypeName#>>(source: null);
+        grid.Bind(source: Model, rowCount:Model.Count, autoSortAndPage: true);
+
+        var index = 0;
+        var columns = grid.Columns
+			(
+				grid.Column(header:"序号", format: (item) => (++index).ToString(), style: "webgrid-col-w25"),
+				<#foreach(var prop in c.EntityType.GetProperties())
+				{#><#
+					var attribute = prop.GetCustomAttributes(typeof(ColumnMapAttribute), false).FirstOrDefault();
+					var colName = attribute == null?prop.Name:((ColumnMapAttribute)attribute).ColumnReamrk;
+					#><#if(prop.Name == c.KeyName){#>
+grid.Column(header: "<#=colName#>", format: @<text><a href="@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/Edit/"+item.<#=prop.Name#>)">@item.<#=prop.Name#></a></text>, style: "webgrid-col-w100"),<#}else
+					{#>
+grid.Column(header: "<#=colName#>", format: @<text>@item.<#=prop.Name#></text>, style: "webgrid-col-w100"),
+<#}#>
+				<#}#>
+grid.Column(header: "ID", format: @<text>@item.<#=c.KeyName#></text>, style: "webgrid-col-w0 keyCol")
+			);
+
+        @grid.GetHtml(
+                mode: WebGridPagerModes.All,
+                columns: columns,
+                selectedRowStyle: "selected",
+                tableStyle: "webgrid-table",
+                headerStyle: "webgrid-header",
+                footerStyle: "paging-number",
+                htmlAttributes: new { select1row = true }
+                );
+
+    }
+		
+	</div>
+</div>
+
+
+@section js
+{
+    <script type="text/javascript">
+    
+        function retieve(postUrl)
+        {
+            $.ajax({
+                    type: "post",
+                    url: postUrl,
+                    data:$("form").serialize(),
+                    success: function (result) {
+                            $("#updateGridDiv").empty().html($("#divListWebGrid",result));
+                            bindEvent();
+                            }
+                    });
+        };
+
+        function bindEvent(){
+             bindWebGridEvent(
+                $(".webgrid-table"),
+                function(){
+                            postUrl = $(this).attr("href");
+                            retieve(postUrl);
+                            return false;
+                          },
+                function(){
+                            window.location.href = "@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/Edit/")"+getRowKey4Url($(this));
+                           }
+            );
+
+        };
+
+
+        $(function () {
+            $("#retrieveButton").click(function () {
+                var postUrl = "@Url.Content("~/<#=c.ModuleName#>/<#=c.EntityTypeName#>/List")";
+                retieve(postUrl);
+                return false;
+             });
+
+           $("#editButton").click(function(){
+                var r = getSelectedRow($(".webgrid-table"));
+                if (r == null)
+                    return false;
+
+                window.location.href = $(this).attr("href")+getRowKey4Url(r);
+                return false;
+              });
+
+
+            bindEvent();
+
+         });
+
+
+    </script>
+}
