@@ -41,6 +41,7 @@ public class BtnCommandEnum
     static public readonly string FHDelivery = "凤凰半导体送货单";
     static public readonly string AddCodeDic = "新增类型";
     static public readonly string EditCodeDic = "修改类型";
+    static public readonly string DelCodeDic = "删除类型";
 }
 
 public enum EntityNameEnum
