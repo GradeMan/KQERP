@@ -656,6 +656,7 @@
     <Compile Include="Report\JobLot_CulaInner2.Designer.cs">
       <DependentUpon>JobLot_CulaInner2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\ProcessType.cs" />
     <Compile Include="Report\_JobLotPreReport.cs">
       <SubType>Component</SubType>
     </Compile>

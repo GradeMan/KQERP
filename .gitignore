@@ -3,3 +3,11 @@
 ################################################################################
 
 /ERPClient/ERP.Web/bin
+/ERPClient/ERPTest/bin/Debug
+/Utils/COM.Net/COM.Data/bin/Debug
+/Utils/COM.Net/COM.Service/bin/Debug
+/Utils/COM.Net/COM.Winform/bin/Debug
+/Utils/COM.Net/COM.YKControls/bin/Debug
+/ERPClient/ERP.Winform/bin/Debug
+/ERPClient/ERP.Winform/obj/x86/Debug
+/ERPClient/ERP.Winform/Properties/licenses.licx

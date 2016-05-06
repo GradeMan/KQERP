@@ -128,6 +128,7 @@ namespace ERP.Service
             mesM202TaskDetail.ModifyDt = DateTime.Now;
             tb_Sys_User tempUser = appCacheService.GetItem("user") as tb_Sys_User;
             mesM202TaskDetail.ModifyUser = tempUser.UserName;
+	        mesM202TaskDetail.Status = "04";
             mesM202TaskDetail.Auditor= tempUser.UserName;
             mesM202TaskDetail.AuditingDt = DateTime.Now;
             mesM202TaskDetail.Validate();

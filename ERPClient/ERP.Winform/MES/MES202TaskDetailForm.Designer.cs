@@ -152,6 +152,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTxDt2 = new DevExpress.XtraEditors.DateEdit();
             this.txtTxDt1 = new DevExpress.XtraEditors.DateEdit();
+            this.colAuditor = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAuditingDt = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ykGridControl1)).BeginInit();
@@ -306,7 +308,9 @@
             this.colLotCount,
             this.colProcessFlow,
             this.colTaskDt,
-            this.colShipQty});
+            this.colShipQty,
+            this.colAuditor,
+            this.colAuditingDt});
             this.gridTaskDetail.GridControl = this.ykGridControl1;
             this.gridTaskDetail.IndicatorWidth = 40;
             this.gridTaskDetail.Name = "gridTaskDetail";
@@ -1369,6 +1373,22 @@
             this.txtTxDt1.Size = new System.Drawing.Size(135, 20);
             this.txtTxDt1.TabIndex = 6;
             // 
+            // colAuditor
+            // 
+            this.colAuditor.Caption = "审核人";
+            this.colAuditor.FieldName = "Auditor";
+            this.colAuditor.Name = "colAuditor";
+            this.colAuditor.Visible = true;
+            this.colAuditor.VisibleIndex = 16;
+            // 
+            // colAuditingDt
+            // 
+            this.colAuditingDt.Caption = "审核时间";
+            this.colAuditingDt.FieldName = "AuditingDt";
+            this.colAuditingDt.Name = "colAuditingDt";
+            this.colAuditingDt.Visible = true;
+            this.colAuditingDt.VisibleIndex = 17;
+            // 
             // MES202TaskDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1577,5 +1597,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPartNo3;
         private System.Windows.Forms.BindingSource eRPM001ProductProcessFlowBindingSource;
         private System.Windows.Forms.BindingSource eRPM001ProductProdInfoBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colAuditor;
+        private DevExpress.XtraGrid.Columns.GridColumn colAuditingDt;
     }
 }

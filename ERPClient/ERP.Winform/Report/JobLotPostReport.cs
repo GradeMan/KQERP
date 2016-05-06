@@ -51,53 +51,57 @@ namespace ERP.Winform.Report
                 //var prodList = prodInfoList.Where(a => a.PFCode == taskDetail.ProcessFlow && a.ProcessCode == processCode).ToList();
                 //JobLot_CuLaInnerProcess innerProcess = new JobLot_CuLaInnerProcess(prodList);
                 //this.xrSubreport1.ReportSource = innerProcess;
-                switch (process.ProcessName)
+                foreach (var processName in Enum.GetNames(typeof(ProcessType)))
                 {
-                    case "粗拉":
-                        JobLot_CulaInner1 inner1 = new JobLot_CulaInner1(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner1;
-                        break;
-                    case "中拉及清洗(酸洗线)":
-                        JobLot_CulaInner1 inner2 = new JobLot_CulaInner1(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner2;
-                        break;
-                    case "电镀":
-                        JobLot_CulaInner2 inner3 = new JobLot_CulaInner2(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner3;
-                        break;
-                    case "细拉半成品1":
-                        JobLot_CulaInner3 inner4 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner4;
-                        break;
-                    case "半成品退火":
-                        JobLot_CulaInner3 inner5 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner5;
-                        break;
-                    case "细拉半成品2":
-                        JobLot_CulaInner3 inner6 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner6;
-                        break;
-                    case "细拉成品":
-                        JobLot_CulaInner3 inner7 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner7;
-                        break;
-                    case "成品清洗":
-                        JobLot_CulaInner3 inner8 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner8;
-                        break;
-                    case "成品退火":
-                        JobLot_CulaInner3 inner9 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner9;
-                        break;
-                    case "成品绕线":
-                        JobLot_CulaInner3 inner10 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner10;
-                        break;
-                    case "成品内包":
-                        JobLot_CulaInner3 inner11 = new JobLot_CulaInner3(process.ProcessKey);
-                        this.xrSubreport2.ReportSource = inner11;
-                        break;
+                    if (process == null || !process.ProcessName.Contains(processName)) continue;
+                    switch (processName)
+                    {
+                        case "粗拉":
+                            JobLot_CulaInner1 inner1 = new JobLot_CulaInner1(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner1;
+                            break;
+                        case "中拉及清洗":
+                            JobLot_CulaInner1 inner2 = new JobLot_CulaInner1(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner2;
+                            break;
+                        case "电镀":
+                            JobLot_CulaInner2 inner3 = new JobLot_CulaInner2(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner3;
+                            break;
+                        case "细拉半成品1":
+                            JobLot_CulaInner3 inner4 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner4;
+                            break;
+                        case "半成品退火":
+                            JobLot_CulaInner3 inner5 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner5;
+                            break;
+                        case "细拉半成品2":
+                            JobLot_CulaInner3 inner6 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner6;
+                            break;
+                        case "细拉成品":
+                            JobLot_CulaInner3 inner7 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner7;
+                            break;
+                        case "成品清洗":
+                            JobLot_CulaInner3 inner8 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner8;
+                            break;
+                        case "成品退火":
+                            JobLot_CulaInner3 inner9 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner9;
+                            break;
+                        case "成品绕线":
+                            JobLot_CulaInner3 inner10 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner10;
+                            break;
+                        case "成品内包":
+                            JobLot_CulaInner3 inner11 = new JobLot_CulaInner3(process.ProcessKey);
+                            this.xrSubreport2.ReportSource = inner11;
+                            break;
 
+                    }
                 }
             }
         }

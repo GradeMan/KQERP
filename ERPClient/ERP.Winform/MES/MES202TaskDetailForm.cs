@@ -197,6 +197,7 @@ namespace ERP.Winform.MES
                 else
                 {
                     taskDetailService.ShenHe(temp);
+                    mESM202TaskDetailBindingSource.ResetCurrentItem();
                     XtraMessageBox.Show("审核成功");
                 }
             }
@@ -211,6 +212,7 @@ namespace ERP.Winform.MES
                     temp.AuditingDt = null;
                     temp.Status = "01";
                     taskDetailService.Update(temp);
+                    mESM202TaskDetailBindingSource.ResetCurrentItem();
                     XtraMessageBox.Show("反审成功");
                 }
                 else
