@@ -53,7 +53,7 @@
             this.xrTableCell49 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell50 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell51 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell52 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cellJobLotNo = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell53 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell54 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -79,15 +79,21 @@
             this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
             // 
-            this.Detail.HeightF = 0F;
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2,
+            this.xrBarCode1,
+            this.xrLabel2});
+            this.Detail.HeightF = 126.0417F;
             this.Detail.MultiColumn.Mode = DevExpress.XtraReports.UI.MultiColumnMode.UseColumnCount;
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -109,19 +115,15 @@
             // 
             // PageHeader
             // 
-            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrBarCode1,
-            this.xrTable2,
-            this.xrLabel2});
-            this.PageHeader.HeightF = 115.1667F;
+            this.PageHeader.HeightF = 0F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrBarCode1
             // 
             this.xrBarCode1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrBarCode1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "JobNo")});
-            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(7.99996F, 0F);
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "JobLotNo")});
+            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrBarCode1.Module = 1F;
             this.xrBarCode1.Name = "xrBarCode1";
             this.xrBarCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
@@ -133,7 +135,7 @@
             // xrTable2
             // 
             this.xrTable2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(7.999992F, 48.08337F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 58.95831F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5,
@@ -205,7 +207,7 @@
             // xrTableCell44
             // 
             this.xrTableCell44.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "JobNo")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "TaskNo")});
             this.xrTableCell44.Name = "xrTableCell44";
             this.xrTableCell44.Weight = 0.55442749614052655D;
             // 
@@ -219,7 +221,7 @@
             this.xrTableCell49,
             this.xrTableCell50,
             this.xrTableCell51,
-            this.xrTableCell52,
+            this.cellJobLotNo,
             this.xrTableCell53,
             this.xrTableCell54});
             this.xrTableRow6.Name = "xrTableRow6";
@@ -270,12 +272,13 @@
             this.xrTableCell51.Text = "订单批次号:";
             this.xrTableCell51.Weight = 0.31002355008249455D;
             // 
-            // xrTableCell52
+            // cellJobLotNo
             // 
-            this.xrTableCell52.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SOLotNo")});
-            this.xrTableCell52.Name = "xrTableCell52";
-            this.xrTableCell52.Weight = 0.4616925774417811D;
+            this.cellJobLotNo.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "JobLotNo")});
+            this.cellJobLotNo.Name = "cellJobLotNo";
+            this.cellJobLotNo.Weight = 0.4616925774417811D;
+            this.cellJobLotNo.TextChanged += new System.EventHandler(this.cellJobLotNo_TextChanged);
             // 
             // xrTableCell53
             // 
@@ -292,7 +295,7 @@
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(7.999992F, 0F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(1.589457E-05F, 0F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(770F, 43.75F);
@@ -456,6 +459,7 @@
             // 
             this.DetailReport1.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail2});
+            this.DetailReport1.DataSource = this.bindingSource3;
             this.DetailReport1.Level = 0;
             this.DetailReport1.Name = "DetailReport1";
             // 
@@ -480,6 +484,10 @@
             // 
             this.bindingSource1.DataSource = typeof(ERP.Domain.MES_M202_Task_Detail);
             // 
+            // bindingSource3
+            // 
+            this.bindingSource3.DataSource = typeof(ERP.Service.Dtos.TaskReportHead);
+            // 
             // JobLotPreReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -488,7 +496,7 @@
             this.BottomMargin,
             this.PageHeader,
             this.DetailReport});
-            this.DataSource = this.bindingSource1;
+            this.DataSource = this.bindingSource3;
             this.Margins = new System.Drawing.Printing.Margins(19, 21, 36, 22);
             this.PageHeight = 1169;
             this.PageWidth = 827;
@@ -499,6 +507,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -528,7 +537,7 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell49;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell50;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell51;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell52;
+        private DevExpress.XtraReports.UI.XRTableCell cellJobLotNo;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell53;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell54;
         private DevExpress.XtraReports.UI.DetailReportBand DetailReport;
@@ -554,5 +563,6 @@
         private DevExpress.XtraReports.UI.DetailReportBand DetailReport1;
         private DevExpress.XtraReports.UI.DetailBand Detail2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
+        private System.Windows.Forms.BindingSource bindingSource3;
     }
 }

@@ -123,7 +123,7 @@ namespace ERP.Domain
 
        public DateTime? AuditingDt { get; set; }
 
-
+       public bool CheckBox { get; set; }
 
 	}
 }

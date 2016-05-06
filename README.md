@@ -6,3 +6,6 @@
 		3.跟踪单批次号排序 Y
 		4.批量打印跟踪单报表 
 		5.跟踪单报表工序名称模糊匹配
+		6.数据库
+alter table MES_M202_Task_Detail add Auditor nvarchar(50)
+alter table MES_M202_Task_Detail add AuditingDt datetime

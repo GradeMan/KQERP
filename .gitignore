@@ -11,3 +11,6 @@
 /ERPClient/ERP.Winform/bin/Debug
 /ERPClient/ERP.Winform/obj/x86/Debug
 /ERPClient/ERP.Winform/Properties/licenses.licx
+/Utils/COM.Net/COM.YKControls/obj/Debug
+/Utils/DependencyLibraries/obj/Debug
+/Utils/Util/obj/Debug

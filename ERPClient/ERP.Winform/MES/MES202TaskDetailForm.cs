@@ -25,6 +25,7 @@ namespace ERP.Winform.MES
         private ICustomerService customerServer = Unity.Instance.GetService<ICustomerService>();
         private IMES_M201_PlanService planService = Unity.Instance.GetService<IMES_M201_PlanService>();
         private IMES_M201_Plan_DetailService planDetailService = Unity.Instance.GetService<IMES_M201_Plan_DetailService>();
+        private IViewService viewService = Unity.Instance.GetService<IViewService>();
         public MES202TaskDetailForm()
         {
             InitializeComponent();
@@ -221,38 +222,45 @@ namespace ERP.Winform.MES
                 }
             }
         }
-
-        private void PrintProcess(string ProcessType)
+        /// <summary>
+        /// 打印任务单报表
+        /// </summary>
+        /// <param name="processType">前制程&后制程</param>
+        private void PrintProcess(string processType)
         {
-            var taskDetail = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
-            var taskJobLot = mESM202TaskJobLotBindingSource.Current as MES_M202_Task_JobLot;
-            if (taskJobLot != null)
+            var taskDetailList = mESM202TaskDetailBindingSource.DataSource as List<MES_M202_Task_Detail>;
+            //var taskJobLot = mESM202TaskJobLotBindingSource.Current as MES_M202_Task_JobLot;
+            if (taskDetailList == null) return;
+            var taskNoList = taskDetailList.Where(a => a.CheckBox == true).Select(a => a.TaskNo).ToList();
+            var taskReportHeadList = viewService.GetTaskReportHeadList(taskNoList);
+            //foreach (var taskDetail in taskDetailList.Where(a=>a.CheckBox==true))
+            //{
+            //    var product = productService.GetProduct().Where(a => a.PartNo == taskDetail.PartNo).Select(a => new { a.PartSpec, a.PartType, a.ProcessFlow }).FirstOrDefault();
+            //    if (product == null)
+            //        throw new AppException("没有对应的产品基础资料，请检查产品基础信息");
+            //    taskDetail.PartSpec = product.PartSpec;
+            //    taskDetail.PartType = product.PartType;
+            //    taskDetail.ProcessFlow = product.ProcessFlow;
+            //    //taskDetail.JobNo = taskJobLot.JobLotNo;
+            //    List<ERP_M001_Product_ProcessFlow> processList = productService.GetProcessFlowByProdutCode(taskDetail.PartNo).Where(a => a.ProcessType == processType).OrderBy(a => a.ProcessSeqNo).ToList();
+            //    var procNameList = codeService.GetListByCodeID("PROC");
+            //    foreach (var process in processList)
+            //    {
+            //        process.ProcessName = procNameList.Where(a => a.Code == process.ProcessCode).Select(a => a.Description).FirstOrDefault();
+            //    }
+                
+            //}
+            if (processType == "前制程")
             {
-                var product = productService.GetProduct().Where(a => a.PartNo == taskDetail.PartNo).Select(a => new { a.PartSpec, a.PartType, a.ProcessFlow }).FirstOrDefault();
-                if (product == null)
-                    throw new AppException("没有对应的产品基础资料，请检查产品基础信息");
-                taskDetail.PartSpec = product.PartSpec;
-                taskDetail.PartType = product.PartType;
-                taskDetail.ProcessFlow = product.ProcessFlow;
-                taskDetail.JobNo = taskJobLot.JobLotNo;
-                List<ERP_M001_Product_ProcessFlow> processList = productService.GetProcessFlowByProdutCode(taskDetail.PartNo).Where(a => a.ProcessType == ProcessType).OrderBy(a => a.ProcessSeqNo).ToList();
-                var procNameList = codeService.GetListByCodeID("PROC");
-                foreach (var process in processList)
-                {
-                    process.ProcessName = procNameList.Where(a => a.Code == process.ProcessCode).Select(a => a.Description).FirstOrDefault();
-                }
-                if (ProcessType == "前制程")
-                {
-                    JobLotPreReport frmreport = new JobLotPreReport(taskDetail, processList);
-                    ReportShowForm frm = new ReportShowForm(frmreport);
-                    frm.Show();
-                }
-                else
-                {
-                    JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
-                    ReportShowForm frm = new ReportShowForm(frmreport);
-                    frm.Show();
-                }
+                JobLotPreReport frmreport = new JobLotPreReport(taskReportHeadList);
+                ReportShowForm frm = new ReportShowForm(frmreport);
+                frm.Show();
+            }
+            else
+            {
+                //JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
+                //ReportShowForm frm = new ReportShowForm(frmreport);
+                //frm.Show();
             }
         }
         private void EditForm(string formText, string btnCommand)
@@ -275,6 +283,18 @@ namespace ERP.Winform.MES
         private void btnSearch_Click(object sender, EventArgs e)
         {
             InitData();
+        }
+        /// <summary>
+        /// 如果选择CheckBox，则允许修改
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gridTaskDetail_FocusedColumnChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedColumnChangedEventArgs e)
+        {
+            if (e.FocusedColumn == colCheckBox)
+                gridTaskDetail.OptionsBehavior.ReadOnly = false;
+            else
+                gridTaskDetail.OptionsBehavior.ReadOnly = true;
         }
     }
 }

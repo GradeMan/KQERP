@@ -80,6 +80,9 @@
             this.colProcessFlow = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTaskDt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colShipQty = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAuditor = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAuditingDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCheckBox = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.ykGridControl2 = new COM.YKControls.YKGridControl();
@@ -152,8 +155,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTxDt2 = new DevExpress.XtraEditors.DateEdit();
             this.txtTxDt1 = new DevExpress.XtraEditors.DateEdit();
-            this.colAuditor = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAuditingDt = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ykGridControl1)).BeginInit();
@@ -310,7 +311,8 @@
             this.colTaskDt,
             this.colShipQty,
             this.colAuditor,
-            this.colAuditingDt});
+            this.colAuditingDt,
+            this.colCheckBox});
             this.gridTaskDetail.GridControl = this.ykGridControl1;
             this.gridTaskDetail.IndicatorWidth = 40;
             this.gridTaskDetail.Name = "gridTaskDetail";
@@ -322,9 +324,11 @@
             this.gridTaskDetail.OptionsView.EnableAppearanceOddRow = true;
             this.gridTaskDetail.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             this.gridTaskDetail.OptionsView.ShowGroupPanel = false;
+            this.gridTaskDetail.FocusedColumnChanged += new DevExpress.XtraGrid.Views.Base.FocusedColumnChangedEventHandler(this.gridTaskDetail_FocusedColumnChanged);
             // 
             // colCompCode1
             // 
+            this.colCompCode1.Caption = "  ";
             this.colCompCode1.FieldName = "CompCode";
             this.colCompCode1.Name = "colCompCode1";
             // 
@@ -334,7 +338,7 @@
             this.colTaskNo1.FieldName = "TaskNo";
             this.colTaskNo1.Name = "colTaskNo1";
             this.colTaskNo1.Visible = true;
-            this.colTaskNo1.VisibleIndex = 0;
+            this.colTaskNo1.VisibleIndex = 1;
             // 
             // colPLNo1
             // 
@@ -349,7 +353,7 @@
             this.colSONo1.FieldName = "SONo";
             this.colSONo1.Name = "colSONo1";
             this.colSONo1.Visible = true;
-            this.colSONo1.VisibleIndex = 5;
+            this.colSONo1.VisibleIndex = 6;
             this.colSONo1.Width = 113;
             // 
             // colJobNo1
@@ -397,7 +401,7 @@
             this.colCustCode1.FieldName = "CustCode";
             this.colCustCode1.Name = "colCustCode1";
             this.colCustCode1.Visible = true;
-            this.colCustCode1.VisibleIndex = 8;
+            this.colCustCode1.VisibleIndex = 9;
             this.colCustCode1.Width = 97;
             // 
             // repositoryItemCustomer
@@ -423,7 +427,7 @@
             this.colPartNo1.FieldName = "PartNo";
             this.colPartNo1.Name = "colPartNo1";
             this.colPartNo1.Visible = true;
-            this.colPartNo1.VisibleIndex = 9;
+            this.colPartNo1.VisibleIndex = 10;
             this.colPartNo1.Width = 74;
             // 
             // repositoryProduct
@@ -449,7 +453,7 @@
             this.colMacCode1.FieldName = "MacCode";
             this.colMacCode1.Name = "colMacCode1";
             this.colMacCode1.Visible = true;
-            this.colMacCode1.VisibleIndex = 10;
+            this.colMacCode1.VisibleIndex = 11;
             this.colMacCode1.Width = 104;
             // 
             // repositoryItemMac
@@ -475,7 +479,7 @@
             this.colShiftCode1.FieldName = "ShiftCode";
             this.colShiftCode1.Name = "colShiftCode1";
             this.colShiftCode1.Visible = true;
-            this.colShiftCode1.VisibleIndex = 11;
+            this.colShiftCode1.VisibleIndex = 12;
             this.colShiftCode1.Width = 90;
             // 
             // repositoryItemShift
@@ -501,7 +505,7 @@
             this.colJobQty1.FieldName = "JobQty";
             this.colJobQty1.Name = "colJobQty1";
             this.colJobQty1.Visible = true;
-            this.colJobQty1.VisibleIndex = 13;
+            this.colJobQty1.VisibleIndex = 14;
             this.colJobQty1.Width = 100;
             // 
             // repositoryItemQty
@@ -553,7 +557,7 @@
             this.colPlanDetailId1.FieldName = "PlanDetailId";
             this.colPlanDetailId1.Name = "colPlanDetailId1";
             this.colPlanDetailId1.Visible = true;
-            this.colPlanDetailId1.VisibleIndex = 4;
+            this.colPlanDetailId1.VisibleIndex = 5;
             this.colPlanDetailId1.Width = 137;
             // 
             // repositoryItemPlan
@@ -595,7 +599,7 @@
             this.colPlanSumQty.Name = "colPlanSumQty";
             this.colPlanSumQty.OptionsColumn.AllowEdit = false;
             this.colPlanSumQty.Visible = true;
-            this.colPlanSumQty.VisibleIndex = 12;
+            this.colPlanSumQty.VisibleIndex = 13;
             // 
             // colSOQty
             // 
@@ -605,7 +609,7 @@
             this.colSOQty.FieldName = "SOQty";
             this.colSOQty.Name = "colSOQty";
             this.colSOQty.Visible = true;
-            this.colSOQty.VisibleIndex = 6;
+            this.colSOQty.VisibleIndex = 7;
             // 
             // colSOLotNo
             // 
@@ -613,7 +617,7 @@
             this.colSOLotNo.FieldName = "SOLotNo";
             this.colSOLotNo.Name = "colSOLotNo";
             this.colSOLotNo.Visible = true;
-            this.colSOLotNo.VisibleIndex = 7;
+            this.colSOLotNo.VisibleIndex = 8;
             // 
             // colStatus
             // 
@@ -622,7 +626,7 @@
             this.colStatus.FieldName = "Status";
             this.colStatus.Name = "colStatus";
             this.colStatus.Visible = true;
-            this.colStatus.VisibleIndex = 3;
+            this.colStatus.VisibleIndex = 4;
             // 
             // repositoryItemStatus
             // 
@@ -647,7 +651,7 @@
             this.colTLevel.FieldName = "TLevel";
             this.colTLevel.Name = "colTLevel";
             this.colTLevel.Visible = true;
-            this.colTLevel.VisibleIndex = 2;
+            this.colTLevel.VisibleIndex = 3;
             // 
             // repositoryItemLevel
             // 
@@ -671,7 +675,7 @@
             this.colLotCount.FieldName = "LotCount";
             this.colLotCount.Name = "colLotCount";
             this.colLotCount.Visible = true;
-            this.colLotCount.VisibleIndex = 15;
+            this.colLotCount.VisibleIndex = 16;
             // 
             // colProcessFlow
             // 
@@ -684,7 +688,7 @@
             this.colTaskDt.FieldName = "TaskDt";
             this.colTaskDt.Name = "colTaskDt";
             this.colTaskDt.Visible = true;
-            this.colTaskDt.VisibleIndex = 1;
+            this.colTaskDt.VisibleIndex = 2;
             // 
             // colShipQty
             // 
@@ -692,7 +696,31 @@
             this.colShipQty.FieldName = "ShipQty";
             this.colShipQty.Name = "colShipQty";
             this.colShipQty.Visible = true;
-            this.colShipQty.VisibleIndex = 14;
+            this.colShipQty.VisibleIndex = 15;
+            // 
+            // colAuditor
+            // 
+            this.colAuditor.Caption = "审核人";
+            this.colAuditor.FieldName = "Auditor";
+            this.colAuditor.Name = "colAuditor";
+            this.colAuditor.Visible = true;
+            this.colAuditor.VisibleIndex = 17;
+            // 
+            // colAuditingDt
+            // 
+            this.colAuditingDt.Caption = "审核时间";
+            this.colAuditingDt.FieldName = "AuditingDt";
+            this.colAuditingDt.Name = "colAuditingDt";
+            this.colAuditingDt.Visible = true;
+            this.colAuditingDt.VisibleIndex = 18;
+            // 
+            // colCheckBox
+            // 
+            this.colCheckBox.Caption = "  ";
+            this.colCheckBox.FieldName = "CheckBox";
+            this.colCheckBox.Name = "colCheckBox";
+            this.colCheckBox.Visible = true;
+            this.colCheckBox.VisibleIndex = 0;
             // 
             // xtraTabControl1
             // 
@@ -1373,22 +1401,6 @@
             this.txtTxDt1.Size = new System.Drawing.Size(135, 20);
             this.txtTxDt1.TabIndex = 6;
             // 
-            // colAuditor
-            // 
-            this.colAuditor.Caption = "审核人";
-            this.colAuditor.FieldName = "Auditor";
-            this.colAuditor.Name = "colAuditor";
-            this.colAuditor.Visible = true;
-            this.colAuditor.VisibleIndex = 16;
-            // 
-            // colAuditingDt
-            // 
-            this.colAuditingDt.Caption = "审核时间";
-            this.colAuditingDt.FieldName = "AuditingDt";
-            this.colAuditingDt.Name = "colAuditingDt";
-            this.colAuditingDt.Visible = true;
-            this.colAuditingDt.VisibleIndex = 17;
-            // 
             // MES202TaskDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1599,5 +1611,6 @@
         private System.Windows.Forms.BindingSource eRPM001ProductProdInfoBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colAuditor;
         private DevExpress.XtraGrid.Columns.GridColumn colAuditingDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colCheckBox;
     }
 }

@@ -57,6 +57,7 @@
     <Compile Include="Common\tb_C001_Company.cs" />
     <Compile Include="Common\ERP_C005_Employee.cs" />
     <Compile Include="Device\DEV_D001_Device.cs" />
+    <Compile Include="Dtos\TaskReportHead.cs" />
     <Compile Include="ESOP\ESOP_Device.cs" />
     <Compile Include="ESOP\ESOP_Doc.cs" />
     <Compile Include="ESOP\ESOP_DocIndex.cs" />

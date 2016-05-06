@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using ERP.Service.Dtos;
 
 namespace ERP.Service
 {
@@ -52,6 +53,13 @@ namespace ERP.Service
         List<R103_JobTxDetail> GetJobTxDetailList(QueryR103JobTxDetailView query);
         //生产明细表
         List<R105_PlanTrace> GetPlanTraceList(QueryR103JobTxDetailView query);
+
+        /// <summary>
+        /// 跟踪单报表
+        /// </summary>
+        /// <param name="taskNoList"></param>
+        /// <returns></returns>
+        List<TaskReportHead> GetTaskReportHeadList(List<string> taskNoList);
     }
 
     public class ViewService : IViewService
@@ -564,6 +572,20 @@ namespace ERP.Service
             var q = this.dbfactory.Get().Database.SqlQuery<string>("exec Proc_GenerateOrderCode @orderType", sdateParam);
 
             return q.ToList().First();
+        }
+
+        public List<TaskReportHead> GetTaskReportHeadList(List<string> taskNoList )
+        {
+            StringBuilder strSql = new StringBuilder();
+
+            strSql.Append(@" select TaskNo,JobLotNo,CustCode,SoNo,SoQty,a.PartNo,PartSpec,a.ProcessFlow from MES_M202_Task_Detail a
+                                inner join MES_M202_Task_JobLot b on a.TaskNo = b.JobNo
+                                left outer join ERP_M001_Product p on a.PartNo = p.PartNo
+                                ORDER BY TaskNo,JobLotNo ");
+            //strSql.AppendFormat(" where TxDt between '{0}' and '{1}' ", proddt1.Date, proddt2.Date);
+            var q = this.dbfactory.Get().Database.SqlQuery<TaskReportHead>(strSql.ToString());
+            q = q.Where(a => taskNoList.Contains(a.TaskNo));
+            return q.ToList();
         }
     }
 }

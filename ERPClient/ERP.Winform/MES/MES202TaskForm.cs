@@ -209,9 +209,9 @@ namespace ERP.Winform.MES
                 }
                 if (ProcessType == "前制程")
                 {
-                    JobLotPreReport frmreport = new JobLotPreReport(taskDetail, processList);
-                    ReportShowForm frm = new ReportShowForm(frmreport);
-                    frm.Show();
+                    //JobLotPreReport frmreport = new JobLotPreReport(taskDetail, processList);
+                    //ReportShowForm frm = new ReportShowForm(frmreport);
+                    //frm.Show();
                 }
                 else
                 {

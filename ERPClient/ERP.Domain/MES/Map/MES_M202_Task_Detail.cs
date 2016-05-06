@@ -51,6 +51,7 @@ namespace ERP.Domain
             this.Property(t => t.ShipQty).HasColumnName("ShipQty");
             this.Property(t => t.PartName).HasColumnName("PartName");
             this.Property(t => t.TaskDt).HasColumnName("TaskDt");
+            this.Ignore(a=>a.CheckBox);
 
 		}
 	}

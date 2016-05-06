@@ -1691,7 +1691,6 @@
     <None Include="Properties\DataSources\ERP.Domain.ESOP_DocIndex.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.ESOP_Product.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.ESOP_Publish.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.ESOP_PublishViewModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.FTP_F002_File1.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.K041PDARecords.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.M201PlanProductViewModel.datasource" />
@@ -1726,22 +1725,16 @@
     <None Include="Properties\DataSources\ERP.Domain.MES_Y202_EYield.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_Y203_CYield.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_Y204_QYield.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.Order.ViewModel.JobReportDetailModel.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.Order.ViewModel.JobReportHeaderModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.Order.ViewModel.OrderDashboardModel.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.Product.ViewModel.ProductViewModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.ProductMaterialViewModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.R103_JobTxDetail.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.R105_PlanTrace.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.Supplier.PurPlanDetailModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.Supplier.PurPlanHeaderModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.Supplier.PurPlanMatViewModel.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.Supplier.PurPlanReportViewModel.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.SUPP_M001_PurPlan.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.SUPP_M001_PurPlan_Detail.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.SUPP_M001_PurPlan_Material.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.tb_C001_Company.datasource" />
-    <None Include="Properties\DataSources\ERP.Domain.tb_C005_Employee.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Button.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Controls.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.tb_Sys_Menu.datasource" />
@@ -1765,6 +1758,7 @@
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMat.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMatDetail.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMatMouthCheck.datasource" />
+    <None Include="Properties\DataSources\ERP.Service.Dtos.TaskReportHead.datasource" />
     <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
