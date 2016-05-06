@@ -118,6 +118,12 @@ namespace ERP.Domain
        public int? ShipQty { get; set; }//板数
 
        public string PartName { get; set; }
-		   
+
+       public string Auditor { get; set; }
+
+       public DateTime? AuditingDt { get; set; }
+
+
+
 	}
 }

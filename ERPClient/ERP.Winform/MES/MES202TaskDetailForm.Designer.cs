@@ -312,6 +312,7 @@
             this.gridTaskDetail.Name = "gridTaskDetail";
             this.gridTaskDetail.OptionsBehavior.ReadOnly = true;
             this.gridTaskDetail.OptionsCustomization.AllowSort = false;
+            this.gridTaskDetail.OptionsSelection.ShowCheckBoxSelectorInColumnHeader = DevExpress.Utils.DefaultBoolean.True;
             this.gridTaskDetail.OptionsView.ColumnAutoWidth = false;
             this.gridTaskDetail.OptionsView.EnableAppearanceEvenRow = true;
             this.gridTaskDetail.OptionsView.EnableAppearanceOddRow = true;

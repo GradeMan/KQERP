@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using Util;
 
 namespace ERP.Winform.MES
@@ -63,7 +64,7 @@ namespace ERP.Winform.MES
             var tempData = this.mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
             if (tempData != null)
             {
-                var taskJobLotList = taskJobLotService.GetQuery().Where(a => a.JobNo == tempData.TaskNo).ToList();
+                var taskJobLotList = taskJobLotService.GetQuery().Where(a => a.JobNo == tempData.TaskNo).OrderBy(a=>a.JobLotNo).ToList();
                 this.mESM202TaskJobLotBindingSource.DataSource = taskJobLotList;
                 this.eRPM001ProductProcessFlowBindingSource.DataSource = productService.GetProcessFlowByProdutCode(tempData.PartNo).OrderBy(a => a.ProcessSeqNo).ToList();
                 this.eRPM001ProductProdInfoBindingSource.DataSource = productService.GetProdInfoByProdutCode(tempData.PartNo).OrderBy(a => a.TechSeqNo).ToList(); 
@@ -105,8 +106,10 @@ namespace ERP.Winform.MES
             if (string.IsNullOrWhiteSpace(txtTxDt1.Text) || string.IsNullOrWhiteSpace(txtTxDt2.Text))
                 throw new AppException("请先输入任务单日期");
 
-            var taskDetailList = tastDetailQuery.Where(a => a.TaskDt >= txtTxDt1.DateTime && a.TaskDt <= txtTxDt2.DateTime).ToList();
-            this.mESM202TaskDetailBindingSource.DataSource = taskDetailList;
+            var taskDetailList =
+                tastDetailQuery.Where(
+                    a => a.TaskDt >= txtTxDt1.DateTime && a.TaskDt <= txtTxDt2.DateTime && a.Status != "03").ToList();
+            mESM202TaskDetailBindingSource.DataSource = taskDetailList;
 
             //this.gridTask.BestFitColumns();
             this.gridTaskDetail.BestFitColumns();
@@ -139,7 +142,7 @@ namespace ERP.Winform.MES
                     MES_M202_Task_Detail temp = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
                     if (temp == null)
                         throw new AppException("请先选择要删除的数据");
-                    //TaskService.Delete(temp.Id);
+                    taskDetailService.Delete(temp.Id);
                     mESM202TaskDetailBindingSource.RemoveCurrent();
                 }
             }
@@ -180,29 +183,41 @@ namespace ERP.Winform.MES
             }
             else if (e.Item.Caption == "打印后制单")
             {
-
-                //var taskDetail = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
-                //if (taskDetail != null)
-                //{
-                //    var product = productService.GetProduct().Where(a => a.PartNo == taskDetail.PartNo).Select(a => new { a.PartSpec, a.PartType, a.ProcessFlow }).FirstOrDefault();
-                //    if (product == null)
-                //        throw new AppException("没有对应的产品基础资料，请检查产品基础信息");
-                //    taskDetail.PartSpec = product.PartSpec;
-                //    taskDetail.PartType = product.PartType;
-                //    taskDetail.ProcessFlow = product.ProcessFlow;
-                //    List<ERP_M001_Product_ProcessFlow> processList = productService.GetProcessFlowByProdutCode(taskDetail.PartNo).OrderBy(a => a.ProcessSeqNo).ToList();
-                //    var procNameList = codeService.GetListByCodeID("PROC");
-                //    foreach (var process in processList)
-                //    {
-                //        process.ProcessName = procNameList.Where(a => a.Code == process.ProcessCode).Select(a => a.Description).FirstOrDefault();
-                //    }
-                //    JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
-                //    ReportShowForm frm = new ReportShowForm(frmreport);
-                //    frm.Show();
-                //}
                 PrintProcess("后制程");
             }
-
+            else if (e.Item.Caption == "审核")
+            {
+                MES_M202_Task_Detail temp = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
+                if(temp == null)
+                    throw new AppException("请先选择要要审核的数据");
+                else if (temp.Status == "04")
+                {
+                    throw new AppException("已审核");
+                }
+                else
+                {
+                    taskDetailService.ShenHe(temp);
+                    XtraMessageBox.Show("审核成功");
+                }
+            }
+            else if (e.Item.Caption == "反审")
+            {
+                MES_M202_Task_Detail temp = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
+                if (temp == null)
+                    throw new AppException("请先选择要要审核的数据");
+                else if (temp.Status=="04")
+                {
+                    temp.Auditor = null;
+                    temp.AuditingDt = null;
+                    temp.Status = "01";
+                    taskDetailService.Update(temp);
+                    XtraMessageBox.Show("反审成功");
+                }
+                else
+                {
+                    XtraMessageBox.Show("未审核");
+                }
+            }
         }
 
         private void PrintProcess(string ProcessType)

@@ -19,6 +19,7 @@ namespace ERP.Service
         void Update(MES_M202_Task_Detail MES_M202_Task_Detail);
         void Delete(Guid Id);
         void Save(MES_M202_Task_Detail taskDetail, List<MES_M202_Task_JobLot> taskJobLotList);
+	    void ShenHe(MES_M202_Task_Detail mesM202TaskDetail);
 	}
 	public class MES_M202_Task_DetailService :IMES_M202_Task_DetailService
 	{
@@ -92,22 +93,23 @@ namespace ERP.Service
 
         public void Delete(Guid Id)
         {
-            //var existstb_Sys_Menu = this.GetById(Id);
-            //this.MES_M202_Task_DetailRepository.Delete(existstb_Sys_Menu);
-            //this.runtimeService.Commit();
             var existstb_Sys_Menu = this.GetById(Id);
-            if (existstb_Sys_Menu != null)
-            {
-                StringBuilder strSql = new StringBuilder();
-                strSql.Append(@"    Delete MES_M202_Task_Detail where TaskNo=@TaskNo
-                                    Delete MES_M202_Task_JobLot where JobNo = @TaskNo  ");
-                var partNoParam = new SqlParameter
-                {
-                    ParameterName = "TaskNo",
-                    Value = existstb_Sys_Menu.TaskNo
-                };
-                this.MES_M202_Task_DetailRepository.GetDbContext().Database.ExecuteSqlCommand(strSql.ToString(), partNoParam);
-            }
+            existstb_Sys_Menu.Status = "03";
+            this.MES_M202_Task_DetailRepository.Delete(existstb_Sys_Menu);
+            this.runtimeService.Commit();
+            //var existstb_Sys_Menu = this.GetById(Id);
+            //if (existstb_Sys_Menu != null)
+            //{
+            //    StringBuilder strSql = new StringBuilder();
+            //    strSql.Append(@"    Delete mesM202TaskDetail where TaskNo=@TaskNo
+            //                        Delete MES_M202_Task_JobLot where JobNo = @TaskNo  ");
+            //    var partNoParam = new SqlParameter
+            //    {
+            //        ParameterName = "TaskNo",
+            //        Value = existstb_Sys_Menu.TaskNo
+            //    };
+            //    this.MES_M202_Task_DetailRepository.GetDbContext().Database.ExecuteSqlCommand(strSql.ToString(), partNoParam);
+            //}
         }
 
         public void Update(MES_M202_Task_Detail MES_M202_Task_Detail)
@@ -121,6 +123,18 @@ namespace ERP.Service
             this.runtimeService.Commit();
         }
 
+	    public void ShenHe(MES_M202_Task_Detail mesM202TaskDetail)
+	    {
+            mesM202TaskDetail.ModifyDt = DateTime.Now;
+            tb_Sys_User tempUser = appCacheService.GetItem("user") as tb_Sys_User;
+            mesM202TaskDetail.ModifyUser = tempUser.UserName;
+            mesM202TaskDetail.Auditor= tempUser.UserName;
+            mesM202TaskDetail.AuditingDt = DateTime.Now;
+            mesM202TaskDetail.Validate();
+            var existstb_Sys_Menu = this.GetById(mesM202TaskDetail.Id);
+            this.MES_M202_Task_DetailRepository.SetValues(mesM202TaskDetail, existstb_Sys_Menu);
+            this.runtimeService.Commit();
+        }
         public List<MES_M202_Task_Detail> GetList(PagingModel pagingModel, DateTime? beginDate, DateTime? endDate)
         {
             var q = this.MES_M202_Task_DetailRepository.GetMany(i => true);

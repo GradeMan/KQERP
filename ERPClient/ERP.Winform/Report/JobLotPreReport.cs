@@ -66,10 +66,12 @@ namespace ERP.Winform.Report
             var processCode = xrTableCell10.Text;
             if (!string.IsNullOrEmpty(processCode))
             {
-                var process = processList.Where(a => a.ProcessCode == processCode).FirstOrDefault();
+                var process = processList.FirstOrDefault(a => a.ProcessCode == processCode);
                 var prodList = prodInfoList.Where(a => a.PFCode == taskDetail.ProcessFlow && a.ProcessCode == processCode).ToList();
                 JobLot_CuLaInnerProcess innerProcess = new JobLot_CuLaInnerProcess(prodList);
                 this.xrSubreport1.ReportSource = innerProcess;
+                List<string> processNameList = new List<string>() {"粗拉", "中拉及清洗(酸洗线)", "电镀"};
+                //if(process.ProcessName.Contains())
                 switch (process.ProcessName)
                 {
                     case "粗拉":
