@@ -215,9 +215,9 @@ namespace ERP.Winform.MES
                 }
                 else
                 {
-                    JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
-                    ReportShowForm frm = new ReportShowForm(frmreport);
-                    frm.Show();
+                    //JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
+                    //ReportShowForm frm = new ReportShowForm(frmreport);
+                    //frm.Show();
                 }
             }
         }

@@ -17,6 +17,7 @@ namespace ERP.Service
         void Update(ERP_M001_Product_ProdInfo ERP_M001_Product_ProdInfo);
         void Delete(Guid Id);
         string[] GetListByItemAndPocessCode(string itemCode,string processCode);
+	    IQueryable<ERP_M001_Product_ProdInfo> GetQueryable();
 	}
     public class ProductProdInfoService : IProductProdInfoService
 	{
@@ -28,8 +29,13 @@ namespace ERP.Service
 			this.runtimeService = new UnitOfWork(dbfactory);
 			this.ERP_M001_Product_ProdInfoRepository = new ERP_M001_Product_ProdInfoRepository(dbfactory);
 		}
-        
-		public List<ERP_M001_Product_ProdInfo> GetList()
+
+        public IQueryable<ERP_M001_Product_ProdInfo> GetQueryable()
+        {
+            var q = this.ERP_M001_Product_ProdInfoRepository.GetMany(i => true);
+            return q;
+        }
+        public List<ERP_M001_Product_ProdInfo> GetList()
         {
             var q = this.ERP_M001_Product_ProdInfoRepository.GetMany(i => true);
             return q.ToList();

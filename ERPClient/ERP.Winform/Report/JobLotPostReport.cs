@@ -8,52 +8,73 @@ using ERP.Domain;
 using ERP.Service;
 using COM.Service;
 using System.Linq;
+using ERP.Service.Dtos;
+using Util;
+
 namespace ERP.Winform.Report
 {
     public partial class JobLotPostReport : DevExpress.XtraReports.UI.XtraReport
     {
-        private IProductService productService = Unity.Instance.GetService<IProductService>();
-        private MES_M202_Task_Detail taskDetail;
-        private List<ERP_M001_Product_ProdInfo> prodInfoList;
-        private List<ERP_M001_Product_ProcessFlow> processList;
-        private ICodeService codeService = Unity.Instance.GetService<ICodeService>();
-        public JobLotPostReport(MES_M202_Task_Detail taskDetail,List<ERP_M001_Product_ProcessFlow> processList)
+        private readonly IProductService productService = Unity.Instance.GetService<IProductService>();
+        private IProductProdInfoService productProdInfoService = Unity.Instance.GetService<IProductProdInfoService>();
+        private readonly IProductProcessFlowService productProcessFlowService = Unity.Instance.GetService<IProductProcessFlowService>();
+        private readonly List<TaskReportHead> taskReportHeadList;
+
+        private readonly ICodeService codeService = Unity.Instance.GetService<ICodeService>();
+        public JobLotPostReport(List<TaskReportHead> taskReportHeadList)
         {
             InitializeComponent();
-            this.bindingSource1.DataSource = taskDetail;
-            this.bindingSource2.DataSource = processList;
-            this.taskDetail = taskDetail;
-            this.processList = processList;
-            prodInfoList = productService.GetProdInfoByProdutCode(taskDetail.PartNo);
-            var procNameList = codeService.GetListByCodeID("PROCPMS");
-            foreach (var prodInfo in prodInfoList)
+            this.taskReportHeadList = taskReportHeadList;
+            this.bindingSource3.DataSource = taskReportHeadList;
+        }
+
+        private void txtJobLotNo_TextChanged(object sender, EventArgs e)
+        {
+            string jobLotNo = txtJobLotNo.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(jobLotNo))
             {
-                prodInfo.TechName = procNameList.Where(a => a.Code == prodInfo.TechCode).Select(a => a.Description).FirstOrDefault();
+                var taskReportHead = taskReportHeadList.FirstOrDefault(a => a.JobLotNo == jobLotNo);
+                if (taskReportHead != null)
+                {
+                    List<ERP_M001_Product_ProcessFlow> processList = productService.GetProcessFlowByProdutCode(taskReportHead.PartNo).Where(a => a.ProcessType == "后制程").OrderBy(a => a.ProcessSeqNo).ToList();
+                    var procNameList = codeService.GetListByCodeID("PROC");
+                    foreach (var process in processList)
+                    {
+                        process.ProcessName = procNameList.Where(a => a.Code == process.ProcessCode).Select(a => a.Description).FirstOrDefault();
+                    }
+                    this.bindingSource2.DataSource = processList;
+                }
             }
         }
 
-        private void xrTableCell1_TextChanged(object sender, EventArgs e)
+        private void txtProcessId_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void xrZipCode1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
-        {
-
-        }
-        //后制成变化
-        private void xrTableCell10_TextChanged(object sender, EventArgs e)
-        {
-            var processCode = xrTableCell10.Text;
-            if (!string.IsNullOrEmpty(processCode))
+            var processId = txtProcessId.Text;//产品制程ID
+            if (!string.IsNullOrEmpty(processId))
             {
-                var process = processList.Where(a => a.ProcessCode == processCode).FirstOrDefault();
-                //var prodList = prodInfoList.Where(a => a.PFCode == taskDetail.ProcessFlow && a.ProcessCode == processCode).ToList();
+                //1.0 获取对应产品制程跟制程名称
+                var process = productProcessFlowService.GetById(processId.ToGuid());
+                var processNameList = codeService.GetListByCodeID("PROC");
+                process.ProcessName =
+                    processNameList.Where(a => a.Code == process.ProcessCode)
+                        .Select(a => a.Description)
+                        .FirstOrDefault();
+                //2.0 获取对应产品制程参数及名称
+                var prodList =
+                    productProdInfoService.GetQueryable()
+                        .Where(a => a.PartNo == process.PartNo && a.ProcessCode == process.ProcessCode).ToList();
+                var prodNameList = codeService.GetListByCodeID("PROCPMS");
+                foreach (var prodInfo in prodList)
+                {
+                    prodInfo.TechName = prodNameList.Where(a => a.Code == prodInfo.TechCode).Select(a => a.Description).FirstOrDefault();
+                }
+                //3.0把模板套用进去
                 //JobLot_CuLaInnerProcess innerProcess = new JobLot_CuLaInnerProcess(prodList);
                 //this.xrSubreport1.ReportSource = innerProcess;
                 foreach (var processName in Enum.GetNames(typeof(ProcessType)))
                 {
-                    if (process == null || !process.ProcessName.Contains(processName)) continue;
+                    if (process.ProcessName != null && !process.ProcessName.Contains(processName)) continue;
+                    //xrSubreport2.ReportSource = null;
                     switch (processName)
                     {
                         case "粗拉":
@@ -105,6 +126,5 @@ namespace ERP.Winform.Report
                 }
             }
         }
-
     }
 }

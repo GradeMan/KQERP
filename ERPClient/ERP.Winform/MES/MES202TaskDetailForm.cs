@@ -228,6 +228,7 @@ namespace ERP.Winform.MES
         /// <param name="processType">前制程&后制程</param>
         private void PrintProcess(string processType)
         {
+            this.gridTaskDetail.CloseEditor();
             var taskDetailList = mESM202TaskDetailBindingSource.DataSource as List<MES_M202_Task_Detail>;
             //var taskJobLot = mESM202TaskJobLotBindingSource.Current as MES_M202_Task_JobLot;
             if (taskDetailList == null) return;
@@ -258,9 +259,9 @@ namespace ERP.Winform.MES
             }
             else
             {
-                //JobLotPostReport frmreport = new JobLotPostReport(taskDetail, processList);
-                //ReportShowForm frm = new ReportShowForm(frmreport);
-                //frm.Show();
+                JobLotPostReport frmreport = new JobLotPostReport(taskReportHeadList);
+                ReportShowForm frm = new ReportShowForm(frmreport);
+                frm.Show();
             }
         }
         private void EditForm(string formText, string btnCommand)
