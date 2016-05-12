@@ -118,6 +118,8 @@ namespace ERP.Domain
         public string LMlotNo { get; set; }
 
         public string LBoxNo { get; set; }
-		   
-	}
+
+        public string CompName { get; set; }
+
+    }
 }

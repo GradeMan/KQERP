@@ -48,6 +48,7 @@
     <Compile Include="Exceptions\AppException.cs" />
     <Compile Include="Helper\AppConfig.cs" />
     <Compile Include="Helper\DatabaseInfo.cs" />
+    <Compile Include="Helper\DateTimeHepler.cs" />
     <Compile Include="Helper\Extensions.Validate.cs" />
     <Compile Include="Helper\Conv.cs" />
     <Compile Include="Helper\Extensions.Convert.cs" />

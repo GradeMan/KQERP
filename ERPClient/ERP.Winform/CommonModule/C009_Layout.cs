@@ -62,7 +62,7 @@ namespace ERP.Winform.CommonModule
                     break;
                 case "Y202_EYieldForm": layoutType = new List<string> { "按产品型号", "按机台", "按生产日期", "按操作员", "按客户" };
                     break;
-                case "MES501JobTxEditForm": layoutType = new List<string> { "粗拉", "中拉及清洗(酸洗线)", "电镀", "细拉半成品1", "半成品退火", "细拉半成品2", "细拉成品", "成品清洗", "成品退火", "成品绕线", "成品内包" };
+                case "MES501JobTxEditForm": layoutType = new List<string> { "粗拉", "熔炼","中拉及清洗(酸洗线)", "电镀", "细拉半成品1", "半成品退火", "细拉半成品2", "细拉成品", "成品清洗", "成品退火", "成品绕线", "成品内包" };
                     break;
             }
             return layoutType;

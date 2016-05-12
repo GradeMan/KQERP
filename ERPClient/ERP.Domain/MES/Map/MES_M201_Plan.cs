@@ -24,6 +24,9 @@ namespace ERP.Domain
                this.Property(t => t.CreateDt).HasColumnName("CreateDt");
                this.Property(t => t.CreateUser).HasColumnName("CreateUser");
                this.Property(t => t.PLAuditingDt).HasColumnName("PLAuditingDt");
+               this.Property(t => t.Weekly).HasColumnName("Weekly");
+               this.Property(t => t.PlanCompleteDt).HasColumnName("PlanCompleteDt");
+               this.Property(t => t.PlanDeliveryDt).HasColumnName("PlanDeliveryDt");
            }
 	}
 }

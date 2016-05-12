@@ -186,6 +186,7 @@ namespace ERP.Winform.MES
                 L.PKOut = false;//是否出库
                 L.CPIn = false;//是否入库
                 L.CPOut = false;
+                L.CompName = packInfo.CompName;
                 string ls_Supplier = "Ningbo Kangqiang Electronics Co.,LTD.";
                 switch (packInfo.LabelType.Trim())
                 {
@@ -279,6 +280,7 @@ namespace ERP.Winform.MES
                     //2015-09-21新增
                     M.LBSpec1 = packInfo.LBSpec1;
                     M.LBSpec2 = packInfo.LBSpec2;
+                    M.CompName = packInfo.CompName;
                     //一盒总片数
                     decimal pianCountOfHe = packInfo.PackBaoPian * packInfo.PackHeBao;
                     //if (heCountOfXiang > k && heCountOfXiang < k + 1)
@@ -295,10 +297,10 @@ namespace ERP.Winform.MES
                             M.Code2D = M.CustPartName + "\n" + M.CustPartType + "\n" + M.CustPartSpec + "\n" + M.CustDrawingNo + "\n" + ls_Supplier + "\n" + M.CustPONo + "\n" + M.CustPartNo + "\n" + M.Qty + "\n" + M.BoxNo + "\n" + M.LotNo + "\n" + M.ProdDt + "\n" + M.ExpiredDt;
                             break;
                         case "202-KH":
-                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
+                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.LBoxNo;
                             break;
                         case "202R-KH":
-                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.BoxNo;
+                            M.Code2D = M.CustPartNo + "," + M.LMlotNo + "," + M.Qty + "," + M.ProdDt + "," + M.ExpiredDt + "," + M.LBoxNo;
                             break;
                         default: M.Code2D = M.LotNo;
                             break;
@@ -347,6 +349,7 @@ namespace ERP.Winform.MES
                     //2015-09-21新增
                     S.LBSpec1 = packInfo.LBSpec1;
                     S.LBSpec2 = packInfo.LBSpec2;
+                    S.CompName = packInfo.CompName;
                     switch (packInfo.LabelType.Trim())
                     {
                         case "201-TS2D":
@@ -380,11 +383,11 @@ namespace ERP.Winform.MES
                             break;
                         case "202-KH":
                             S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
-                            S.PackSeqNo = L.BoxNo + S.PackSeqNo;
+                            S.PackSeqNo = L.BoxNo + S.PackNo;
                             break;
                         case "202R-KH":
                             S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
-                            S.PackSeqNo = L.BoxNo + S.PackSeqNo;
+                            S.PackSeqNo = L.BoxNo + S.PackNo;
                             break;
                         case "212-AOI":
                             S.CustLotNo = string.Format("{0}{1}{2}{3}{4}{5}{6}", "A", txtShipLotNo.Text.Substring(0, 6), S.CustLotNo, "-", i, "-", j);

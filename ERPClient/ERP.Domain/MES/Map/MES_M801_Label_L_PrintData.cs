@@ -48,6 +48,7 @@ namespace ERP.Domain
                this.Property(t => t.LBSpec1).HasColumnName("LBSpec1");
                this.Property(t => t.LBSpec2).HasColumnName("LBSpec2");
                this.Property(t => t.JointNumber).HasColumnName("JointNumber");
+               this.Property(t => t.CompName).HasColumnName("CompName");
            }
 	}
 }

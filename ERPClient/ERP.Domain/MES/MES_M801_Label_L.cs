@@ -150,5 +150,7 @@ namespace ERP.Domain
 
        //2016-03-09添加接头数
         public int? JointNumber { get; set; }
-	}
+
+        public string CompName { get; set; }
+    }
 }

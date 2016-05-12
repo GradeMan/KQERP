@@ -102,6 +102,7 @@ namespace ERP.Service
                 lprint.LBSpec1 = L.LBSpec1;
                 lprint.LBSpec2 = L.LBSpec2;
                 lprint.JointNumber = L.JointNumber;
+                lprint.CompName = L.CompName;
                 this.MES_M801_Label_L_PrintDataRepository.Add(lprint);
 
             }
@@ -155,6 +156,7 @@ namespace ERP.Service
                 lprint.JointNumber = M.JointNumber;
                 lprint.LMlotNo = M.LMlotNo;
                 lprint.LBoxNo = M.LBoxNo;
+                lprint.CompName = M.CompName;
                 this.MES_M801_Label_M_PrintDataRepository.Add(lprint);
             }
             foreach (var S in SData)
@@ -202,6 +204,7 @@ namespace ERP.Service
                 lprint.LMlotNo = S.LMlotNo;
                 lprint.BoxNo = S.BoxNo;
                 lprint.PackNo = S.PackNo;
+                lprint.CompName = S.CompName;
                 this.MES_M801_Label_S_PrintDataRepository.Add(lprint);
             }
             this.runtimeService.Commit(); 

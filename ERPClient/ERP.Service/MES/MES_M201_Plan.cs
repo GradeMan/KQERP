@@ -14,11 +14,12 @@ namespace ERP.Service
         IQueryable<MES_M201_Plan> GetQuery();
         IQueryable<MES_M201_Plan_Detail> GetProductQuery();
         IQueryable<MES_M201_Plan_Material> GetMaterialQuery();
-		List<MES_M201_Plan> GetList(PagingModel pagingModel, DateTime? beginDate, DateTime? endDate);
+        IQueryable<MES_M201_Plan_Daily> GetPlanDailiesQuery();
+        List<MES_M201_Plan> GetList(PagingModel pagingModel, DateTime? beginDate, DateTime? endDate);
         void Create(MES_M201_Plan MES_M201_Plan);
         void Update(MES_M201_Plan MES_M201_Plan);
         void Delete(Guid Id);
-        void Save(MES_M201_Plan material, List<MES_M201_Plan_Detail> productList);
+        void Save(MES_M201_Plan material, List<MES_M201_Plan_Detail> productList,List<MES_M201_Plan_Daily> planDailyList);
         void MarkDelProduct(MES_M201_Plan_Detail temp);
         void ShenHe(MES_M201_Plan MES_M201_Plan);
 
@@ -28,6 +29,7 @@ namespace ERP.Service
 		private IMES_M201_PlanRepository MES_M201_PlanRepository;
         private IMES_M201_Plan_DetailRepository planDetailRepository;
         private IMES_M201_Plan_MaterialRepository planMaterialRepository;
+	    private IMES_M201_Plan_DailyRepository planDailyRepository;
 		private IUnitOfWork runtimeService;
 		private ICacheServiceBase appCacheService = Unity.Instance.GetService<ICacheServiceBase>();
 		public MES_M201_PlanService(IDatabaseFactory dbfactory)
@@ -36,7 +38,9 @@ namespace ERP.Service
 			this.MES_M201_PlanRepository = new MES_M201_PlanRepository(dbfactory);
             this.planDetailRepository = new MES_M201_Plan_DetailRepository(dbfactory);
             this.planMaterialRepository = new MES_M201_Plan_MaterialRepository(dbfactory);
-		}
+            planDailyRepository = new MES_M201_Plan_DailyRepository(dbfactory);
+
+        }
 
         public void MarkDelProduct(MES_M201_Plan_Detail temp)
         {
@@ -51,7 +55,7 @@ namespace ERP.Service
 
         }
 
-        public void Save(MES_M201_Plan plan, List<MES_M201_Plan_Detail> productList)
+        public void Save(MES_M201_Plan plan, List<MES_M201_Plan_Detail> productList, List<MES_M201_Plan_Daily> planDailyList)
         {
             tb_Sys_User tempUser = appCacheService.GetItem("user") as tb_Sys_User;
 
@@ -92,6 +96,22 @@ namespace ERP.Service
                     this.planDetailRepository.SetValues(product, existsmatSupp);
                 }
             }
+            foreach (var planDaily in planDailyList)
+            {
+                var existsmatSupp = planDailyRepository.GetByID(planDaily.Id);
+                if (existsmatSupp == null)
+                {
+                    planDaily.CompCode = tempUser.CompCode;
+                    planDaily.PLNo = plan.PLNo;
+                    planDaily.Validate();
+                    this.planDailyRepository.Add(planDaily);
+                }
+                else
+                {
+                    planDaily.Validate();
+                    this.planDailyRepository.SetValues(planDaily, existsmatSupp);
+                }
+            }
            
             this.runtimeService.Commit();
         }
@@ -119,6 +139,10 @@ namespace ERP.Service
             return this.MES_M201_PlanRepository.GetByID(Id);
         }
 
+	    public IQueryable<MES_M201_Plan_Daily> GetPlanDailiesQuery()
+	    {
+            return this.planDailyRepository.GetMany(i => true);
+        }
         public void Create(MES_M201_Plan MES_M201_Plan)
         {
         	MES_M201_Plan.CreateDt = DateTime.Now;

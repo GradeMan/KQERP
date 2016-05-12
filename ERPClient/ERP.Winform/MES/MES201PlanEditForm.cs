@@ -13,6 +13,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.XtraEditors.Helpers;
 using Util;
 using DevExpress.XtraEditors.Repository;
 namespace ERP.Winform.MES
@@ -73,9 +74,11 @@ namespace ERP.Winform.MES
             //}
             this.mESM201PlanDetailBindingSource.DataSource = productList;
             this.mESM201PlanMaterialBindingSource.DataSource = planService.GetMaterialQuery().Where(a => a.PLNo == tempData.PLNo).ToList();
+            this.mESM201PlanDailyBindingSource.DataSource =
+                planService.GetPlanDailiesQuery().Where(a => a.PLNo == tempData.PLNo).ToList();
             //this.gridProduct.BestFitColumns();
             //this.gridMaterial.BestFitColumns();
-            
+
         }
 
         void mESM201PlanDetailBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -104,6 +107,7 @@ namespace ERP.Winform.MES
                 }
             }
             this.gridMaterial.ActiveFilterString = filterSql;
+            this.gridPlanDaily.ActiveFilterString = filterSql;
         }
 
         private void gridProduct_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -134,8 +138,11 @@ namespace ERP.Winform.MES
                     }
                 }
                 var productList = (this.mESM201PlanDetailBindingSource.DataSource as List<MES_M201_Plan_Detail>).Where(a => a.PartNo != null).ToList();
+                var planDailyList =
+                    (this.mESM201PlanDailyBindingSource.DataSource as List<MES_M201_Plan_Daily>).Where(a => a.Qty > 0)
+                        .ToList();
                 //var materialList = this.mESM201PlanMaterialBindingSource.DataSource as List<MES_M201_Plan_Material>;
-                planService.Save(tempData, productList);
+                planService.Save(tempData, productList, planDailyList);
                 DialogResult = DialogResult.OK;
             }
             else if (e.Item.Caption == BtnCommandEnum.Cancel)
@@ -219,7 +226,20 @@ namespace ERP.Winform.MES
                 detail.SumQty = 0;
                 detail.FQty = 0;
                 this.mESM201PlanDetailBindingSource.ResetCurrentItem();
-                //this.gridProduct.BestFitColumns();
+                var planDailyList = mESM201PlanDailyBindingSource.DataSource as List<MES_M201_Plan_Daily>;
+                if (planDailyList.Count(a => a.PlanDetailId == detail.Id) == 0)
+                {
+                    DateTime dt1 = txtPlanStartDt.DateTime, dt2 = txtPlanDeliveryDt.DateTime;
+                    for (; dt1 <= dt2;)
+                    {
+                        MES_M201_Plan_Daily planDaily = new MES_M201_Plan_Daily();
+                        planDaily.PlanDetailId = detail.Id;
+                        planDaily.TxDt = dt1;
+                        dt1 = dt1.AddDays(1);
+                        this.mESM201PlanDailyBindingSource.Add(planDaily);
+                    }
+                }
+                
             }
             
         }
@@ -270,5 +290,30 @@ namespace ERP.Winform.MES
             
         }
 
+        private void gridPlanDaily_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+
+            if (e.Column == colQty2)
+            {
+                this.gridPlanDaily.CloseEditor();
+                var detail = this.mESM201PlanDetailBindingSource.Current as MES_M201_Plan_Detail;
+                var planDailyList = this.mESM201PlanDailyBindingSource.DataSource as List<MES_M201_Plan_Daily>;
+                if (detail != null&& planDailyList != null)
+                {
+                    detail.Qty = planDailyList.Where(a => a.PlanDetailId == detail.Id).Sum(a => a.Qty);
+                    this.mESM201PlanDetailBindingSource.ResetCurrentItem();
+                }
+            }
+        }
+
+        private void txtWeekly_Leave(object sender, EventArgs e)
+        {
+            DateTime dt1, dt2;
+            Util.Helper.DateTimeHepler.GetWeek(DateTime.Now.Year, Convert.ToInt32(txtWeekly.Value), out dt1, out dt2);
+            tempData.Weekly = Convert.ToInt32(txtWeekly.Value);
+            tempData.PlanCompleteDt = dt1;
+            tempData.PlanDeliveryDt = dt2;
+            this.mESM201PlanBindingSource.ResetCurrentItem();
+        }
     }
 }

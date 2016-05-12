@@ -154,6 +154,8 @@ namespace ERP.Domain
 
         public string LBoxNo { get; set; }
 
-		   
-	}
+        public string CompName { get; set; }
+
+
+    }
 }

@@ -141,5 +141,7 @@ namespace ERP.Domain
 
         public string LBSpec1 { get; set; }
         public string LBSpec2 { get; set; }
+
+        public string CompName { get; set; }
 	}
 }

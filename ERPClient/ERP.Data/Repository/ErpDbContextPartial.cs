@@ -130,6 +130,7 @@ namespace ERP.Data
         public DbSet<MES_M201_Plan> MES_M201_PlanSet { get; set; }
         public DbSet<MES_M201_Plan_Detail> MES_M201_Plan_DetailSet { get; set; }
         public DbSet<MES_M201_Plan_Material> MES_M201_Plan_MaterialSet { get; set; }
+        public DbSet<MES_M201_Plan_Daily> MES_M201_Plan_DailySet { get; set; }
         public DbSet<MES_M202_Task> MES_M202_TaskSet { get; set; }
         public DbSet<MES_M202_Task_Detail> MES_M202_Task_DetailSet { get; set; }
         public DbSet<MES_M202_Task_JobLot> MES_M202_Task_JobLotSet { get; set; }
@@ -151,6 +152,7 @@ namespace ERP.Data
                 .Add(new MES_M201_PlanMap())
                 .Add(new MES_M201_Plan_DetailMap())
                 .Add(new MES_M201_Plan_MaterialMap())
+                .Add(new MES_M201_Plan_DailyMap())
                 .Add(new MES_M202_TaskMap())
                 .Add(new MES_M202_Task_DetailMap())
                 .Add(new MES_M202_Task_JobLotMap())

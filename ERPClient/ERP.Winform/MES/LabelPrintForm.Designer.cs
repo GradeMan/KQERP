@@ -311,6 +311,9 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.colCompName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName2 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
@@ -1169,7 +1172,6 @@
             this.ItemForVersion.Size = new System.Drawing.Size(558, 24);
             this.ItemForVersion.Text = "Version";
             this.ItemForVersion.TextSize = new System.Drawing.Size(50, 20);
-            this.ItemForVersion.TextToControlDistance = 5;
             // 
             // Root
             // 
@@ -1547,7 +1549,8 @@
             this.colLBSpec2,
             this.colLBPartName,
             this.colLBPartNo,
-            this.colJointNumber});
+            this.colJointNumber,
+            this.colCompName});
             this.gridXiang.GridControl = this.ykGridControl3;
             this.gridXiang.IndicatorWidth = 40;
             this.gridXiang.Name = "gridXiang";
@@ -1978,7 +1981,8 @@
             this.colLBSpec21,
             this.colJointNumber2,
             this.colLMlotNo1,
-            this.colLBoxNo});
+            this.colLBoxNo,
+            this.colCompName2});
             this.gridHe.GridControl = this.ykGridControl2;
             this.gridHe.IndicatorWidth = 40;
             this.gridHe.Name = "gridHe";
@@ -2410,7 +2414,8 @@
             this.colJointNumber1,
             this.colLMlotNo,
             this.colBoxNo3,
-            this.colPackNo});
+            this.colPackNo,
+            this.colCompName1});
             this.gridBao.GridControl = this.ykGridControl1;
             this.gridBao.IndicatorWidth = 40;
             this.gridBao.Name = "gridBao";
@@ -2946,7 +2951,6 @@
             this.layoutControlItem13.Size = new System.Drawing.Size(1098, 125);
             this.layoutControlItem13.Text = "layoutControlItem13";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextToControlDistance = 0;
             this.layoutControlItem13.TextVisible = false;
             // 
             // layoutControlGroup3
@@ -2968,7 +2972,6 @@
             this.layoutControlItem14.Size = new System.Drawing.Size(1098, 72);
             this.layoutControlItem14.Text = "layoutControlItem14";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem14.TextToControlDistance = 0;
             this.layoutControlItem14.TextVisible = false;
             // 
             // splitterItem2
@@ -2998,7 +3001,6 @@
             this.layoutControlItem15.Size = new System.Drawing.Size(1098, 127);
             this.layoutControlItem15.Text = "layoutControlItem15";
             this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem15.TextToControlDistance = 0;
             this.layoutControlItem15.TextVisible = false;
             // 
             // splitterItem1
@@ -3028,7 +3030,6 @@
             this.layoutControlItem16.Size = new System.Drawing.Size(615, 194);
             this.layoutControlItem16.Text = "layoutControlItem16";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem16.TextToControlDistance = 0;
             this.layoutControlItem16.TextVisible = false;
             // 
             // layoutControlGroup9
@@ -3122,7 +3123,6 @@
             this.layoutControlItem11.Size = new System.Drawing.Size(171, 24);
             this.layoutControlItem11.Text = "layoutControlItem11";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem11.TextToControlDistance = 0;
             this.layoutControlItem11.TextVisible = false;
             // 
             // layoutControlItem7
@@ -3144,7 +3144,6 @@
             this.layoutControlItem12.Size = new System.Drawing.Size(171, 24);
             this.layoutControlItem12.Text = "layoutControlItem12";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem12.TextToControlDistance = 0;
             this.layoutControlItem12.TextVisible = false;
             // 
             // layoutControlItem8
@@ -3186,8 +3185,31 @@
             this.layoutControlItem10.Size = new System.Drawing.Size(112, 194);
             this.layoutControlItem10.Text = "layoutControlItem10";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem10.TextToControlDistance = 0;
             this.layoutControlItem10.TextVisible = false;
+            // 
+            // colCompName
+            // 
+            this.colCompName.Caption = "公司";
+            this.colCompName.FieldName = "CompName";
+            this.colCompName.Name = "colCompName";
+            this.colCompName.Visible = true;
+            this.colCompName.VisibleIndex = 34;
+            // 
+            // colCompName1
+            // 
+            this.colCompName1.Caption = "公司";
+            this.colCompName1.FieldName = "CompName";
+            this.colCompName1.Name = "colCompName1";
+            this.colCompName1.Visible = true;
+            this.colCompName1.VisibleIndex = 30;
+            // 
+            // colCompName2
+            // 
+            this.colCompName2.Caption = "公司";
+            this.colCompName2.FieldName = "CompName";
+            this.colCompName2.Name = "colCompName2";
+            this.colCompName2.Visible = true;
+            this.colCompName2.VisibleIndex = 36;
             // 
             // LabelPrintForm
             // 
@@ -3595,5 +3617,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colLMlotNo;
         private DevExpress.XtraGrid.Columns.GridColumn colBoxNo3;
         private DevExpress.XtraGrid.Columns.GridColumn colPackNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompName;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompName2;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompName1;
     }
 }

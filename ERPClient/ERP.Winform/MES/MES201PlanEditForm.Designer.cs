@@ -41,6 +41,7 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.mESM201PlanDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridProduct = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -57,6 +58,7 @@
             this.colPartSpec = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUnit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colQty = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemQty = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.colFQty = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRemarks1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colModifyDt1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -75,6 +77,19 @@
             this.colPLevel = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLevel = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlProdInfo = new COM.YKControls.YKGridControl();
+            this.mESM201PlanDailyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridPlanDaily = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCompCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPlanDetailId1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTxDt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQty2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRemarks = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemPROCPMS = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.repositoryItemPROCPMSTATUS = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControlSupplier = new DevExpress.XtraGrid.GridControl();
             this.mESM201PlanMaterialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridMaterial = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -100,7 +115,12 @@
             this.PLNoTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.ItemForPLType = new DevExpress.XtraLayout.LayoutControlItem();
             this.PLTypeTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.repositoryItemQty = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtPlanStartDt = new DevExpress.XtraEditors.DateEdit();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtPlanDeliveryDt = new DevExpress.XtraEditors.DateEdit();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtWeekly = new DevExpress.XtraEditors.SpinEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
@@ -121,6 +141,8 @@
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
             this.splitContainerControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanDetailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProduct)).BeginInit();
@@ -128,10 +150,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit3View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProdInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanDailyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPlanDaily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPROCPMS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPROCPMSTATUS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanMaterialBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridMaterial)).BeginInit();
@@ -142,33 +172,43 @@
             ((System.ComponentModel.ISupportInitialize)(this.PLNoTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPLType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PLTypeTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanStartDt.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanStartDt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanDeliveryDt.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanDeliveryDt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeekly.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
-            this.panelControl1.Size = new System.Drawing.Size(1356, 689);
+            this.panelControl1.Size = new System.Drawing.Size(1482, 738);
             // 
             // dataLayoutControl1
             // 
+            this.dataLayoutControl1.Controls.Add(this.txtPlanDeliveryDt);
             this.dataLayoutControl1.Controls.Add(this.xtraTabControl1);
             this.dataLayoutControl1.Controls.Add(this.CompCodeTextEdit);
             this.dataLayoutControl1.Controls.Add(this.PLNoTextEdit);
             this.dataLayoutControl1.Controls.Add(this.PLDtDateEdit);
             this.dataLayoutControl1.Controls.Add(this.RemarksTextEdit);
             this.dataLayoutControl1.Controls.Add(this.PLTypeTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.txtPlanStartDt);
+            this.dataLayoutControl1.Controls.Add(this.txtWeekly);
             this.dataLayoutControl1.DataSource = this.mESM201PlanBindingSource;
             this.dataLayoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForCompCode});
             this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(584, 214, 250, 350);
             this.dataLayoutControl1.OptionsView.UseDefaultDragAndDropRendering = false;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1352, 685);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1478, 734);
             // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1352, 685);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1478, 734);
             // 
             // mESM201PlanBindingSource
             // 
@@ -192,7 +232,6 @@
             this.ItemForCompCode.Size = new System.Drawing.Size(1192, 24);
             this.ItemForCompCode.Text = "Comp Code";
             this.ItemForCompCode.TextSize = new System.Drawing.Size(63, 14);
-            this.ItemForCompCode.TextToControlDistance = 5;
             // 
             // layoutControlGroup2
             // 
@@ -205,10 +244,13 @@
             this.layoutControlItem1,
             this.emptySpaceItem1,
             this.ItemForPLNo,
-            this.ItemForPLType});
+            this.ItemForPLType,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1332, 665);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1458, 714);
             this.layoutControlGroup2.Text = "autoGeneratedGroup0";
             // 
             // ItemForPLDt
@@ -217,21 +259,21 @@
             this.ItemForPLDt.CustomizationFormText = "PLDt";
             this.ItemForPLDt.Location = new System.Drawing.Point(0, 48);
             this.ItemForPLDt.Name = "ItemForPLDt";
-            this.ItemForPLDt.Size = new System.Drawing.Size(364, 24);
+            this.ItemForPLDt.Size = new System.Drawing.Size(398, 24);
             this.ItemForPLDt.Text = "日期";
-            this.ItemForPLDt.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForPLDt.TextSize = new System.Drawing.Size(72, 14);
             // 
             // PLDtDateEdit
             // 
             this.PLDtDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "PLDt", true));
             this.PLDtDateEdit.EditValue = null;
-            this.PLDtDateEdit.Location = new System.Drawing.Point(64, 60);
+            this.PLDtDateEdit.Location = new System.Drawing.Point(88, 60);
             this.PLDtDateEdit.Name = "PLDtDateEdit";
             this.PLDtDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PLDtDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.PLDtDateEdit.Size = new System.Drawing.Size(308, 20);
+            this.PLDtDateEdit.Size = new System.Drawing.Size(318, 20);
             this.PLDtDateEdit.StyleController = this.dataLayoutControl1;
             this.PLDtDateEdit.TabIndex = 6;
             // 
@@ -239,18 +281,18 @@
             // 
             this.ItemForRemarks.Control = this.RemarksTextEdit;
             this.ItemForRemarks.CustomizationFormText = "Remarks";
-            this.ItemForRemarks.Location = new System.Drawing.Point(0, 72);
+            this.ItemForRemarks.Location = new System.Drawing.Point(0, 144);
             this.ItemForRemarks.Name = "ItemForRemarks";
-            this.ItemForRemarks.Size = new System.Drawing.Size(364, 169);
+            this.ItemForRemarks.Size = new System.Drawing.Size(398, 62);
             this.ItemForRemarks.Text = "备注";
-            this.ItemForRemarks.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForRemarks.TextSize = new System.Drawing.Size(72, 14);
             // 
             // RemarksTextEdit
             // 
             this.RemarksTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "Remarks", true));
-            this.RemarksTextEdit.Location = new System.Drawing.Point(64, 84);
+            this.RemarksTextEdit.Location = new System.Drawing.Point(88, 156);
             this.RemarksTextEdit.Name = "RemarksTextEdit";
-            this.RemarksTextEdit.Size = new System.Drawing.Size(308, 165);
+            this.RemarksTextEdit.Size = new System.Drawing.Size(318, 58);
             this.RemarksTextEdit.StyleController = this.dataLayoutControl1;
             this.RemarksTextEdit.TabIndex = 8;
             // 
@@ -258,20 +300,19 @@
             // 
             this.layoutControlItem1.Control = this.xtraTabControl1;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 241);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 206);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1332, 424);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1458, 508);
             this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(12, 253);
+            this.xtraTabControl1.Location = new System.Drawing.Point(12, 218);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1328, 420);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1454, 504);
             this.xtraTabControl1.TabIndex = 9;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1});
@@ -280,7 +321,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.splitContainerControl2);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1322, 391);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1448, 475);
             this.xtraTabPage1.Text = "明细";
             // 
             // splitContainerControl2
@@ -288,14 +329,29 @@
             this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
             this.splitContainerControl2.Name = "splitContainerControl2";
-            this.splitContainerControl2.Panel1.Controls.Add(this.gridControl1);
+            this.splitContainerControl2.Panel1.Controls.Add(this.splitContainerControl1);
             this.splitContainerControl2.Panel1.Text = "Panel1";
             this.splitContainerControl2.Panel2.Controls.Add(this.gridControlSupplier);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(1322, 391);
-            this.splitContainerControl2.SplitterPosition = 1215;
+            this.splitContainerControl2.Size = new System.Drawing.Size(1448, 475);
+            this.splitContainerControl2.SplitterPosition = 1081;
             this.splitContainerControl2.TabIndex = 8;
             this.splitContainerControl2.Text = "splitContainerControl2";
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Horizontal = false;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.gridControl1);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Controls.Add(this.gridControlProdInfo);
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(1081, 475);
+            this.splitContainerControl1.SplitterPosition = 220;
+            this.splitContainerControl1.TabIndex = 7;
+            this.splitContainerControl1.Text = "splitContainerControl1";
             // 
             // gridControl1
             // 
@@ -311,7 +367,7 @@
             this.repositoryItemLevel,
             this.repositoryItemStatus,
             this.repositoryItemQty});
-            this.gridControl1.Size = new System.Drawing.Size(1215, 391);
+            this.gridControl1.Size = new System.Drawing.Size(1081, 220);
             this.gridControl1.TabIndex = 6;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridProduct});
@@ -457,6 +513,15 @@
             this.colQty.Visible = true;
             this.colQty.VisibleIndex = 8;
             // 
+            // repositoryItemQty
+            // 
+            this.repositoryItemQty.AutoHeight = false;
+            this.repositoryItemQty.DisplayFormat.FormatString = "n2";
+            this.repositoryItemQty.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryItemQty.EditFormat.FormatString = "n2";
+            this.repositoryItemQty.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.repositoryItemQty.Name = "repositoryItemQty";
+            // 
             // colFQty
             // 
             this.colFQty.Caption = "仓库数量";
@@ -525,7 +590,7 @@
             // 
             // colSONo
             // 
-            this.colSONo.Caption = "SO订单";
+            this.colSONo.Caption = "订单号";
             this.colSONo.FieldName = "SONo";
             this.colSONo.Name = "colSONo";
             this.colSONo.Visible = true;
@@ -534,7 +599,7 @@
             // 
             // colSOQty
             // 
-            this.colSOQty.Caption = "SO工单数量";
+            this.colSOQty.Caption = "订单数量";
             this.colSOQty.ColumnEdit = this.repositoryItemQty;
             this.colSOQty.FieldName = "SOQty";
             this.colSOQty.Name = "colSOQty";
@@ -568,7 +633,7 @@
             // 
             // colPLevel
             // 
-            this.colPLevel.Caption = "级别";
+            this.colPLevel.Caption = "优先级";
             this.colPLevel.ColumnEdit = this.repositoryItemLevel;
             this.colPLevel.FieldName = "PLevel";
             this.colPLevel.Name = "colPLevel";
@@ -591,6 +656,132 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
+            // gridControlProdInfo
+            // 
+            this.gridControlProdInfo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridControlProdInfo.DataSource = this.mESM201PlanDailyBindingSource;
+            this.gridControlProdInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlProdInfo.EmbeddedNavigator.Buttons.Append.Visible = false;
+            this.gridControlProdInfo.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
+            this.gridControlProdInfo.EmbeddedNavigator.Buttons.Edit.Visible = false;
+            this.gridControlProdInfo.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
+            this.gridControlProdInfo.EmbeddedNavigator.Buttons.Remove.Visible = false;
+            this.gridControlProdInfo.EmbeddedNavigator.TextStringFormat = "记录:第{0}笔/共{1}笔";
+            this.gridControlProdInfo.Location = new System.Drawing.Point(0, 0);
+            this.gridControlProdInfo.MainView = this.gridPlanDaily;
+            this.gridControlProdInfo.Name = "gridControlProdInfo";
+            this.gridControlProdInfo.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemPROCPMS,
+            this.repositoryItemPROCPMSTATUS});
+            this.gridControlProdInfo.Size = new System.Drawing.Size(1081, 250);
+            this.gridControlProdInfo.TabIndex = 15;
+            this.gridControlProdInfo.UseEmbeddedNavigator = true;
+            this.gridControlProdInfo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridPlanDaily});
+            // 
+            // mESM201PlanDailyBindingSource
+            // 
+            this.mESM201PlanDailyBindingSource.DataSource = typeof(ERP.Domain.MES_M201_Plan_Daily);
+            // 
+            // gridPlanDaily
+            // 
+            this.gridPlanDaily.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(234)))), ((int)(((byte)(250)))));
+            this.gridPlanDaily.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridPlanDaily.Appearance.OddRow.BackColor = System.Drawing.Color.White;
+            this.gridPlanDaily.Appearance.OddRow.Options.UseBackColor = true;
+            this.gridPlanDaily.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCompCode,
+            this.colPlanDetailId1,
+            this.colTxDt,
+            this.colQty2,
+            this.colId,
+            this.colRemarks});
+            this.gridPlanDaily.GridControl = this.gridControlProdInfo;
+            this.gridPlanDaily.IndicatorWidth = 40;
+            this.gridPlanDaily.Name = "gridPlanDaily";
+            this.gridPlanDaily.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridPlanDaily.OptionsView.EnableAppearanceOddRow = true;
+            this.gridPlanDaily.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
+            this.gridPlanDaily.OptionsView.ShowFooter = true;
+            this.gridPlanDaily.OptionsView.ShowGroupPanel = false;
+            this.gridPlanDaily.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gridPlanDaily_CellValueChanged);
+            // 
+            // colCompCode
+            // 
+            this.colCompCode.FieldName = "CompCode";
+            this.colCompCode.Name = "colCompCode";
+            // 
+            // colPlanDetailId1
+            // 
+            this.colPlanDetailId1.FieldName = "PlanDetailId";
+            this.colPlanDetailId1.Name = "colPlanDetailId1";
+            // 
+            // colTxDt
+            // 
+            this.colTxDt.Caption = "日期";
+            this.colTxDt.FieldName = "TxDt";
+            this.colTxDt.Name = "colTxDt";
+            this.colTxDt.Visible = true;
+            this.colTxDt.VisibleIndex = 0;
+            this.colTxDt.Width = 183;
+            // 
+            // colQty2
+            // 
+            this.colQty2.Caption = "数量";
+            this.colQty2.FieldName = "Qty";
+            this.colQty2.Name = "colQty2";
+            this.colQty2.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)});
+            this.colQty2.Visible = true;
+            this.colQty2.VisibleIndex = 1;
+            this.colQty2.Width = 203;
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            // 
+            // colRemarks
+            // 
+            this.colRemarks.Caption = "备注";
+            this.colRemarks.FieldName = "Remarks";
+            this.colRemarks.Name = "colRemarks";
+            this.colRemarks.Visible = true;
+            this.colRemarks.VisibleIndex = 2;
+            this.colRemarks.Width = 653;
+            // 
+            // repositoryItemPROCPMS
+            // 
+            this.repositoryItemPROCPMS.AutoHeight = false;
+            this.repositoryItemPROCPMS.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemPROCPMS.Name = "repositoryItemPROCPMS";
+            this.repositoryItemPROCPMS.NullText = "";
+            this.repositoryItemPROCPMS.View = this.gridView5;
+            // 
+            // gridView5
+            // 
+            this.gridView5.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView5.OptionsView.ShowGroupPanel = false;
+            // 
+            // repositoryItemPROCPMSTATUS
+            // 
+            this.repositoryItemPROCPMSTATUS.AutoHeight = false;
+            this.repositoryItemPROCPMSTATUS.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemPROCPMSTATUS.Name = "repositoryItemPROCPMSTATUS";
+            this.repositoryItemPROCPMSTATUS.NullText = "";
+            this.repositoryItemPROCPMSTATUS.View = this.gridView6;
+            // 
+            // gridView6
+            // 
+            this.gridView6.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView6.Name = "gridView6";
+            this.gridView6.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView6.OptionsView.ShowGroupPanel = false;
+            // 
             // gridControlSupplier
             // 
             this.gridControlSupplier.Cursor = System.Windows.Forms.Cursors.Default;
@@ -601,7 +792,7 @@
             this.gridControlSupplier.Name = "gridControlSupplier";
             this.gridControlSupplier.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemGridLookUpEdit1});
-            this.gridControlSupplier.Size = new System.Drawing.Size(102, 391);
+            this.gridControlSupplier.Size = new System.Drawing.Size(362, 475);
             this.gridControlSupplier.TabIndex = 3;
             this.gridControlSupplier.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridMaterial});
@@ -749,9 +940,9 @@
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem1.Location = new System.Drawing.Point(364, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(398, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(968, 241);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1060, 206);
             this.emptySpaceItem1.Text = "emptySpaceItem1";
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -761,17 +952,17 @@
             this.ItemForPLNo.CustomizationFormText = "PLNo";
             this.ItemForPLNo.Location = new System.Drawing.Point(0, 24);
             this.ItemForPLNo.Name = "ItemForPLNo";
-            this.ItemForPLNo.Size = new System.Drawing.Size(364, 24);
+            this.ItemForPLNo.Size = new System.Drawing.Size(398, 24);
             this.ItemForPLNo.Text = "计划单号";
-            this.ItemForPLNo.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForPLNo.TextSize = new System.Drawing.Size(72, 14);
             // 
             // PLNoTextEdit
             // 
             this.PLNoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "PLNo", true));
             this.PLNoTextEdit.Enabled = false;
-            this.PLNoTextEdit.Location = new System.Drawing.Point(64, 36);
+            this.PLNoTextEdit.Location = new System.Drawing.Point(88, 36);
             this.PLNoTextEdit.Name = "PLNoTextEdit";
-            this.PLNoTextEdit.Size = new System.Drawing.Size(308, 20);
+            this.PLNoTextEdit.Size = new System.Drawing.Size(318, 20);
             this.PLNoTextEdit.StyleController = this.dataLayoutControl1;
             this.PLNoTextEdit.TabIndex = 5;
             // 
@@ -781,14 +972,14 @@
             this.ItemForPLType.CustomizationFormText = "PL Type";
             this.ItemForPLType.Location = new System.Drawing.Point(0, 0);
             this.ItemForPLType.Name = "ItemForPLType";
-            this.ItemForPLType.Size = new System.Drawing.Size(364, 24);
+            this.ItemForPLType.Size = new System.Drawing.Size(398, 24);
             this.ItemForPLType.Text = "类别";
-            this.ItemForPLType.TextSize = new System.Drawing.Size(48, 14);
+            this.ItemForPLType.TextSize = new System.Drawing.Size(72, 14);
             // 
             // PLTypeTextEdit
             // 
             this.PLTypeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "PLType", true));
-            this.PLTypeTextEdit.Location = new System.Drawing.Point(64, 12);
+            this.PLTypeTextEdit.Location = new System.Drawing.Point(88, 12);
             this.PLTypeTextEdit.Name = "PLTypeTextEdit";
             this.PLTypeTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -796,25 +987,96 @@
             "月计划",
             "周计划",
             "日计划"});
-            this.PLTypeTextEdit.Size = new System.Drawing.Size(308, 20);
+            this.PLTypeTextEdit.Size = new System.Drawing.Size(318, 20);
             this.PLTypeTextEdit.StyleController = this.dataLayoutControl1;
             this.PLTypeTextEdit.TabIndex = 7;
             this.PLTypeTextEdit.EditValueChanged += new System.EventHandler(this.PLTypeTextEdit_EditValueChanged);
             // 
-            // repositoryItemQty
+            // layoutControlItem2
             // 
-            this.repositoryItemQty.AutoHeight = false;
-            this.repositoryItemQty.DisplayFormat.FormatString = "n2";
-            this.repositoryItemQty.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryItemQty.EditFormat.FormatString = "n2";
-            this.repositoryItemQty.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.repositoryItemQty.Name = "repositoryItemQty";
+            this.layoutControlItem2.Control = this.txtPlanStartDt;
+            this.layoutControlItem2.CustomizationFormText = "计划完成日期";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(398, 24);
+            this.layoutControlItem2.Text = "计划开始日期";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(72, 14);
+            // 
+            // txtPlanStartDt
+            // 
+            this.txtPlanStartDt.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "PlanCompleteDt", true));
+            this.txtPlanStartDt.EditValue = null;
+            this.txtPlanStartDt.Location = new System.Drawing.Point(88, 108);
+            this.txtPlanStartDt.Name = "txtPlanStartDt";
+            this.txtPlanStartDt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtPlanStartDt.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtPlanStartDt.Properties.Mask.EditMask = "";
+            this.txtPlanStartDt.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.txtPlanStartDt.Size = new System.Drawing.Size(318, 20);
+            this.txtPlanStartDt.StyleController = this.dataLayoutControl1;
+            this.txtPlanStartDt.TabIndex = 10;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.txtPlanDeliveryDt;
+            this.layoutControlItem3.CustomizationFormText = "计划交期";
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 120);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(398, 24);
+            this.layoutControlItem3.Text = "计划交期";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(72, 14);
+            // 
+            // txtPlanDeliveryDt
+            // 
+            this.txtPlanDeliveryDt.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "PlanDeliveryDt", true));
+            this.txtPlanDeliveryDt.EditValue = null;
+            this.txtPlanDeliveryDt.Location = new System.Drawing.Point(88, 132);
+            this.txtPlanDeliveryDt.Name = "txtPlanDeliveryDt";
+            this.txtPlanDeliveryDt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtPlanDeliveryDt.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtPlanDeliveryDt.Properties.ShowWeekNumbers = true;
+            this.txtPlanDeliveryDt.Size = new System.Drawing.Size(318, 20);
+            this.txtPlanDeliveryDt.StyleController = this.dataLayoutControl1;
+            this.txtPlanDeliveryDt.TabIndex = 11;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.txtWeekly;
+            this.layoutControlItem4.CustomizationFormText = "周次";
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(398, 24);
+            this.layoutControlItem4.Text = "周次";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(72, 14);
+            // 
+            // txtWeekly
+            // 
+            this.txtWeekly.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mESM201PlanBindingSource, "Weekly", true));
+            this.txtWeekly.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtWeekly.Location = new System.Drawing.Point(88, 84);
+            this.txtWeekly.Name = "txtWeekly";
+            this.txtWeekly.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtWeekly.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtWeekly.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.txtWeekly.Size = new System.Drawing.Size(318, 20);
+            this.txtWeekly.StyleController = this.dataLayoutControl1;
+            this.txtWeekly.TabIndex = 12;
+            this.txtWeekly.Leave += new System.EventHandler(this.txtWeekly_Leave);
             // 
             // MES201PlanEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 722);
+            this.ClientSize = new System.Drawing.Size(1486, 773);
             this.Name = "MES201PlanEditForm";
             this.Text = "_201PlanEditForm";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -837,6 +1099,8 @@
             this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
             this.splitContainerControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanDetailBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProduct)).EndInit();
@@ -844,10 +1108,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit3View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProdInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanDailyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPlanDaily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPROCPMS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPROCPMSTATUS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mESM201PlanMaterialBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridMaterial)).EndInit();
@@ -858,7 +1130,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.PLNoTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPLType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PLTypeTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanStartDt.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanStartDt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanDeliveryDt.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPlanDeliveryDt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeekly.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -937,5 +1216,25 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemLevel;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemQty;
+        private DevExpress.XtraEditors.DateEdit txtPlanDeliveryDt;
+        private DevExpress.XtraEditors.DateEdit txtPlanStartDt;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private COM.YKControls.YKGridControl gridControlProdInfo;
+        private System.Windows.Forms.BindingSource mESM201PlanDailyBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridPlanDaily;
+        private DevExpress.XtraGrid.Columns.GridColumn colCompCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colPlanDetailId1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTxDt;
+        private DevExpress.XtraGrid.Columns.GridColumn colQty2;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemPROCPMS;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemPROCPMSTATUS;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraEditors.SpinEdit txtWeekly;
+        private DevExpress.XtraGrid.Columns.GridColumn colRemarks;
     }
 }

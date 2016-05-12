@@ -92,6 +92,7 @@
     <Compile Include="File\Map\FTP_F002_File.cs" />
     <Compile Include="File\Map\FTP_F003_RolesRight.cs" />
     <Compile Include="MES\Map\MES_M201_Plan.cs" />
+    <Compile Include="MES\Map\MES_M201_Plan_Daily.cs" />
     <Compile Include="MES\Map\MES_M201_Plan_Detail.cs" />
     <Compile Include="MES\Map\MES_M201_Plan_Material.cs" />
     <Compile Include="MES\Map\MES_M202_Task.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="MES\Map\MES_M802_Packing_Dtl.cs" />
     <Compile Include="MES\Map\MES_M802_Packing_Hd.cs" />
     <Compile Include="MES\MES_M201_Plan.cs" />
+    <Compile Include="MES\MES_M201_Plan_Daily.cs" />
     <Compile Include="MES\MES_M201_Plan_Detail.cs" />
     <Compile Include="MES\MES_M201_Plan_Material.cs" />
     <Compile Include="MES\MES_M202_Task.cs" />

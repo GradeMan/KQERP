@@ -67,7 +67,12 @@ namespace ERP.Winform.MES
         {
             var tempData = this.mESM201PlanBindingSource.Current as MES_M201_Plan;
             if (tempData != null)
-                this.mESM201PlanDetailBindingSource.DataSource = planService.GetProductQuery().Where(a => a.PlanId == tempData.Id).ToList();
+            {
+                this.mESM201PlanDetailBindingSource.DataSource =
+                    planService.GetProductQuery().Where(a => a.PlanId == tempData.Id).ToList();
+                this.mESM201PlanDailyBindingSource.DataSource =
+                planService.GetPlanDailiesQuery().Where(a => a.PLNo == tempData.PLNo).ToList();
+            }
             else
             {
                 this.mESM201PlanDetailBindingSource.DataSource = null;
@@ -81,6 +86,7 @@ namespace ERP.Winform.MES
             {
 
                 this.gridControl2.DataSource = viewService.GetPlanProductMaterialView(product.PlanId.ToStr());
+                this.mESM201PlanDailyBindingSource.DataSource = planService.GetPlanDailiesQuery().Where(a=>a.PlanDetailId == product.Id).OrderBy(a=>a.TxDt).ToList();
             }
             else
                 this.gridControl2.DataSource = null;

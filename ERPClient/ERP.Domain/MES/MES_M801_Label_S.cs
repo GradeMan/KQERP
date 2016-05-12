@@ -106,5 +106,7 @@ namespace ERP.Domain
         public string BoxNo { get; set; }
 
         public string PackNo { get; set; }
-	}
+
+        public string CompName { get; set; }
+    }
 }

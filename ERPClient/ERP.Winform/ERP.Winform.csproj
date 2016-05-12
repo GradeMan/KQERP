@@ -1703,6 +1703,7 @@
     <None Include="Properties\DataSources\ERP.Domain.MES_M003_LotTx_NG.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_M004_PlanJob.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_M201_Plan.datasource" />
+    <None Include="Properties\DataSources\ERP.Domain.MES_M201_Plan_Daily.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_M201_Plan_Detail.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_M201_Plan_Material.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.MES_M202_Task_Detail1.datasource" />

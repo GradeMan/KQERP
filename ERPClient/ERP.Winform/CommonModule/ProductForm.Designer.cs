@@ -119,6 +119,7 @@
             this.colProcessSeqNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRemarks3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colId3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProcessType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControlProdInfo = new COM.YKControls.YKGridControl();
             this.eRPM001ProductProdInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridProdInfo = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -181,7 +182,7 @@
             this.colId2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.colProcessType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ykGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eRPM001ProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProduct)).BeginInit();
@@ -570,7 +571,8 @@
             this.colCreateDt1,
             this.colCreateUser1,
             this.colVersion1,
-            this.colId1});
+            this.colId1,
+            this.colCompName});
             this.gridPacking.GridControl = this.gridControl2;
             this.gridPacking.Name = "gridPacking";
             this.gridPacking.OptionsView.ColumnAutoWidth = false;
@@ -1025,6 +1027,14 @@
             // 
             this.colId3.FieldName = "Id";
             this.colId3.Name = "colId3";
+            // 
+            // colProcessType
+            // 
+            this.colProcessType.Caption = "制程类别";
+            this.colProcessType.FieldName = "ProcessType";
+            this.colProcessType.Name = "colProcessType";
+            this.colProcessType.Visible = true;
+            this.colProcessType.VisibleIndex = 4;
             // 
             // gridControlProdInfo
             // 
@@ -1532,13 +1542,13 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "0.png");
             // 
-            // colProcessType
+            // colCompName
             // 
-            this.colProcessType.Caption = "制程类别";
-            this.colProcessType.FieldName = "ProcessType";
-            this.colProcessType.Name = "colProcessType";
-            this.colProcessType.Visible = true;
-            this.colProcessType.VisibleIndex = 4;
+            this.colCompName.Caption = "公司名称";
+            this.colCompName.FieldName = "CompName";
+            this.colCompName.Name = "colCompName";
+            this.colCompName.Visible = true;
+            this.colCompName.VisibleIndex = 30;
             // 
             // ProductForm
             // 
@@ -1752,6 +1762,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemMatCode;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colProcessType;
-       
+        private DevExpress.XtraGrid.Columns.GridColumn colCompName;
     }
 }

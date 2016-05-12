@@ -45,6 +45,7 @@ namespace ERP.Domain
                this.Property(t => t.LMlotNo).HasColumnName("LMlotNo");
                this.Property(t => t.BoxNo).HasColumnName("BoxNo");
                this.Property(t => t.PackNo).HasColumnName("PackNo");
+               this.Property(t => t.CompName).HasColumnName("CompName");
            }
 	}
 }

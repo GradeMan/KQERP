@@ -157,6 +157,7 @@ namespace ERP.Service
                 .Register<IMES_M201_Plan_DetailRepository, MES_M201_Plan_DetailRepository>()
                 .Register<IMES_M201_Plan_MaterialService, MES_M201_Plan_MaterialService>()
                 .Register<IMES_M201_Plan_MaterialRepository, MES_M201_Plan_MaterialRepository>()
+                .Register<IMES_M201_Plan_DailyRepository,MES_M201_Plan_DailyRepository>()
 		        .Register<IMES_M202_TaskService, MES_M202_TaskService>()
                 .Register<IMES_M202_TaskRepository, MES_M202_TaskRepository>()
 		        .Register<IMES_M202_Task_DetailService, MES_M202_Task_DetailService>()

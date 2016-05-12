@@ -51,6 +51,13 @@ namespace ERP.Domain
 				
 		[ColumnMap("CreateUser","CreateUser")]
         public string CreateUser{ get; set; }
-		   
-	}
+
+        public int? Weekly { get; set; }
+
+        public DateTime? PlanCompleteDt { get; set; }
+
+        public DateTime? PlanDeliveryDt { get; set; }
+
+
+    }
 }
