@@ -36,14 +36,14 @@ namespace ERP.Winform.MES
         {
             //客户
             var customerData = customerServer.GetCustomerInputData();
-            SetGridLookUpEdit(repositoryItemCustomer, customerData, 1);
+            //SetGridLookUpEdit(repositoryItemCustomer, customerData, 1);
 
             //级别
-            SetGridLookUpEdit(repositoryItemLevel, codeService.GetCodeDataByCodeId("PLLEVEL"), 1);
+            //SetGridLookUpEdit(repositoryItemLevel, codeService.GetCodeDataByCodeId("PLLEVEL"), 1);
             //状态
-            SetGridLookUpEdit(repositoryItemStatus, codeService.GetCodeDataByCodeId("PLSTATUS"), 1);
+            //SetGridLookUpEdit(repositoryItemStatus, codeService.GetCodeDataByCodeId("PLSTATUS"), 1);
             this.mESM201PlanBindingSource.CurrentChanged += mESM201PlanBindingSource_CurrentChanged;
-            this.mESM201PlanDetailBindingSource.CurrentChanged += mESM201PlanDetailBindingSource_CurrentChanged;
+            //this.mESM201PlanDetailBindingSource.CurrentChanged += mESM201PlanDetailBindingSource_CurrentChanged;
             txtProdDt1.DateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             txtProdDt2.DateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
         }
@@ -58,7 +58,7 @@ namespace ERP.Winform.MES
             var planList = planQuery.Where(a => a.PLDt >= txtProdDt1.DateTime && a.PLDt <= txtProdDt2.DateTime).ToList(); ;
             this.mESM201PlanBindingSource.DataSource = planList;
             this.gridPlan.BestFitColumns();
-            this.gridProduct.BestFitColumns();
+            //this.gridProduct.BestFitColumns();
             this.gridMaterial.BestFitColumns();
             
         }
@@ -68,10 +68,11 @@ namespace ERP.Winform.MES
             var tempData = this.mESM201PlanBindingSource.Current as MES_M201_Plan;
             if (tempData != null)
             {
-                this.mESM201PlanDetailBindingSource.DataSource =
-                    planService.GetProductQuery().Where(a => a.PlanId == tempData.Id).ToList();
-                this.mESM201PlanDailyBindingSource.DataSource =
-                planService.GetPlanDailiesQuery().Where(a => a.PLNo == tempData.PLNo).ToList();
+                //this.mESM201PlanDetailBindingSource.DataSource =
+                //    planService.GetProductQuery().Where(a => a.PlanId == tempData.Id).ToList();
+                //this.mESM201PlanDailyBindingSource.DataSource =
+                //planService.GetPlanDailiesQuery().Where(a => a.PLNo == tempData.PLNo).ToList();
+                this.planDetailDtoBindingSource.DataSource = viewService.GetPlanDetailDtoList(tempData.PLNo);
             }
             else
             {

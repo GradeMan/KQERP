@@ -179,6 +179,7 @@
             this.colLBPartName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLBPartNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colJointNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ykGridControl2 = new COM.YKControls.YKGridControl();
             this.mESM801LabelMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridHe = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -231,6 +232,7 @@
             this.colJointNumber2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLMlotNo1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLBoxNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ykGridControl1 = new COM.YKControls.YKGridControl();
             this.mESM801LabelSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridBao = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -267,6 +269,7 @@
             this.colLMlotNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBoxNo3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPackNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCompName1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtSNO2 = new DevExpress.XtraEditors.SpinEdit();
             this.txtLNo2 = new DevExpress.XtraEditors.SpinEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -311,9 +314,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.colCompName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCompName1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCompName2 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
@@ -1902,6 +1902,14 @@
             this.colJointNumber.Visible = true;
             this.colJointNumber.VisibleIndex = 30;
             // 
+            // colCompName
+            // 
+            this.colCompName.Caption = "公司";
+            this.colCompName.FieldName = "CompName";
+            this.colCompName.Name = "colCompName";
+            this.colCompName.Visible = true;
+            this.colCompName.VisibleIndex = 34;
+            // 
             // ykGridControl2
             // 
             this.ykGridControl2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -2351,6 +2359,14 @@
             this.colLBoxNo.Visible = true;
             this.colLBoxNo.VisibleIndex = 3;
             // 
+            // colCompName2
+            // 
+            this.colCompName2.Caption = "公司";
+            this.colCompName2.FieldName = "CompName";
+            this.colCompName2.Name = "colCompName2";
+            this.colCompName2.Visible = true;
+            this.colCompName2.VisibleIndex = 36;
+            // 
             // ykGridControl1
             // 
             this.ykGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
@@ -2683,6 +2699,14 @@
             this.colPackNo.Name = "colPackNo";
             this.colPackNo.Visible = true;
             this.colPackNo.VisibleIndex = 4;
+            // 
+            // colCompName1
+            // 
+            this.colCompName1.Caption = "公司";
+            this.colCompName1.FieldName = "CompName";
+            this.colCompName1.Name = "colCompName1";
+            this.colCompName1.Visible = true;
+            this.colCompName1.VisibleIndex = 30;
             // 
             // txtSNO2
             // 
@@ -3186,30 +3210,6 @@
             this.layoutControlItem10.Text = "layoutControlItem10";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
-            // 
-            // colCompName
-            // 
-            this.colCompName.Caption = "公司";
-            this.colCompName.FieldName = "CompName";
-            this.colCompName.Name = "colCompName";
-            this.colCompName.Visible = true;
-            this.colCompName.VisibleIndex = 34;
-            // 
-            // colCompName1
-            // 
-            this.colCompName1.Caption = "公司";
-            this.colCompName1.FieldName = "CompName";
-            this.colCompName1.Name = "colCompName1";
-            this.colCompName1.Visible = true;
-            this.colCompName1.VisibleIndex = 30;
-            // 
-            // colCompName2
-            // 
-            this.colCompName2.Caption = "公司";
-            this.colCompName2.FieldName = "CompName";
-            this.colCompName2.Name = "colCompName2";
-            this.colCompName2.Visible = true;
-            this.colCompName2.VisibleIndex = 36;
             // 
             // LabelPrintForm
             // 

@@ -161,7 +161,8 @@ namespace ERP.Winform.MES
                 L.CustPartType = packInfo.CustPartType;
                 L.CustPartSpec = packInfo.CustPartSpec;
                 L.CustDrawingNo = packInfo.CustDrawingNo;
-                L.CustPONo = packInfo.CustPONo;
+                //L.CustPONo = packInfo.CustPONo;
+                L.CustPONo = txtOrderNo.Text.Trim();  
                 L.CustLotNo = packInfo.CustLotNo;
                 L.MatCode = packInfo.MatCode;
                 L.MatType = packInfo.MatType;
@@ -262,7 +263,8 @@ namespace ERP.Winform.MES
                     M.CustPartType = packInfo.CustPartType;
                     M.CustPartSpec = packInfo.CustPartSpec;
                     M.CustDrawingNo = packInfo.CustDrawingNo;
-                    M.CustPONo = packInfo.CustPONo;
+                    //M.CustPONo = packInfo.CustPONo;
+                    M.CustPONo = txtOrderNo.Text.Trim();
                     M.CustLotNo = packInfo.CustLotNo;
                     M.MatCode = packInfo.MatCode;
                     M.MatType = packInfo.MatType;
@@ -334,7 +336,8 @@ namespace ERP.Winform.MES
                     S.CustPartType = packInfo.CustPartType;
                     S.CustPartSpec = packInfo.CustPartSpec;
                     S.CustDrawingNo = packInfo.CustDrawingNo;
-                    S.CustPONo = packInfo.CustPONo;
+                    //S.CustPONo = packInfo.CustPONo;
+                    S.CustPONo = txtOrderNo.Text.Trim();
                     S.CustLotNo = packInfo.CustLotNo;
                     S.MatCode = packInfo.MatCode;
                     S.MatType = packInfo.MatType;
@@ -382,12 +385,14 @@ namespace ERP.Winform.MES
                             S.Code2D = S.PartNo + "\n" + S.CustPartNo + "\n" + S.MatCode + "\n" + S.LotNo + "\n" + S.ProdDt + "\n" + S.ExpiredDt + "\n" + S.Qty + "\n" + ls_Supplier;
                             break;
                         case "202-KH":
-                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
                             S.PackSeqNo = L.BoxNo + S.PackNo;
+                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
+                            
                             break;
                         case "202R-KH":
-                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
                             S.PackSeqNo = L.BoxNo + S.PackNo;
+                            S.Code2D = S.CustPartNo + "," + S.LMlotNo + "," + S.Qty + "," + S.ProdDt + "," + S.ExpiredDt + "," + S.PackSeqNo;
+                            
                             break;
                         case "212-AOI":
                             S.CustLotNo = string.Format("{0}{1}{2}{3}{4}{5}{6}", "A", txtShipLotNo.Text.Substring(0, 6), S.CustLotNo, "-", i, "-", j);

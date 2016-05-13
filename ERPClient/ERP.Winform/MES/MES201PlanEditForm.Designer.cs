@@ -57,6 +57,8 @@
             this.colPartName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPartSpec = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUnit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemUnit = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colQty = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemQty = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.colFQty = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -150,6 +152,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemUnit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit3View)).BeginInit();
@@ -366,7 +370,8 @@
             this.repositoryItemCustomer,
             this.repositoryItemLevel,
             this.repositoryItemStatus,
-            this.repositoryItemQty});
+            this.repositoryItemQty,
+            this.repositoryItemUnit});
             this.gridControl1.Size = new System.Drawing.Size(1081, 220);
             this.gridControl1.TabIndex = 6;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -432,7 +437,7 @@
             this.colCustCode.FieldName = "CustCode";
             this.colCustCode.Name = "colCustCode";
             this.colCustCode.Visible = true;
-            this.colCustCode.VisibleIndex = 1;
+            this.colCustCode.VisibleIndex = 2;
             this.colCustCode.Width = 115;
             // 
             // repositoryItemCustomer
@@ -458,7 +463,7 @@
             this.colPartNo.FieldName = "PartNo";
             this.colPartNo.Name = "colPartNo";
             this.colPartNo.Visible = true;
-            this.colPartNo.VisibleIndex = 4;
+            this.colPartNo.VisibleIndex = 5;
             this.colPartNo.Width = 126;
             // 
             // repositoryProduct
@@ -483,7 +488,7 @@
             this.colPartName.FieldName = "PartName";
             this.colPartName.Name = "colPartName";
             this.colPartName.Visible = true;
-            this.colPartName.VisibleIndex = 5;
+            this.colPartName.VisibleIndex = 6;
             this.colPartName.Width = 151;
             // 
             // colPartSpec
@@ -492,17 +497,34 @@
             this.colPartSpec.FieldName = "PartSpec";
             this.colPartSpec.Name = "colPartSpec";
             this.colPartSpec.Visible = true;
-            this.colPartSpec.VisibleIndex = 6;
+            this.colPartSpec.VisibleIndex = 7;
             this.colPartSpec.Width = 83;
             // 
             // colUnit
             // 
             this.colUnit.Caption = "单位";
+            this.colUnit.ColumnEdit = this.repositoryItemUnit;
             this.colUnit.FieldName = "Unit";
             this.colUnit.Name = "colUnit";
             this.colUnit.Visible = true;
-            this.colUnit.VisibleIndex = 7;
+            this.colUnit.VisibleIndex = 8;
             this.colUnit.Width = 74;
+            // 
+            // repositoryItemUnit
+            // 
+            this.repositoryItemUnit.AutoHeight = false;
+            this.repositoryItemUnit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemUnit.Name = "repositoryItemUnit";
+            this.repositoryItemUnit.NullText = "";
+            this.repositoryItemUnit.View = this.gridView2;
+            // 
+            // gridView2
+            // 
+            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
             // colQty
             // 
@@ -511,7 +533,7 @@
             this.colQty.FieldName = "Qty";
             this.colQty.Name = "colQty";
             this.colQty.Visible = true;
-            this.colQty.VisibleIndex = 8;
+            this.colQty.VisibleIndex = 9;
             // 
             // repositoryItemQty
             // 
@@ -529,7 +551,7 @@
             this.colFQty.FieldName = "FQty";
             this.colFQty.Name = "colFQty";
             this.colFQty.Visible = true;
-            this.colFQty.VisibleIndex = 11;
+            this.colFQty.VisibleIndex = 12;
             // 
             // colRemarks1
             // 
@@ -537,7 +559,7 @@
             this.colRemarks1.FieldName = "Remarks";
             this.colRemarks1.Name = "colRemarks1";
             this.colRemarks1.Visible = true;
-            this.colRemarks1.VisibleIndex = 12;
+            this.colRemarks1.VisibleIndex = 13;
             // 
             // colModifyDt1
             // 
@@ -577,7 +599,7 @@
             this.colSumQty.Name = "colSumQty";
             this.colSumQty.OptionsColumn.AllowEdit = false;
             this.colSumQty.Visible = true;
-            this.colSumQty.VisibleIndex = 10;
+            this.colSumQty.VisibleIndex = 11;
             // 
             // colAdJustQty
             // 
@@ -586,7 +608,7 @@
             this.colAdJustQty.FieldName = "AdJustQty";
             this.colAdJustQty.Name = "colAdJustQty";
             this.colAdJustQty.Visible = true;
-            this.colAdJustQty.VisibleIndex = 9;
+            this.colAdJustQty.VisibleIndex = 10;
             // 
             // colSONo
             // 
@@ -594,7 +616,7 @@
             this.colSONo.FieldName = "SONo";
             this.colSONo.Name = "colSONo";
             this.colSONo.Visible = true;
-            this.colSONo.VisibleIndex = 2;
+            this.colSONo.VisibleIndex = 3;
             this.colSONo.Width = 147;
             // 
             // colSOQty
@@ -604,7 +626,7 @@
             this.colSOQty.FieldName = "SOQty";
             this.colSOQty.Name = "colSOQty";
             this.colSOQty.Visible = true;
-            this.colSOQty.VisibleIndex = 3;
+            this.colSOQty.VisibleIndex = 4;
             // 
             // colStatus
             // 
@@ -613,7 +635,7 @@
             this.colStatus.FieldName = "Status";
             this.colStatus.Name = "colStatus";
             this.colStatus.Visible = true;
-            this.colStatus.VisibleIndex = 13;
+            this.colStatus.VisibleIndex = 1;
             // 
             // repositoryItemStatus
             // 
@@ -1108,6 +1130,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemUnit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemQty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit3View)).EndInit();
@@ -1236,5 +1260,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraEditors.SpinEdit txtWeekly;
         private DevExpress.XtraGrid.Columns.GridColumn colRemarks;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit repositoryItemUnit;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

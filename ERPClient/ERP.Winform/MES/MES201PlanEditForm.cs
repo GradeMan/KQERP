@@ -42,6 +42,8 @@ namespace ERP.Winform.MES
             SetGridLookUpEdit(repositoryItemLevel, codeService.GetCodeDataByCodeId("PLLEVEL"), 1);
             //状态
             SetGridLookUpEdit(repositoryItemStatus, codeService.GetCodeDataByCodeId("PLSTATUS"), 1);
+
+            SetGridLookUpEdit(repositoryItemUnit, codeService.GetCodeDataByCodeId("UNIT"), 1);
             this.mESM201PlanDetailBindingSource.CurrentChanged += mESM201PlanDetailBindingSource_CurrentChanged;
             var productData = productService.GetProductInputData();
             SetGridLookUpEdit(repositoryProduct, productData, 1);
@@ -64,7 +66,8 @@ namespace ERP.Winform.MES
                 {
                     MES_M201_Plan_Detail bomMat = new MES_M201_Plan_Detail();
                     bomMat.PlanId = tempData.Id;
-                    bomMat.Status = "02";
+                    bomMat.Status = "01";
+                    bomMat.PLevel = "01";
                     productList.Add(bomMat);
                 }
             }
@@ -94,13 +97,13 @@ namespace ERP.Winform.MES
                     colAdJustQty.OptionsColumn.AllowEdit = false;
                 }
                 //如果是紧急单 状态为修改，则可以修改 数量跟调整数量
-                else if (product.Status == "01" && this.Tag.ToStr() == BtnCommandEnum.Edit)
+                else if (product.Status == "02" && this.Tag.ToStr() == BtnCommandEnum.Edit)
                 {
                     colAdJustQty.OptionsColumn.AllowEdit = true;
                     colQty.OptionsColumn.AllowEdit = true;
                 }
                 //如果是正常单 状态为修改，则可以修改 数量跟调整数量
-                else if (product.Status == "02" && this.Tag.ToStr() == BtnCommandEnum.Edit)
+                else if (product.Status == "01" && this.Tag.ToStr() == BtnCommandEnum.Edit)
                 {
                     colAdJustQty.OptionsColumn.AllowEdit = true;
                     colQty.OptionsColumn.AllowEdit = false;

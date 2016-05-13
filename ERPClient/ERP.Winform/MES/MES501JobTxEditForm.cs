@@ -368,7 +368,8 @@ namespace ERP.Winform.MES
         /// <param name="e"></param>
         private void ProcessCodeTextEdit_EditValueChanged(object sender, EventArgs e)
         {
-            ShowLayForm(ProcessCodeTextEdit.Text);
+            //if (!string.IsNullOrWhiteSpace(ProcessCodeTextEdit.Text))
+                ShowLayForm(ProcessCodeTextEdit.Text);
         }
 
         private void ShowLayForm(string type)

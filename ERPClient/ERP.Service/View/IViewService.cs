@@ -60,6 +60,13 @@ namespace ERP.Service
         /// <param name="taskNoList"></param>
         /// <returns></returns>
         List<TaskReportHead> GetTaskReportHeadList(List<string> taskNoList);
+
+        /// <summary>
+        /// 获取计划单明细数据
+        /// </summary>
+        /// <param name="plNo">计划单号</param>
+        /// <returns></returns>
+        List<PlanDetailDto> GetPlanDetailDtoList(string plNo);
     }
 
     public class ViewService : IViewService
@@ -75,11 +82,11 @@ namespace ERP.Service
         public List<R105_PlanTrace> GetPlanTraceList(QueryR103JobTxDetailView query)
         {
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append(@" select * from (select a.PLNo,a.PartName,a.Qty as PlanQty,a.FQty as PlanFQty,a.AdJustQty,a.SumQty,b.TaskNo,b.JobNo,b.JobQty,b.FQty as TaskFQty 
+            sqlStr.Append(@" select * from (select a.plNo,a.PartName,a.Qty as PlanQty,a.FQty as PlanFQty,a.AdJustQty,a.SumQty,b.TaskNo,b.JobNo,b.JobQty,b.FQty as TaskFQty 
                                                 ,c.ProdDt,c.ShiftCode,c.MacCode,c.InQty,c.OutQty,c.NGQty
                                                 from MES_M201_Plan_Detail a
-                                                Left Outer join MES_M202_Task_Detail b on a.PLNo = b.PLNo and a.PartNo = b.PartNo and  a.CompCode = b.CompCode
-                                                Left Outer join MES_M501_JobTx c on c.PLNo = b.PLNo and c.TaskNo = b.TaskNo and c.PartNo = b.PartNo and c.CompCode = b.CompCode
+                                                Left Outer join MES_M202_Task_Detail b on a.plNo = b.plNo and a.PartNo = b.PartNo and  a.CompCode = b.CompCode
+                                                Left Outer join MES_M501_JobTx c on c.plNo = b.plNo and c.TaskNo = b.TaskNo and c.PartNo = b.PartNo and c.CompCode = b.CompCode
                                              ) as T
                                         where 1= 1");
             if (query.ProdDt != null && query.ProdDt2 != null)
@@ -87,7 +94,7 @@ namespace ERP.Service
             if (!string.IsNullOrWhiteSpace(query.PartNo))
                 sqlStr.AppendFormat(" and PartNo = '{0}' ", query.PartNo);
             if (!string.IsNullOrWhiteSpace(query.PLNO))
-                sqlStr.AppendFormat(" and PLNo = '{0}' ", query.PLNO);
+                sqlStr.AppendFormat(" and plNo = '{0}' ", query.PLNO);
             if (!string.IsNullOrWhiteSpace(query.TaskNo))
                 sqlStr.AppendFormat(" and TaskNo = '{0}' ", query.TaskNo);
             if (!string.IsNullOrWhiteSpace(query.JobNo))
@@ -113,7 +120,7 @@ namespace ERP.Service
             if (!string.IsNullOrWhiteSpace(query.PartNo))
                 sqlStr.AppendFormat(" and PartNo = '{0}' ", query.PartNo);
             if (!string.IsNullOrWhiteSpace(query.PLNO))
-                sqlStr.AppendFormat(" and PLNo = '{0}' ", query.PLNO);
+                sqlStr.AppendFormat(" and plNo = '{0}' ", query.PLNO);
             if (!string.IsNullOrWhiteSpace(query.TaskNo))
                 sqlStr.AppendFormat(" and TaskNo = '{0}' ", query.TaskNo);
             if (!string.IsNullOrWhiteSpace(query.JobNo))
@@ -124,7 +131,7 @@ namespace ERP.Service
         public DataTable GetEmployeelist()
         {
 //            StringBuilder sqlStr = new StringBuilder();
-//            sqlStr.Append(@" select * from (select a.id as PlanDetailId,a.PLNo,a.PlanId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
+//            sqlStr.Append(@" select * from (select a.id as PlanDetailId,a.plNo,a.PlanId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
 //                                                   a.SumQty*c.UnitConsume as Qty,a.SONO 
 //                                                from  dbo.MES_M201_Plan_Detail a
 //                                                left join dbo.ERP_M002_BOM b on a.PartNo = b.PartNo
@@ -138,7 +145,7 @@ namespace ERP.Service
         public List<ProductMaterialViewModel> GetBOMMaterialView(string planId)
         {
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append(@" select * from (select a.id as PlanDetailId,a.PLNo,a.PlanId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
+            sqlStr.Append(@" select * from (select a.id as PlanDetailId,a.plNo,a.PlanId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
                                                    a.SumQty*c.UnitConsume as Qty,a.SONO 
                                                 from  dbo.MES_M201_Plan_Detail a
                                                 left join dbo.ERP_M002_BOM b on a.PartNo = b.PartNo
@@ -153,7 +160,7 @@ namespace ERP.Service
         public List<ProductMaterialViewModel> GetPlanProductMaterialView(string planId)
         {
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append(@" select * from (select p.id as PlanId,p.PLNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,e.CustType,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
+            sqlStr.Append(@" select * from (select p.id as PlanId,p.plNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,e.CustType,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
                                                  c.Qty,a.SONO
                                                 from MES_M201_Plan p 
                                                 left join  dbo.MES_M201_Plan_Detail a on p.Id = a.PlanId
@@ -170,7 +177,7 @@ namespace ERP.Service
         {
            
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append(@" select * from (select p.CompCode,p.id as PlanId,p.PLNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,e.CustType,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
+            sqlStr.Append(@" select * from (select p.CompCode,p.id as PlanId,p.plNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,e.CustType,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,c.MatCode,c.Unit,c.UnitConsume,d.MatName,d.MatSpec,
                                                  c.Qty,a.SONO
                                                 from MES_M201_Plan p 
                                                 left join  dbo.MES_M201_Plan_Detail a on p.CompCode = a.CompCode and p.Id = a.PlanId 
@@ -186,7 +193,7 @@ namespace ERP.Service
             if (!string.IsNullOrWhiteSpace(query.CustNo))
                 sqlStr.AppendFormat(" and CustCode = '{0}' ", query.CustNo);
             if (!string.IsNullOrWhiteSpace(query.PlanNo))
-                sqlStr.AppendFormat(" and PLNo = '{0}' ", query.PlanNo);
+                sqlStr.AppendFormat(" and plNo = '{0}' ", query.PlanNo);
             if (!string.IsNullOrWhiteSpace(query.SONo))
                 sqlStr.AppendFormat(" and SONo = '{0}' ", query.SONo);
             if (!string.IsNullOrWhiteSpace(query.Status))
@@ -199,7 +206,7 @@ namespace ERP.Service
         public List<M201PlanProductViewModel> GetPlanProductView(QueryMESPlanView query)
         {
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append(@" select * from (select p.id as PlanId,p.PLNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,
+            sqlStr.Append(@" select * from (select p.id as PlanId,p.plNo,p.PLDt,p.PLType,p.PLAuditing,p.PLAuditingDt,p.State,a.id as PlanDetailId,a.PartNo,a.CustCode,e.Alias as CustAlias,a.PartName,a.PartSpec,a.SumQty,
                                                  a.SONO,a.AdJustQty,a.Qty
                                                 from MES_M201_Plan p 
                                                 left join  dbo.MES_M201_Plan_Detail a on p.Id = a.PlanId
@@ -212,7 +219,7 @@ namespace ERP.Service
             if (!string.IsNullOrWhiteSpace(query.CustNo))
                 sqlStr.AppendFormat(" and CustCode = '{0}' ", query.CustNo);
             if (!string.IsNullOrWhiteSpace(query.PlanNo))
-                sqlStr.AppendFormat(" and PLNo = '{0}' ", query.PlanNo);
+                sqlStr.AppendFormat(" and plNo = '{0}' ", query.PlanNo);
             if (!string.IsNullOrWhiteSpace(query.SONo))
                 sqlStr.AppendFormat(" and SONo = '{0}' ", query.SONo);
             if (!string.IsNullOrWhiteSpace(query.Status))
@@ -585,6 +592,26 @@ namespace ERP.Service
             //strSql.AppendFormat(" where TxDt between '{0}' and '{1}' ", proddt1.Date, proddt2.Date);
             var q = this.dbfactory.Get().Database.SqlQuery<TaskReportHead>(strSql.ToString());
             q = q.Where(a => taskNoList.Contains(a.TaskNo));
+            return q.ToList();
+        }
+
+        public List<PlanDetailDto> GetPlanDetailDtoList(string pLNo)
+        {
+            StringBuilder strSql = new StringBuilder();
+
+            strSql.Append(
+                @" select * from (select PLevel=(select Description from ERP_C001_Code code where code.CodeID = 'PLLEVEL' and Code = a.PLevel )
+,a.PLNo,SONo,SOQty,
+CustCode =(select CustName from ERP_C004_Customer cust where cust.CustCode = a.CustCode )
+,PartNo,PartName,PartSpec,DetailType,
+Unit=(select Description from ERP_C001_Code b where b.CodeID = 'UNIT' and Code = a.Unit )
+,a.Qty as DetailQty,FQty,AdJustQty, SumQty,b.TxDt,b.Qty as DailyQty
+from MES_M201_Plan_Detail a
+left join MES_M201_Plan_Daily b on a.PLNO =b.PLNo and a.Id = b.PlanDetailId
+)as T
+ ");
+            strSql.AppendFormat(" where PLNO = '{0}'  ",pLNo);
+            var q = this.dbfactory.Get().Database.SqlQuery<PlanDetailDto>(strSql.ToString());
             return q.ToList();
         }
     }

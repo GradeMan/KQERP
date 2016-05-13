@@ -1759,6 +1759,7 @@
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMat.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMatDetail.datasource" />
     <None Include="Properties\DataSources\ERP.Domain.WMS_MatConsume_ActMatMouthCheck.datasource" />
+    <None Include="Properties\DataSources\ERP.Service.Dtos.PlanDetailDto.datasource" />
     <None Include="Properties\DataSources\ERP.Service.Dtos.TaskReportHead.datasource" />
     <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">

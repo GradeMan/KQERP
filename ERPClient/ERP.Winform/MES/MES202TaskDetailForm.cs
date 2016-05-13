@@ -126,7 +126,7 @@ namespace ERP.Winform.MES
                 MES_M202_Task_Detail temp = mESM202TaskDetailBindingSource.Current as MES_M202_Task_Detail;
                 temp.TaskDt = DateTime.Now.Date;
                 temp.TLevel = "01";
-                temp.Status = "02";
+                temp.Status = "01";
                 EditForm("跟踪单新增", BtnCommandEnum.Add);
             }
             else if (e.Item.Caption == BtnCommandEnum.Edit)
